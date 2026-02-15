@@ -1,35 +1,40 @@
-name: Daily Harvest
+name: Reality-Harvest-Action
 
 on:
   push:
     paths:
-      - 'xlsx/**' # xlsxフォルダにファイルが追加されたら実行
-  workflow_dispatch: # 手動実行ボタン
+      - 'xlsx/**'      # xlsxフォルダにファイルが入ったら実行
+      - 'src/**'       # スクリプトが変わったら実行
+  workflow_dispatch:   # 手動実行ボタンを有効化
+  schedule:
+    - cron: '0 15 * * *' # 日本時間 0:00 (UTC 15:00) に毎日実行
 
 permissions:
   contents: write
 
 jobs:
-  harvest:
+  build-and-harvest:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install
         run: npm install
 
       - name: Run Harvester
         run: npm run harvest
 
-      - name: Commit and Push Data
+      - name: Commit Results
         run: |
-          git config --global user.name "Harvest Bot"
+          git config --global user.name "Reality-Harvester-Bot"
           git config --global user.email "bot@example.com"
-          git add data/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "update: fresh reality data" && git push)
+          git add data/*.json
+          # 変更があればコミット
+          git diff --staged --quiet || (git commit -m "chore: update reality data [skip ci]" && git push)
