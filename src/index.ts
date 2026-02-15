@@ -17,36 +17,51 @@ async function main() {
     if (!file.match(/\.(xlsx|xls|csv)$/i)) continue;
 
     try {
+      console.log(`Processing: ${file}`);
       const workbook = XLSX.readFile(path.join(XLSX_DIR, file));
-      const sheet = workbook.Sheets[workbook.SheetNames[0]];
       
-      // header: 1 で「行列（配列の配列）」として抽出
-      const rawMatrix = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: "" }) as any[][];
+      // 全シートを格納するオブジェクト
+      const allSheetsData: any = {};
+      // 構造確認用のLite版（各シートの数行だけを抽出）
+      const liteData: any = {};
 
-      // 完全に空の行を削除し、各行の末尾の空要素を削って圧縮
-      const compressedMatrix = rawMatrix
-        .map(row => {
-          // 行の末尾にある空要素を削除
-          while (row.length > 0 && (row[row.length - 1] === "" || row[row.length - 1] === null)) {
-            row.pop();
-          }
-          return row;
-        })
-        .filter(row => row.length > 0); // 空行を削除
+      workbook.SheetNames.forEach(sheetName => {
+        // 各シートを行列形式で取得
+        const rawMatrix = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1, defval: "" }) as any[][];
+
+        // データの圧縮（空要素の削除）
+        const compressedMatrix = rawMatrix
+          .map(row => {
+            while (row.length > 0 && (row[row.length - 1] === "" || row[row.length - 1] === null)) {
+              row.pop();
+            }
+            return row;
+          })
+          .filter(row => row.length > 0);
+
+        if (compressedMatrix.length > 0) {
+          allSheetsData[sheetName] = compressedMatrix;
+          liteData[sheetName] = compressedMatrix.slice(0, 15); // 構造確認用に各シート15行だけ抽出
+        }
+      });
 
       const fileName = path.parse(file).name;
 
-      // フル版：インデントなしで保存
-      await fs.writeFile(path.join(DATA_DIR, `${fileName}.json`), JSON.stringify(compressedMatrix));
+      // フル版（API用）
+      await fs.writeFile(path.join(DATA_DIR, `${fileName}.json`), JSON.stringify(allSheetsData));
       
-      // Lite版：構造確認用に最初の50行だけを見やすく保存
-      await fs.writeJson(path.join(DATA_DIR, `${fileName}.lite.json`), compressedMatrix.slice(0, 50), { spaces: 2 });
+      // Lite版（LLM分析用：各シートの冒頭だけ入っているので構造がすぐわかる）
+      await fs.writeJson(path.join(DATA_DIR, `${fileName}.lite.json`), liteData, { spaces: 2 });
 
-      console.log(`Converted: ${file} (Rows: ${compressedMatrix.length})`);
+      console.log(`✅ Success: ${file} (${workbook.SheetNames.length} sheets)`);
     } catch (e: any) {
-      console.error(`Error: ${file}`, e.message);
+      console.error(`❌ Error: ${file}`, e.message);
     }
   }
+
+  // index.jsonの更新
+  const jsonFiles = (await fs.readdir(DATA_DIR)).filter(f => f.endsWith('.json') && f !== 'index.json');
+  await fs.writeJson(path.join(DATA_DIR, 'index.json'), { updated: new Date().toISOString(), files: jsonFiles });
 }
 
 main().catch(console.error);
