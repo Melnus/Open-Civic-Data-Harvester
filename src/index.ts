@@ -1,61 +1,13 @@
+import axios from 'axios';
 import * as XLSX from 'xlsx';
 import * as fs from 'fs-extra';
 import * as path from 'path';
 import { createHash } from 'crypto';
 
-const TARGET_SCHEMA = [
-  { key: "FY_year", keywords: ["年度"] },
-  { key: "population", keywords: ["住民基本台帳人口", "人口"] },
-  { key: "total_revenue", keywords: ["歳入総額", "歳入合計", "歳入総計", "歳入決算総額"] },
-  { key: "total_expenditure", keywords: ["歳出総額", "歳出合計", "歳出総計", "歳出決算総額"] },
-  { key: "local_tax", keywords: ["地方税", "普通税", "都道府県税"] },
-  { key: "consumption_tax_share", keywords: ["地方消費税"] },
-];
-
 const ROOT_DIR = process.cwd();
 const XLSX_DIR = path.join(ROOT_DIR, 'xlsx');
 const DATA_DIR = path.join(ROOT_DIR, 'data');
 const HABIT_DIR = path.join(ROOT_DIR, 'habits');
-
-function parseNumber(value: any): number | null {
-  if (value === undefined || value === null || value === "") return null;
-  const str = String(value).trim().replace(/,/g, '');
-  if (str === '-' || str === '－' || str === '') return null;
-  const num = parseFloat(str);
-  return isNaN(num) ? null : num;
-}
-
-function createFingerprint(matrix: any[][]): string {
-  const SCAN_ROWS = 20;
-  const SCAN_COLS = 20;
-  const binaryRows = matrix.slice(0, SCAN_ROWS).map(row => {
-    let bits = "";
-    for (let c = 0; c < SCAN_COLS; c++) {
-      const cell = row[c];
-      const hasValue = cell !== undefined && cell !== null && String(cell).trim() !== "" && String(cell).trim() !== "-";
-      bits += hasValue ? "1" : "0";
-    }
-    return bits.padEnd(SCAN_COLS, "0");
-  });
-  while (binaryRows.length < SCAN_ROWS) binaryRows.push("0".repeat(SCAN_COLS));
-  return createHash('md5').update(binaryRows.join("\n")).digest('hex').slice(0, 8);
-}
-
-function autoExtract(matrix: any[][], keywords: string[]): any {
-  for (let r = 0; r < matrix.length; r++) {
-    for (let c = 0; c < matrix[r].length; r++) {
-      const cellText = String(matrix[r][c] || "").replace(/\s+/g, '');
-      if (keywords.some(k => cellText.includes(k))) {
-        // キーワードが見つかったら、右側10セル分を探す
-        for (let nextC = c + 1; nextC < Math.min(c + 10, matrix[r].length); nextC++) {
-          const val = parseNumber(matrix[r][nextC]);
-          if (val !== null) return val;
-        }
-      }
-    }
-  }
-  return null;
-}
 
 async function main() {
   await fs.ensureDir(XLSX_DIR);
@@ -65,61 +17,78 @@ async function main() {
   const files = await fs.readdir(XLSX_DIR);
   const catalog: any = {};
 
+  console.log(`🚀 Harvesting: Found ${files.length} files.`);
+
   for (const file of files) {
-    if (file.startsWith('.') || !file.match(/\.(xlsx|xls|csv)$/i)) continue;
+    if (!file.match(/\.(xlsx|xls|csv)$/i)) continue;
+
+    console.log(`🚜 Processing: ${file}`);
+    const inputPath = path.join(XLSX_DIR, file);
+    const fileName = path.parse(file).name;
 
     try {
-      console.log(`🚜 Harvesting: ${file}`);
-      const workbook = XLSX.readFile(path.join(XLSX_DIR, file));
-      const fileData: any = { metadata: { source: file, timestamp: new Date().toISOString() }, sheets: {} };
+      const workbook = XLSX.readFile(inputPath);
+      const allSheets: any = {};
+      const liteData: any = {};
 
-      // 【改良点】全シートをループする
       for (const sheetName of workbook.SheetNames) {
-        // 「目次」「index」「注意事項」などの名前のシートは飛ばす（ヒューリスティック）
-        if (sheetName.match(/(目次|index|注意|原本|Menu)/i)) continue;
+        const sheet = workbook.Sheets[sheetName];
+        if (!sheet) continue;
 
-        const matrix = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1, defval: "" }) as any[][];
-        if (matrix.length < 5) continue; // データが少なすぎるシートは無視
+        // 行列形式で取得。defval: "" を指定して undefined を回避
+        const rawMatrix = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: "" }) as any[][];
+        if (!rawMatrix || rawMatrix.length === 0) continue;
 
-        const habitId = createFingerprint(matrix);
-        const extracted: any = {};
-        let hasData = false;
-
-        for (const item of TARGET_SCHEMA) {
-          const val = autoExtract(matrix, item.keywords);
-          if (val !== null) {
-            extracted[item.key] = val;
-            hasData = true; 
+        // 行の末尾の空要素を削り、有効な行だけを残す
+        const compressed = rawMatrix.map((r: any) => {
+          if (!Array.isArray(r)) return []; // 配列でない場合は空配列を返す（エラー対策）
+          const row = [...r];
+          while (row.length > 0 && (row[row.length - 1] === "" || row[row.length - 1] === null || row[row.length - 1] === undefined)) {
+            row.pop();
           }
+          return row;
+        }).filter(r => r.length > 0);
+
+        if (compressed.length === 0) continue;
+
+        // 【指紋生成】
+        // 最初の20行の「値がある場所(1)」「ない場所(0)」をパターン化
+        const fingerprintBase = compressed.slice(0, 20).map(row => 
+          row.map(cell => (cell === "" || cell === null ? "0" : "1")).join("")
+        ).join("\n");
+        
+        const habitHash = createHash('md5').update(fingerprintBase).digest('hex').slice(0, 8);
+
+        // 癖（Habit）の保存
+        const specificHabitDir = path.join(HABIT_DIR, habitHash);
+        await fs.ensureDir(specificHabitDir);
+        if (!(await fs.pathExists(path.join(specificHabitDir, 'sample.json')))) {
+          await fs.writeJson(path.join(specificHabitDir, 'sample.json'), compressed.slice(0, 30), { spaces: 2 });
         }
 
-        // 何かしらデータが抜けたシートだけを保存
-        if (hasData) {
-          fileData.sheets[sheetName] = {
-            habitId,
-            physics: extracted,
-            preview: matrix.slice(0, 15) // 最初の15行だけ確認用に残す
-          };
-
-          // 癖のサンプルを保存
-          const habitPath = path.join(HABIT_DIR, habitId);
-          await fs.ensureDir(habitPath);
-          if (!(await fs.pathExists(path.join(habitPath, 'sample.json')))) {
-            await fs.writeJson(path.join(habitPath, 'sample.json'), matrix.slice(0, 50), { spaces: 2 });
-          }
-        }
+        allSheets[sheetName] = compressed;
+        liteData[sheetName] = compressed.slice(0, 15);
+        
+        // カタログに記録
+        if (!catalog[fileName]) catalog[fileName] = { habits: [] };
+        catalog[fileName].habits.push({ sheet: sheetName, habitId: habitHash });
       }
 
-      const fileName = path.parse(file).name;
-      await fs.writeJson(path.join(DATA_DIR, `${fileName}.json`), fileData, { spaces: 2 });
-      console.log(`  ✅ Done: ${Object.keys(fileData.sheets).length} sheets extracted.`);
+      // 最終的なデータ保存
+      await fs.writeFile(path.join(DATA_DIR, `${fileName}.json`), JSON.stringify(allSheets));
+      await fs.writeJson(path.join(DATA_DIR, `${fileName}.lite.json`), liteData, { spaces: 0 });
+
+      console.log(`✅ Success: ${file}`);
 
     } catch (e: any) {
-      console.error(`  ❌ Error: ${file} - ${e.message}`);
+      console.error(`❌ Error in ${file}:`, e.message);
     }
   }
 
-  await fs.writeJson(path.join(DATA_DIR, 'index.json'), { updated: new Date().toISOString() }, { spaces: 2 });
+  await fs.writeJson(path.join(HABIT_DIR, 'catalog.json'), catalog, { spaces: 2 });
 }
 
-main().catch(console.error);
+main().catch(err => {
+  console.error('💥 Fatal Error:', err);
+  process.exit(1);
+});
