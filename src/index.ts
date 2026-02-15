@@ -3,12 +3,10 @@ import * as XLSX from 'xlsx';
 import * as fs from 'fs-extra';
 import * as path from 'path';
 
-// ■ 設定: フォルダの場所 (process.cwd() を使うことで実行環境に依存しないように変更)
 const ROOT_DIR = process.cwd();
-const XLSX_DIR = path.join(ROOT_DIR, 'xlsx'); // Excel置き場
-const DATA_DIR = path.join(ROOT_DIR, 'data'); // JSON出力先
+const XLSX_DIR = path.join(ROOT_DIR, 'xlsx');
+const DATA_DIR = path.join(ROOT_DIR, 'data');
 
-// ■ 設定: 自動ダウンロードURL（必要なければ [] 空にしてください）
 const TARGET_URLS = [
   {
     name: 'FY2022-local_finance_prefectures', 
@@ -17,86 +15,80 @@ const TARGET_URLS = [
 ];
 
 async function main() {
-  console.log('🚀 Starting Harvester...');
-
-  // 1. フォルダ準備
   await fs.ensureDir(XLSX_DIR);
   await fs.ensureDir(DATA_DIR);
 
-  // 2. 自動ダウンロードフェーズ
-  console.log('\n--- Phase 1: Downloading ---');
+  console.log('Phase 1: Downloading target files...');
   for (const target of TARGET_URLS) {
     try {
       const ext = path.extname(target.url) || '.xlsx';
       const savePath = path.join(XLSX_DIR, `${target.name}${ext}`);
-
-      if (await fs.pathExists(savePath)) {
-        console.log(`⏭️  Already exists: ${target.name}`);
-      } else {
-        console.log(`⬇️  Downloading: ${target.name}...`);
-        const response = await axios.get(target.url, { responseType: 'arraybuffer', timeout: 30000 });
-        await fs.writeFile(savePath, response.data);
-        console.log(`✅ Saved: ${target.name}${ext}`);
+      if (!(await fs.pathExists(savePath))) {
+        const res = await axios.get(target.url, { responseType: 'arraybuffer' });
+        await fs.writeFile(savePath, res.data);
       }
-    } catch (error: any) {
-      console.error(`❌ Download Failed (${target.name}):`, error.message);
+    } catch (e) {
+      console.error(`Download failed: ${target.name}`);
     }
   }
 
-  // 3. 変換フェーズ
-  console.log('\n--- Phase 2: Converting ---');
+  console.log('Phase 2: Converting and compressing files...');
   const files = await fs.readdir(XLSX_DIR);
-  console.log(`Found ${files.length} files in xlsx/ folder.`);
 
   for (const file of files) {
-    // 拡張子チェック (iをつけて大文字小文字を区別しないように修正)
-    if (!file.match(/\.(xlsx|xls|csv|ods)$/i)) {
-      console.log(`⏩ Skipping non-excel file: ${file}`);
-      continue;
-    }
+    if (!file.match(/\.(xlsx|xls|csv)$/i)) continue;
 
     const inputPath = path.join(XLSX_DIR, file);
-    const fileNameWithoutExt = path.parse(file).name;
-    const outputPath = path.join(DATA_DIR, `${fileNameWithoutExt}.json`);
+    const fileName = path.parse(file).name;
 
     try {
-      console.log(`⚙️  Processing: ${file}`);
       const workbook = XLSX.readFile(inputPath);
-      const result: any = {};
+      const sheet = workbook.Sheets[workbook.SheetNames[0]];
+      const rawData = XLSX.utils.sheet_to_json(sheet, { defval: "" });
 
-      workbook.SheetNames.forEach(sheetName => {
-        const worksheet = workbook.Sheets[sheetName];
-        // セル内の改行や空白を考慮し、空セルはnullを入れる
-        const json = XLSX.utils.sheet_to_json(worksheet, { defval: null, raw: false });
-        
-        if (workbook.SheetNames.length === 1) {
-          result.data = json; // シートが1枚なら直下に配列を置く
-        } else {
-          result[sheetName] = json; // 複数あればシート名で分ける
+      const compressedData = (rawData as any[]).map(row => {
+        const newRow: any = {};
+        for (const key in row) {
+          let val = row[key];
+          
+          if (typeof val === 'string') {
+            const num = parseFloat(val.replace(/,/g, ''));
+            if (!isNaN(num)) val = num;
+          }
+
+          const cleanKey = key.replace(/\r?\n/g, "").trim();
+          // トークン節約のため、空文字、ハイフン、0、nullの項目は除外する
+          if (val !== "" && val !== "-" && val !== 0 && val !== null) {
+            newRow[cleanKey] = val;
+          }
         }
-      });
+        return newRow;
+      }).filter(row => Object.keys(row).length > 2);
 
-      await fs.writeJson(outputPath, result, { spaces: 2 });
-      console.log(`✨ Generated: ${fileNameWithoutExt}.json`);
+      // フル版（API/システム用）：インデントを消してファイルサイズを最小化
+      await fs.writeFile(
+        path.join(DATA_DIR, `${fileName}.json`), 
+        JSON.stringify(compressedData)
+      );
+      
+      // Lite版（LLM分析用）：最初の10件だけを抽出し、見やすく整形
+      await fs.writeJson(
+        path.join(DATA_DIR, `${fileName}.lite.json`), 
+        compressedData.slice(0, 10), 
+        { spaces: 2 }
+      );
 
-    } catch (error: any) {
-      console.error(`❌ Convert Error (${file}):`, error.message);
+      console.log(`Processed: ${file} (Items: ${compressedData.length})`);
+    } catch (e: any) {
+      console.error(`Error processing ${file}:`, e.message);
     }
   }
 
-  // 4. インデックス作成
-  console.log('\n--- Phase 3: Indexing ---');
-  const jsonFiles = (await fs.readdir(DATA_DIR)).filter(f => f.toLowerCase().endsWith('.json') && f !== 'index.json');
-  await fs.writeJson(path.join(DATA_DIR, 'index.json'), {
-    updated_at: new Date().toISOString(),
-    total_files: jsonFiles.length,
-    files: jsonFiles
-  }, { spaces: 2 });
-  
-  console.log('🎉 Harvest Complete!');
+  const jsonFiles = (await fs.readdir(DATA_DIR)).filter(f => f.endsWith('.json') && f !== 'index.json');
+  await fs.writeJson(path.join(DATA_DIR, 'index.json'), { 
+    updated_at: new Date().toISOString(), 
+    files: jsonFiles 
+  });
 }
 
-main().catch(err => {
-  console.error('💥 Critical Error:', err);
-  process.exit(1);
-});
+main().catch(console.error);
