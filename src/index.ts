@@ -3,103 +3,100 @@ import * as XLSX from 'xlsx';
 import * as fs from 'fs-extra';
 import * as path from 'path';
 
-// ■ 設定: フォルダの場所
-const XLSX_DIR = path.join(__dirname, '../xlsx'); // Excel置き場
-const DATA_DIR = path.join(__dirname, '../data'); // JSON出力先
+// ■ 設定: フォルダの場所 (process.cwd() を使うことで実行環境に依存しないように変更)
+const ROOT_DIR = process.cwd();
+const XLSX_DIR = path.join(ROOT_DIR, 'xlsx'); // Excel置き場
+const DATA_DIR = path.join(ROOT_DIR, 'data'); // JSON出力先
 
-// ■ 設定: 自動で取りに行きたいURLリスト
-// ※ここにURLを足せば勝手にダウンロードしてxlsxフォルダに入れます
+// ■ 設定: 自動ダウンロードURL（必要なければ [] 空にしてください）
 const TARGET_URLS = [
-  // 総務省: 令和4年度 決算カード (都道府県)
-  // 例: https://www.soumu.go.jp/main_content/000999084.xlsx
   {
-    name: 'soumu_r4_prefectures', 
+    name: 'FY2022-local_finance_prefectures', 
     url: 'https://www.soumu.go.jp/main_content/000925769.xls' 
-  },
-  // 必要な分だけここに追記...
+  }
 ];
 
 async function main() {
-  // 1. フォルダがなければ作る
+  console.log('🚀 Starting Harvester...');
+
+  // 1. フォルダ準備
   await fs.ensureDir(XLSX_DIR);
   await fs.ensureDir(DATA_DIR);
 
-  console.log('=== Phase 1: Downloading Files ===');
-  
-  // 2. URLリストにあるファイルをダウンロードして xlsx フォルダに保存
+  // 2. 自動ダウンロードフェーズ
+  console.log('\n--- Phase 1: Downloading ---');
   for (const target of TARGET_URLS) {
     try {
-      // 拡張子をURLから判定 (xlsx か xls か)
       const ext = path.extname(target.url) || '.xlsx';
       const savePath = path.join(XLSX_DIR, `${target.name}${ext}`);
 
-      // 既にファイルがあればスキップ（上書きしたい場合はここを調整）
       if (await fs.pathExists(savePath)) {
-        console.log(`⏭️  Skipped (Exists): ${target.name}`);
-        continue;
+        console.log(`⏭️  Already exists: ${target.name}`);
+      } else {
+        console.log(`⬇️  Downloading: ${target.name}...`);
+        const response = await axios.get(target.url, { responseType: 'arraybuffer', timeout: 30000 });
+        await fs.writeFile(savePath, response.data);
+        console.log(`✅ Saved: ${target.name}${ext}`);
       }
-
-      console.log(`⬇️  Downloading: ${target.name}...`);
-      const response = await axios.get(target.url, { responseType: 'arraybuffer' });
-      await fs.writeFile(savePath, response.data);
-      console.log(`✅ Saved to: ${savePath}`);
-      
-    } catch (error) {
-      console.error(`❌ Download Error (${target.name}):`, error.message);
+    } catch (error: any) {
+      console.error(`❌ Download Failed (${target.name}):`, error.message);
     }
   }
 
-  console.log('\n=== Phase 2: Converting xlsx to JSON ===');
-
-  // 3. xlsx フォルダの中身を全部読んで変換する
-  // (自動DLしたものも、手動で置いたものも、全部処理します)
+  // 3. 変換フェーズ
+  console.log('\n--- Phase 2: Converting ---');
   const files = await fs.readdir(XLSX_DIR);
+  console.log(`Found ${files.length} files in xlsx/ folder.`);
 
   for (const file of files) {
-    // Excelファイル以外は無視
-    if (!file.match(/\.(xlsx|xls|csv)$/)) continue;
+    // 拡張子チェック (iをつけて大文字小文字を区別しないように修正)
+    if (!file.match(/\.(xlsx|xls|csv|ods)$/i)) {
+      console.log(`⏩ Skipping non-excel file: ${file}`);
+      continue;
+    }
 
     const inputPath = path.join(XLSX_DIR, file);
     const fileNameWithoutExt = path.parse(file).name;
     const outputPath = path.join(DATA_DIR, `${fileNameWithoutExt}.json`);
 
     try {
-      console.log(`⚙️  Converting: ${file}`);
-      
-      // Excelを読み込む
+      console.log(`⚙️  Processing: ${file}`);
       const workbook = XLSX.readFile(inputPath);
-      
-      // 全シートをループしてデータ化
       const result: any = {};
+
       workbook.SheetNames.forEach(sheetName => {
         const worksheet = workbook.Sheets[sheetName];
-        // シートの中身をJSON配列にする
-        const json = XLSX.utils.sheet_to_json(worksheet, { defval: null }); // 空セルはnull
-        // シート名が "Sheet1" とかなら省略、複数あればシート名で分ける
+        // セル内の改行や空白を考慮し、空セルはnullを入れる
+        const json = XLSX.utils.sheet_to_json(worksheet, { defval: null, raw: false });
+        
         if (workbook.SheetNames.length === 1) {
-          Object.assign(result, json); // 配列そのものにするなら result = json
+          result.data = json; // シートが1枚なら直下に配列を置く
         } else {
-          result[sheetName] = json;
+          result[sheetName] = json; // 複数あればシート名で分ける
         }
       });
 
-      // JSON保存
       await fs.writeJson(outputPath, result, { spaces: 2 });
-      console.log(`✨ Generated: ${outputPath}`);
+      console.log(`✨ Generated: ${fileNameWithoutExt}.json`);
 
-    } catch (error) {
+    } catch (error: any) {
       console.error(`❌ Convert Error (${file}):`, error.message);
     }
   }
 
-  // 4. API用の目次ファイル作成
-  const jsonFiles = (await fs.readdir(DATA_DIR)).filter(f => f.endsWith('.json'));
+  // 4. インデックス作成
+  console.log('\n--- Phase 3: Indexing ---');
+  const jsonFiles = (await fs.readdir(DATA_DIR)).filter(f => f.toLowerCase().endsWith('.json') && f !== 'index.json');
   await fs.writeJson(path.join(DATA_DIR, 'index.json'), {
     updated_at: new Date().toISOString(),
+    total_files: jsonFiles.length,
     files: jsonFiles
   }, { spaces: 2 });
   
-  console.log('\n🎉 All Done!');
+  console.log('🎉 Harvest Complete!');
 }
 
-main();
+main().catch(err => {
+  console.error('💥 Critical Error:', err);
+  process.exit(1);
+});
