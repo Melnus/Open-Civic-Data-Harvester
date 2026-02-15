@@ -3,11 +3,11 @@ name: Reality-Harvest-Action
 on:
   push:
     paths:
-      - 'xlsx/**'      # xlsxフォルダにファイルが入ったら実行
-      - 'src/**'       # スクリプトが変わったら実行
-  workflow_dispatch:   # 手動実行ボタンを有効化
+      - 'xlsx/**'
+      - 'src/**'
+  workflow_dispatch:
   schedule:
-    - cron: '0 15 * * *' # 日本時間 0:00 (UTC 15:00) に毎日実行
+    - cron: '0 15 * * *'
 
 permissions:
   contents: write
@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
+          # ↓ エラーの原因だった cache: 'npm' を削除しました
 
       - name: Install
         run: npm install
@@ -36,5 +36,4 @@ jobs:
           git config --global user.name "Reality-Harvester-Bot"
           git config --global user.email "bot@example.com"
           git add data/*.json
-          # 変更があればコミット
           git diff --staged --quiet || (git commit -m "chore: update reality data [skip ci]" && git push)
