@@ -1,38 +1,3 @@
 {
-  "updated": "2026-02-15T16:23:45.568Z",
-  "catalog": {
-    "FY2023-settlementcard.xlsx": {
-      "habitId": "bba81eed",
-      "physicsSummary": {
-        "FY_year": null,
-        "population": null,
-        "total_revenue": null,
-        "total_expenditure": null,
-        "local_tax": null,
-        "consumption_tax_share": null
-      }
-    },
-    "FY2025-migration_prefecture.xlsx": {
-      "habitId": "54bb5154",
-      "physicsSummary": {
-        "FY_year": null,
-        "population": null,
-        "total_revenue": null,
-        "total_expenditure": null,
-        "local_tax": null,
-        "consumption_tax_share": null
-      }
-    },
-    "FY2025-population_dynamics_municipal.xlsx.xlsx": {
-      "habitId": "07e4d539",
-      "physicsSummary": {
-        "FY_year": null,
-        "population": null,
-        "total_revenue": null,
-        "total_expenditure": null,
-        "local_tax": null,
-        "consumption_tax_share": null
-      }
-    }
-  }
+  "updated": "2026-02-15T16:27:39.013Z"
 }
