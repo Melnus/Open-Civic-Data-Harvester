@@ -1,0 +1,35 @@
+name: Daily Harvest
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 毎日AM0:00 (UTC) に実行
+  workflow_dispatch: # 手動実行ボタンも有効化
+
+permissions:
+  contents: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Harvester
+        run: npm run harvest
+
+      - name: Commit and Push Data
+        run: |
+          git config --global user.name "Harvest Bot"
+          git config --global user.email "bot@example.com"
+          git add data/
+          # 変更がある場合のみコミット
+          git diff --quiet && git diff --staged --quiet || (git commit -m "update: fresh reality data" && git push)
