@@ -1,9 +1,10 @@
 name: Daily Harvest
 
 on:
-  schedule:
-    - cron: '0 0 * * *' # 毎日AM0:00 (UTC) に実行
-  workflow_dispatch: # 手動実行ボタンも有効化
+  push:
+    paths:
+      - 'xlsx/**' # xlsxフォルダにファイルが追加されたら実行
+  workflow_dispatch: # 手動実行ボタン
 
 permissions:
   contents: write
@@ -31,5 +32,4 @@ jobs:
           git config --global user.name "Harvest Bot"
           git config --global user.email "bot@example.com"
           git add data/
-          # 変更がある場合のみコミット
           git diff --quiet && git diff --staged --quiet || (git commit -m "update: fresh reality data" && git push)
