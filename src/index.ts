@@ -3,13 +3,12 @@ import * as fs from 'fs-extra';
 import * as path from 'path';
 import { createHash } from 'crypto';
 
-// --- 設定：抽出したい「物理量」とキーワードの定義 ---
 const TARGET_SCHEMA = [
   { key: "FY_year", keywords: ["年度"] },
   { key: "population", keywords: ["住民基本台帳人口", "人口"] },
-  { key: "total_revenue", keywords: ["歳入総額", "歳入合計", "歳入総計"] },
-  { key: "total_expenditure", keywords: ["歳出総額", "歳出合計", "歳出総計"] },
-  { key: "local_tax", keywords: ["地方税", "普通税"] },
+  { key: "total_revenue", keywords: ["歳入総額", "歳入合計", "歳入総計", "歳入決算総額"] },
+  { key: "total_expenditure", keywords: ["歳出総額", "歳出合計", "歳出総計", "歳出決算総額"] },
+  { key: "local_tax", keywords: ["地方税", "普通税", "都道府県税"] },
   { key: "consumption_tax_share", keywords: ["地方消費税"] },
 ];
 
@@ -18,7 +17,6 @@ const XLSX_DIR = path.join(ROOT_DIR, 'xlsx');
 const DATA_DIR = path.join(ROOT_DIR, 'data');
 const HABIT_DIR = path.join(ROOT_DIR, 'habits');
 
-// 数値パース用（カンマやハイフンを処理）
 function parseNumber(value: any): number | null {
   if (value === undefined || value === null || value === "") return null;
   const str = String(value).trim().replace(/,/g, '');
@@ -27,7 +25,6 @@ function parseNumber(value: any): number | null {
   return isNaN(num) ? null : num;
 }
 
-// 指紋（レイアウトの癖）を生成する関数
 function createFingerprint(matrix: any[][]): string {
   const SCAN_ROWS = 20;
   const SCAN_COLS = 20;
@@ -38,20 +35,19 @@ function createFingerprint(matrix: any[][]): string {
       const hasValue = cell !== undefined && cell !== null && String(cell).trim() !== "" && String(cell).trim() !== "-";
       bits += hasValue ? "1" : "0";
     }
-    return bits;
+    return bits.padEnd(SCAN_COLS, "0");
   });
   while (binaryRows.length < SCAN_ROWS) binaryRows.push("0".repeat(SCAN_COLS));
   return createHash('md5').update(binaryRows.join("\n")).digest('hex').slice(0, 8);
 }
 
-// キーワードの右側にある数値を自動で探す関数
 function autoExtract(matrix: any[][], keywords: string[]): any {
   for (let r = 0; r < matrix.length; r++) {
-    for (let c = 0; c < matrix[r].length; c++) {
+    for (let c = 0; c < matrix[r].length; r++) {
       const cellText = String(matrix[r][c] || "").replace(/\s+/g, '');
       if (keywords.some(k => cellText.includes(k))) {
-        // キーワードが見つかったら、同じ行の右側を探索
-        for (let nextC = c + 1; nextC < matrix[r].length; nextC++) {
+        // キーワードが見つかったら、右側10セル分を探す
+        for (let nextC = c + 1; nextC < Math.min(c + 10, matrix[r].length); nextC++) {
           const val = parseNumber(matrix[r][nextC]);
           if (val !== null) return val;
         }
@@ -75,44 +71,55 @@ async function main() {
     try {
       console.log(`🚜 Harvesting: ${file}`);
       const workbook = XLSX.readFile(path.join(XLSX_DIR, file));
-      const firstSheet = workbook.SheetNames[0];
-      const matrix = XLSX.utils.sheet_to_json(workbook.Sheets[firstSheet], { header: 1, defval: "" }) as any[][];
+      const fileData: any = { metadata: { source: file, timestamp: new Date().toISOString() }, sheets: {} };
 
-      // 1. 指紋の検出
-      const habitId = createFingerprint(matrix);
+      // 【改良点】全シートをループする
+      for (const sheetName of workbook.SheetNames) {
+        // 「目次」「index」「注意事項」などの名前のシートは飛ばす（ヒューリスティック）
+        if (sheetName.match(/(目次|index|注意|原本|Menu)/i)) continue;
 
-      // 2. 物理量の自動抽出
-      const extracted: any = {};
-      for (const item of TARGET_SCHEMA) {
-        extracted[item.key] = autoExtract(matrix, item.keywords);
+        const matrix = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1, defval: "" }) as any[][];
+        if (matrix.length < 5) continue; // データが少なすぎるシートは無視
+
+        const habitId = createFingerprint(matrix);
+        const extracted: any = {};
+        let hasData = false;
+
+        for (const item of TARGET_SCHEMA) {
+          const val = autoExtract(matrix, item.keywords);
+          if (val !== null) {
+            extracted[item.key] = val;
+            hasData = true; 
+          }
+        }
+
+        // 何かしらデータが抜けたシートだけを保存
+        if (hasData) {
+          fileData.sheets[sheetName] = {
+            habitId,
+            physics: extracted,
+            preview: matrix.slice(0, 15) // 最初の15行だけ確認用に残す
+          };
+
+          // 癖のサンプルを保存
+          const habitPath = path.join(HABIT_DIR, habitId);
+          await fs.ensureDir(habitPath);
+          if (!(await fs.pathExists(path.join(habitPath, 'sample.json')))) {
+            await fs.writeJson(path.join(habitPath, 'sample.json'), matrix.slice(0, 50), { spaces: 2 });
+          }
+        }
       }
 
-      // 3. データの保存
       const fileName = path.parse(file).name;
-      const output = {
-        metadata: { source: file, habitId, timestamp: new Date().toISOString() },
-        physics: extracted, // 抽出された物理量
-        raw_lite: matrix.slice(0, 50) // 構造確認用に冒頭50行だけ残す
-      };
-
-      await fs.writeJson(path.join(DATA_DIR, `${fileName}.json`), output, { spaces: 2 });
-
-      // 4. ハブ（癖）のサンプル保存
-      const habitPath = path.join(HABIT_DIR, habitId);
-      await fs.ensureDir(habitPath);
-      if (!(await fs.pathExists(path.join(habitPath, 'sample.json')))) {
-        await fs.writeJson(path.join(habitPath, 'sample.json'), matrix.slice(0, 40), { spaces: 2 });
-      }
-
-      catalog[file] = { habitId, physicsSummary: extracted };
-      console.log(`  ✅ Done: Habit [${habitId}]`);
+      await fs.writeJson(path.join(DATA_DIR, `${fileName}.json`), fileData, { spaces: 2 });
+      console.log(`  ✅ Done: ${Object.keys(fileData.sheets).length} sheets extracted.`);
 
     } catch (e: any) {
       console.error(`  ❌ Error: ${file} - ${e.message}`);
     }
   }
 
-  await fs.writeJson(path.join(DATA_DIR, 'index.json'), { updated: new Date().toISOString(), catalog }, { spaces: 2 });
+  await fs.writeJson(path.join(DATA_DIR, 'index.json'), { updated: new Date().toISOString() }, { spaces: 2 });
 }
 
 main().catch(console.error);
