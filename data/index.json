@@ -1,1 +1,38 @@
-{"updated":"2026-02-15T15:21:30.160Z","files":["FY2023-settlementcard.json","FY2023-settlementcard.lite.json","FY2025-migration_prefecture.json","FY2025-migration_prefecture.lite.json","FY2025-population_dynamics_municipal.xlsx.json","FY2025-population_dynamics_municipal.xlsx.lite.json"]}
+{
+  "updated": "2026-02-15T16:16:42.158Z",
+  "catalog": {
+    "FY2023-settlementcard.xlsx": {
+      "habitId": "bba81eed",
+      "physicsSummary": {
+        "FY_year": null,
+        "population": null,
+        "total_revenue": null,
+        "total_expenditure": null,
+        "local_tax": null,
+        "consumption_tax_share": null
+      }
+    },
+    "FY2025-migration_prefecture.xlsx": {
+      "habitId": "54bb5154",
+      "physicsSummary": {
+        "FY_year": null,
+        "population": null,
+        "total_revenue": null,
+        "total_expenditure": null,
+        "local_tax": null,
+        "consumption_tax_share": null
+      }
+    },
+    "FY2025-population_dynamics_municipal.xlsx.xlsx": {
+      "habitId": "07e4d539",
+      "physicsSummary": {
+        "FY_year": null,
+        "population": null,
+        "total_revenue": null,
+        "total_expenditure": null,
+        "local_tax": null,
+        "consumption_tax_share": null
+      }
+    }
+  }
+}
