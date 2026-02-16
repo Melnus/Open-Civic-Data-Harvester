@@ -1,7 +1,8 @@
 [
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "2北海道",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 1,
     "total_revenue": 3094654845,
     "total_expenditure": 3058479552,
@@ -10,8 +11,9 @@
     "real_balance": 27568641
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "3青森県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 2,
     "total_revenue": 798600986,
     "total_expenditure": 770615744,
@@ -20,8 +22,9 @@
     "real_balance": 7890610
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "4岩手県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 3,
     "total_revenue": 879040072,
     "total_expenditure": 824677066,
@@ -30,8 +33,9 @@
     "real_balance": 19773269
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "5宮城県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 4,
     "total_revenue": 1134875591,
     "total_expenditure": 1097820691,
@@ -40,8 +44,9 @@
     "real_balance": 13424176
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "6秋田県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 5,
     "total_revenue": 658765038,
     "total_expenditure": 639205052,
@@ -50,8 +55,9 @@
     "real_balance": 14837420
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "7山形県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 6,
     "total_revenue": 716149217,
     "total_expenditure": 701825691,
@@ -60,8 +66,9 @@
     "real_balance": 8207189
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "8福島県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 7,
     "total_revenue": 1344287454,
     "total_expenditure": 1306838789,
@@ -70,8 +77,9 @@
     "real_balance": 8647181
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "9茨城県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 8,
     "total_revenue": 1340774026,
     "total_expenditure": 1309533583,
@@ -80,8 +88,9 @@
     "real_balance": 19996693
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "10栃木県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 9,
     "total_revenue": 1010319939,
     "total_expenditure": 979908390,
@@ -90,8 +99,9 @@
     "real_balance": 21024373
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "11群馬県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 10,
     "total_revenue": 992572541,
     "total_expenditure": 945817362,
@@ -100,8 +110,9 @@
     "real_balance": 31650682
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "12埼玉県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 11,
     "total_revenue": 2285622612,
     "total_expenditure": 2237199908,
@@ -110,8 +121,9 @@
     "real_balance": 41009619
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "13千葉県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 12,
     "total_revenue": 2240426182,
     "total_expenditure": 2204550383,
@@ -120,8 +132,9 @@
     "real_balance": 15586941
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "14東京都",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 13,
     "total_revenue": 9755045494,
     "total_expenditure": 9188314158,
@@ -130,8 +143,9 @@
     "real_balance": 286726616
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "15神奈川県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 14,
     "total_revenue": 2539155772,
     "total_expenditure": 2492642650,
@@ -140,8 +154,9 @@
     "real_balance": 26730480
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "16新潟県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 15,
     "total_revenue": 1193390575,
     "total_expenditure": 1166079268,
@@ -150,8 +165,9 @@
     "real_balance": 19284822
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "17富山県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 16,
     "total_revenue": 643086782,
     "total_expenditure": 614212503,
@@ -160,8 +176,9 @@
     "real_balance": 1165695
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "18石川県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 17,
     "total_revenue": 649453271,
     "total_expenditure": 623877954,
@@ -170,8 +187,9 @@
     "real_balance": 1865360
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "19福井県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 18,
     "total_revenue": 554078342,
     "total_expenditure": 535947139,
@@ -180,8 +198,9 @@
     "real_balance": 9158699
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "20山梨県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 19,
     "total_revenue": 613385091,
     "total_expenditure": 583045839,
@@ -190,8 +209,9 @@
     "real_balance": 10125194
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "21長野県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 20,
     "total_revenue": 1180398469,
     "total_expenditure": 1156362770,
@@ -200,8 +220,9 @@
     "real_balance": 9997230
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "22岐阜県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 21,
     "total_revenue": 981072160,
     "total_expenditure": 961418272,
@@ -210,8 +231,9 @@
     "real_balance": 9704078
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "23静岡県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 22,
     "total_revenue": 1384631998,
     "total_expenditure": 1359231789,
@@ -220,8 +242,9 @@
     "real_balance": 15893418
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "24愛知県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 23,
     "total_revenue": 2924785931,
     "total_expenditure": 2849306635,
@@ -230,8 +253,9 @@
     "real_balance": 65116215
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "25三重県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 24,
     "total_revenue": 867829220,
     "total_expenditure": 829846648,
@@ -240,8 +264,9 @@
     "real_balance": 18776474
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "26滋賀県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 25,
     "total_revenue": 683731180,
     "total_expenditure": 678985794,
@@ -250,8 +275,9 @@
     "real_balance": 1049600
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "27京都府",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 26,
     "total_revenue": 1172280594,
     "total_expenditure": 1155652494,
@@ -260,8 +286,9 @@
     "real_balance": 12096275
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "28大阪府",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 27,
     "total_revenue": 3942613114,
     "total_expenditure": 3895343951,
@@ -270,8 +297,9 @@
     "real_balance": 23408133
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "29兵庫県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 28,
     "total_revenue": 2683182088,
     "total_expenditure": 2648172795,
@@ -280,8 +308,9 @@
     "real_balance": 23972811
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "30奈良県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 29,
     "total_revenue": 603570473,
     "total_expenditure": 594644618,
@@ -290,8 +319,9 @@
     "real_balance": 2805844
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "31和歌山県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 30,
     "total_revenue": 662895167,
     "total_expenditure": 637231552,
@@ -300,8 +330,9 @@
     "real_balance": 18125408
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "32鳥取県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 31,
     "total_revenue": 405728488,
     "total_expenditure": 383422974,
@@ -310,8 +341,9 @@
     "real_balance": 14223252
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "33島根県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 32,
     "total_revenue": 599893659,
     "total_expenditure": 563955467,
@@ -320,8 +352,9 @@
     "real_balance": 20735429
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "34岡山県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 33,
     "total_revenue": 802008865,
     "total_expenditure": 788998145,
@@ -330,8 +363,9 @@
     "real_balance": 5333684
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "35広島県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 34,
     "total_revenue": 1221698617,
     "total_expenditure": 1193714538,
@@ -340,8 +374,9 @@
     "real_balance": 9581544
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "36山口県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 35,
     "total_revenue": 776771731,
     "total_expenditure": 747765426,
@@ -350,8 +385,9 @@
     "real_balance": 20737707
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "37徳島県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 36,
     "total_revenue": 563618625,
     "total_expenditure": 535631500,
@@ -360,8 +396,9 @@
     "real_balance": 11549540
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "38香川県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 37,
     "total_revenue": 515593484,
     "total_expenditure": 501282880,
@@ -370,8 +407,9 @@
     "real_balance": 6537973
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "39愛媛県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 38,
     "total_revenue": 734178021,
     "total_expenditure": 707431134,
@@ -380,8 +418,9 @@
     "real_balance": 5862131
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "40高知県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 39,
     "total_revenue": 496689021,
     "total_expenditure": 483483446,
@@ -390,8 +429,9 @@
     "real_balance": 3673925
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "41福岡県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 40,
     "total_revenue": 2277786328,
     "total_expenditure": 2203057341,
@@ -400,8 +440,9 @@
     "real_balance": 30196599
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "42佐賀県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 41,
     "total_revenue": 613699133,
     "total_expenditure": 595781190,
@@ -410,8 +451,9 @@
     "real_balance": 11080506
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "43長崎県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 42,
     "total_revenue": 802100998,
     "total_expenditure": 786301848,
@@ -420,8 +462,9 @@
     "real_balance": 1302825
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "44熊本県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 43,
     "total_revenue": 1028620307,
     "total_expenditure": 978345151,
@@ -430,8 +473,9 @@
     "real_balance": 24627696
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "45大分県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 44,
     "total_revenue": 736303105,
     "total_expenditure": 699396596,
@@ -440,8 +484,9 @@
     "real_balance": 8926883
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "46宮崎県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 45,
     "total_revenue": 722275169,
     "total_expenditure": 690519290,
@@ -450,8 +495,9 @@
     "real_balance": 14604025
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "47鹿児島県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 46,
     "total_revenue": 975815228,
     "total_expenditure": 921475579,
@@ -460,8 +506,9 @@
     "real_balance": 21087160
   },
   {
-    "fiscal_year": "2022",
+    "fiscal_year": 2022,
     "prefecture": "48沖縄県",
+    "source": "FY2022-settlementcard.xlsx",
     "population": 47,
     "total_revenue": 932266646,
     "total_expenditure": 912192057,

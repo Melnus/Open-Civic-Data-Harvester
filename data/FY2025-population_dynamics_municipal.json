@@ -1,1 +1,425 @@
-[]
+[
+  {
+    "fiscal_year": 2025,
+    "area": "北海道",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "北海道",
+    "total_population": 10006,
+    "births": 22877,
+    "deaths": 76433
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "青森県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "青森県",
+    "total_population": 20001,
+    "births": 5133,
+    "deaths": 20528
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "岩手県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "岩手県",
+    "total_population": 30007,
+    "births": 4929,
+    "deaths": 19678
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "宮城県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "宮城県",
+    "total_population": 40002,
+    "births": 11446,
+    "deaths": 28980
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "秋田県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "秋田県",
+    "total_population": 50008,
+    "births": 3309,
+    "deaths": 17411
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "山形県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "山形県",
+    "total_population": 60003,
+    "births": 4726,
+    "deaths": 16834
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "福島県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "福島県",
+    "total_population": 70009,
+    "births": 8340,
+    "deaths": 27361
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "茨城県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "茨城県",
+    "total_population": 80004,
+    "births": 14557,
+    "deaths": 39013
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "栃木県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "栃木県",
+    "total_population": 90000,
+    "births": 9669,
+    "deaths": 25667
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "群馬県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "群馬県",
+    "total_population": 100005,
+    "births": 10019,
+    "deaths": 27297
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "埼玉県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "埼玉県",
+    "total_population": 110001,
+    "births": 42261,
+    "deaths": 86438
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "千葉県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "千葉県",
+    "total_population": 120006,
+    "births": 35589,
+    "deaths": 75251
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "東京都",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "東京都",
+    "total_population": 130001,
+    "births": 88622,
+    "deaths": 141081
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "神奈川県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "神奈川県",
+    "total_population": 140007,
+    "births": 53629,
+    "deaths": 102509
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "新潟県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "新潟県",
+    "total_population": 150002,
+    "births": 10021,
+    "deaths": 33020
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "富山県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "富山県",
+    "total_population": 160008,
+    "births": 5210,
+    "deaths": 15209
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "石川県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "石川県",
+    "total_population": 170003,
+    "births": 6193,
+    "deaths": 15058
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "福井県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "福井県",
+    "total_population": 180009,
+    "births": 4502,
+    "deaths": 10543
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "山梨県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "山梨県",
+    "total_population": 190004,
+    "births": 4277,
+    "deaths": 11212
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "長野県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "長野県",
+    "total_population": 200000,
+    "births": 10712,
+    "deaths": 28869
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "岐阜県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "岐阜県",
+    "total_population": 210005,
+    "births": 10344,
+    "deaths": 26512
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "静岡県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "静岡県",
+    "total_population": 220001,
+    "births": 18344,
+    "deaths": 49167
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "愛知県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "愛知県",
+    "total_population": 230006,
+    "births": 48233,
+    "deaths": 83093
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "三重県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "三重県",
+    "total_population": 240001,
+    "births": 9379,
+    "deaths": 24028
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "滋賀県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "滋賀県",
+    "total_population": 250007,
+    "births": 9090,
+    "deaths": 15572
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "京都府",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "京都府",
+    "total_population": 260002,
+    "births": 13290,
+    "deaths": 31739
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "大阪府",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "大阪府",
+    "total_population": 270008,
+    "births": 55381,
+    "deaths": 109990
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "兵庫県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "兵庫県",
+    "total_population": 280003,
+    "births": 31359,
+    "deaths": 68447
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "奈良県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "奈良県",
+    "total_population": 290009,
+    "births": 6762,
+    "deaths": 17410
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "和歌山県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "和歌山県",
+    "total_population": 300004,
+    "births": 4516,
+    "deaths": 14673
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "鳥取県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "鳥取県",
+    "total_population": 310000,
+    "births": 3112,
+    "deaths": 8032
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "島根県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "島根県",
+    "total_population": 320005,
+    "births": 3730,
+    "deaths": 10413
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "岡山県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "岡山県",
+    "total_population": 330001,
+    "births": 11087,
+    "deaths": 25576
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "広島県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "広島県",
+    "total_population": 340006,
+    "births": 16134,
+    "deaths": 35693
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "山口県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "山口県",
+    "total_population": 350001,
+    "births": 6835,
+    "deaths": 21347
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "徳島県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "徳島県",
+    "total_population": 360007,
+    "births": 3558,
+    "deaths": 11295
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "香川県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "香川県",
+    "total_population": 370002,
+    "births": 5170,
+    "deaths": 13788
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "愛媛県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "愛媛県",
+    "total_population": 380008,
+    "births": 6627,
+    "deaths": 20479
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "高知県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "高知県",
+    "total_population": 390003,
+    "births": 3126,
+    "deaths": 11442
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "福岡県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "福岡県",
+    "total_population": 400009,
+    "births": 32939,
+    "deaths": 62968
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "佐賀県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "佐賀県",
+    "total_population": 410004,
+    "births": 4899,
+    "deaths": 11386
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "長崎県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "長崎県",
+    "total_population": 420000,
+    "births": 7045,
+    "deaths": 19983
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "熊本県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "熊本県",
+    "total_population": 430005,
+    "births": 10450,
+    "deaths": 24601
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "大分県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "大分県",
+    "total_population": 440001,
+    "births": 6040,
+    "deaths": 16807
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "宮崎県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "宮崎県",
+    "total_population": 450006,
+    "births": 6029,
+    "deaths": 16405
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "鹿児島県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "鹿児島県",
+    "total_population": 460001,
+    "births": 8993,
+    "deaths": 24206
+  },
+  {
+    "fiscal_year": 2025,
+    "area": "沖縄県",
+    "source": "FY2025-population_dynamics_municipal.xlsx",
+    "prefecture": "沖縄県",
+    "total_population": 470007,
+    "births": 11934,
+    "deaths": 15479
+  }
+]
