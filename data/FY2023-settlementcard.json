@@ -2,565 +2,518 @@
   {
     "fiscal_year": 2023,
     "prefecture": "2北海道",
-    "habit_id": "f534d3f2",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 5224614,
     "total_revenue": 2856219142,
     "total_expenditure": 2819962872,
     "local_tax": 36256270,
     "consumption_tax_share": 278611356,
-    "real_balance": 28406655,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 28406655
   },
   {
     "fiscal_year": 2023,
     "prefecture": "3青森県",
-    "habit_id": "f534d3f2",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1237984,
     "total_revenue": 709754981,
     "total_expenditure": 681161044,
     "local_tax": 28593937,
     "consumption_tax_share": 62560871,
-    "real_balance": 5899444,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 5899444
   },
   {
     "fiscal_year": 2023,
     "prefecture": "4岩手県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1210534,
     "total_revenue": 809515999,
     "total_expenditure": 756669461,
     "local_tax": 52846538,
     "consumption_tax_share": 61680945,
-    "real_balance": 19464700,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 19464700
   },
   {
     "fiscal_year": 2023,
     "prefecture": "5宮城県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 2301996,
     "total_revenue": 1024723861,
     "total_expenditure": 1008373713,
     "local_tax": 16350148,
     "consumption_tax_share": 115571319,
-    "real_balance": 1762212,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 1762212
   },
   {
     "fiscal_year": 2023,
     "prefecture": "6秋田県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 959502,
     "total_revenue": 617448721,
     "total_expenditure": 599529541,
     "local_tax": 17919180,
     "consumption_tax_share": 49902351,
-    "real_balance": 10215482,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 10215482
   },
   {
     "fiscal_year": 2023,
     "prefecture": "7山形県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1068027,
     "total_revenue": 676811593,
     "total_expenditure": 664557243,
     "local_tax": 12254350,
     "consumption_tax_share": 55175329,
-    "real_balance": 6151871,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 6151871
   },
   {
     "fiscal_year": 2023,
     "prefecture": "8福島県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1833152,
     "total_revenue": 1257263227,
     "total_expenditure": 1224298248,
     "local_tax": 32964979,
     "consumption_tax_share": 98473899,
-    "real_balance": 7701625,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 7701625
   },
   {
     "fiscal_year": 2023,
     "prefecture": "9茨城県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 2867009,
     "total_revenue": 1259006243,
     "total_expenditure": 1220658113,
     "local_tax": 38348130,
     "consumption_tax_share": 140867543,
-    "real_balance": 21470395,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 21470395
   },
   {
     "fiscal_year": 2023,
     "prefecture": "10栃木県",
-    "habit_id": "d9887168",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1933146,
     "total_revenue": 931727812,
     "total_expenditure": 912533087,
     "local_tax": 19194725,
     "consumption_tax_share": 99967277,
-    "real_balance": 10051371,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 10051371
   },
   {
     "fiscal_year": 2023,
     "prefecture": "11群馬県",
-    "habit_id": "d9887168",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1939110,
     "total_revenue": 904925531,
     "total_expenditure": 886922117,
     "local_tax": 18003414,
     "consumption_tax_share": 100604097,
-    "real_balance": 10256713,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 10256713
   },
   {
     "fiscal_year": 2023,
     "prefecture": "12埼玉県",
-    "habit_id": "d9887168",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 7344765,
     "total_revenue": 2102354725,
     "total_expenditure": 2059405178,
     "local_tax": 42949547,
     "consumption_tax_share": 338561001,
-    "real_balance": 35047782,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 35047782
   },
   {
     "fiscal_year": 2023,
     "prefecture": "13千葉県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 6284480,
     "total_revenue": 2045562522,
     "total_expenditure": 2011231816,
     "local_tax": 34330706,
     "consumption_tax_share": 296584314,
-    "real_balance": 14854867,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 14854867
   },
   {
     "fiscal_year": 2023,
     "prefecture": "14東京都",
-    "habit_id": "403ffd0b",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 14047598,
     "total_revenue": 8898726626,
     "total_expenditure": 8353285707,
     "local_tax": 545440919,
     "consumption_tax_share": 744262442,
-    "real_balance": 285659720,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 285659720
   },
   {
     "fiscal_year": 2023,
     "prefecture": "15神奈川県",
-    "habit_id": "d9887168",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 9237333,
     "total_revenue": 2251237949,
     "total_expenditure": 2207423640,
     "local_tax": 43814309,
     "consumption_tax_share": 423833146,
-    "real_balance": 22937841,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 22937841
   },
   {
     "fiscal_year": 2023,
     "prefecture": "16新潟県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 2201272,
     "total_revenue": 1148075153,
     "total_expenditure": 1122782289,
     "local_tax": 25292864,
     "consumption_tax_share": 109809730,
-    "real_balance": 13134020,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 13134020
   },
   {
     "fiscal_year": 2023,
     "prefecture": "17富山県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1034814,
     "total_revenue": 617351150,
     "total_expenditure": 588990295,
     "local_tax": 28360855,
     "consumption_tax_share": 54170156,
-    "real_balance": 1377268,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 1377268
   },
   {
     "fiscal_year": 2023,
     "prefecture": "18石川県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1132526,
     "total_revenue": 693732898,
     "total_expenditure": 652501500,
     "local_tax": 41231398,
     "consumption_tax_share": 58904047,
-    "real_balance": 2735650,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 2735650
   },
   {
     "fiscal_year": 2023,
     "prefecture": "19福井県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 766863,
     "total_revenue": 539080066,
     "total_expenditure": 523817438,
     "local_tax": 15262628,
     "consumption_tax_share": 38397897,
-    "real_balance": 6709032,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 6709032
   },
   {
     "fiscal_year": 2023,
     "prefecture": "20山梨県",
-    "habit_id": "d9887168",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 809974,
     "total_revenue": 573586922,
     "total_expenditure": 544039848,
     "local_tax": 29547074,
     "consumption_tax_share": 42636524,
-    "real_balance": 5994349,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 5994349
   },
   {
     "fiscal_year": 2023,
     "prefecture": "21長野県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 2048011,
     "total_revenue": 1098347683,
     "total_expenditure": 1079564340,
     "local_tax": 18783343,
     "consumption_tax_share": 109007947,
-    "real_balance": 8379121,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 8379121
   },
   {
     "fiscal_year": 2023,
     "prefecture": "22岐阜県",
-    "habit_id": "d9887168",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1978742,
     "total_revenue": 876508334,
     "total_expenditure": 859178419,
     "local_tax": 17329915,
     "consumption_tax_share": 100603944,
-    "real_balance": 7289681,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 7289681
   },
   {
     "fiscal_year": 2023,
     "prefecture": "23静岡県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 3633202,
     "total_revenue": 1269197338,
     "total_expenditure": 1250356192,
     "local_tax": 18841146,
     "consumption_tax_share": 186203455,
-    "real_balance": 7339239,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 7339239
   },
   {
     "fiscal_year": 2023,
     "prefecture": "24愛知県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 7542415,
     "total_revenue": 2620933437,
     "total_expenditure": 2547795499,
     "local_tax": 73137938,
     "consumption_tax_share": 383888621,
-    "real_balance": 57662657,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 57662657
   },
   {
     "fiscal_year": 2023,
     "prefecture": "25三重県",
-    "habit_id": "d9887168",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1770254,
     "total_revenue": 807571927,
     "total_expenditure": 764500853,
     "local_tax": 43071074,
     "consumption_tax_share": 90605479,
-    "real_balance": 11178757,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 11178757
   },
   {
     "fiscal_year": 2023,
     "prefecture": "26滋賀県",
-    "habit_id": "d9887168",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1413610,
     "total_revenue": 620385624,
     "total_expenditure": 611976612,
     "local_tax": 8409012,
     "consumption_tax_share": 66681828,
-    "real_balance": 1090825,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 1090825
   },
   {
     "fiscal_year": 2023,
     "prefecture": "27京都府",
-    "habit_id": "d9887168",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 2578087,
     "total_revenue": 1042685775,
     "total_expenditure": 1024886167,
     "local_tax": 17799608,
     "consumption_tax_share": 123276380,
-    "real_balance": 13183086,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 13183086
   },
   {
     "fiscal_year": 2023,
     "prefecture": "28大阪府",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 8837685,
     "total_revenue": 3358436064,
     "total_expenditure": 3325569052,
     "local_tax": 32867012,
     "consumption_tax_share": 435204619,
-    "real_balance": 15531497,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 15531497
   },
   {
     "fiscal_year": 2023,
     "prefecture": "29兵庫県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 5465002,
     "total_revenue": 2444905048,
     "total_expenditure": 2417645312,
     "local_tax": 27259736,
     "consumption_tax_share": 259098095,
-    "real_balance": 14150575,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 14150575
   },
   {
     "fiscal_year": 2023,
     "prefecture": "30奈良県",
-    "habit_id": "d9887168",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1324473,
     "total_revenue": 546695998,
     "total_expenditure": 536284251,
     "local_tax": 10411747,
     "consumption_tax_share": 57917759,
-    "real_balance": 4871393,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 4871393
   },
   {
     "fiscal_year": 2023,
     "prefecture": "31和歌山県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 922584,
     "total_revenue": 636274296,
     "total_expenditure": 608065885,
     "local_tax": 28208411,
     "consumption_tax_share": 45225769,
-    "real_balance": 18516786,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 18516786
   },
   {
     "fiscal_year": 2023,
     "prefecture": "32鳥取県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 553407,
     "total_revenue": 389626524,
     "total_expenditure": 370967375,
     "local_tax": 18659149,
     "consumption_tax_share": 27314133,
-    "real_balance": 9404147,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 9404147
   },
   {
     "fiscal_year": 2023,
     "prefecture": "33島根県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 671126,
     "total_revenue": 561454234,
     "total_expenditure": 528059488,
     "local_tax": 33394746,
     "consumption_tax_share": 32810936,
-    "real_balance": 17519582,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 17519582
   },
   {
     "fiscal_year": 2023,
     "prefecture": "34岡山県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1888432,
     "total_revenue": 730821476,
     "total_expenditure": 721336380,
     "local_tax": 9485096,
     "consumption_tax_share": 90674206,
-    "real_balance": 2204159,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 2204159
   },
   {
     "fiscal_year": 2023,
     "prefecture": "35広島県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 2799702,
     "total_revenue": 1124841043,
     "total_expenditure": 1102901381,
     "local_tax": 21939662,
     "consumption_tax_share": 137411862,
-    "real_balance": 5467362,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 5467362
   },
   {
     "fiscal_year": 2023,
     "prefecture": "36山口県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1342059,
     "total_revenue": 712962097,
     "total_expenditure": 678580641,
     "local_tax": 34381456,
     "consumption_tax_share": 65377400,
-    "real_balance": 23739995,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 23739995
   },
   {
     "fiscal_year": 2023,
     "prefecture": "37徳島県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 719559,
     "total_revenue": 531810865,
     "total_expenditure": 500502981,
     "local_tax": 31307884,
     "consumption_tax_share": 33311104,
-    "real_balance": 15009687,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 15009687
   },
   {
     "fiscal_year": 2023,
     "prefecture": "38香川県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 950244,
     "total_revenue": 477854963,
     "total_expenditure": 462664477,
     "local_tax": 15190486,
     "consumption_tax_share": 48855474,
-    "real_balance": 7106688,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 7106688
   },
   {
     "fiscal_year": 2023,
     "prefecture": "39愛媛県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1334841,
     "total_revenue": 765414818,
     "total_expenditure": 740769253,
     "local_tax": 24645565,
     "consumption_tax_share": 65373931,
-    "real_balance": 5247092,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 5247092
   },
   {
     "fiscal_year": 2023,
     "prefecture": "40高知県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 691527,
     "total_revenue": 483884519,
     "total_expenditure": 473554741,
     "local_tax": 10329778,
     "consumption_tax_share": 35096552,
-    "real_balance": 2723923,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 2723923
   },
   {
     "fiscal_year": 2023,
     "prefecture": "41福岡県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 5135214,
     "total_revenue": 2054311220,
     "total_expenditure": 1993404740,
     "local_tax": 60906480,
     "consumption_tax_share": 250474423,
-    "real_balance": 11837303,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 11837303
   },
   {
     "fiscal_year": 2023,
     "prefecture": "42佐賀県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 811442,
     "total_revenue": 555571022,
     "total_expenditure": 539531062,
     "local_tax": 16039960,
     "consumption_tax_share": 39820802,
-    "real_balance": 9639205,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 9639205
   },
   {
     "fiscal_year": 2023,
     "prefecture": "43長崎県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1312317,
     "total_revenue": 747602171,
     "total_expenditure": 731783777,
     "local_tax": 15818394,
     "consumption_tax_share": 64763770,
-    "real_balance": 1075872,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 1075872
   },
   {
     "fiscal_year": 2023,
     "prefecture": "44熊本県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1738301,
     "total_revenue": 954296621,
     "total_expenditure": 903825031,
     "local_tax": 50471590,
     "consumption_tax_share": 86471017,
-    "real_balance": 30922991,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 30922991
   },
   {
     "fiscal_year": 2023,
     "prefecture": "45大分県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1123852,
     "total_revenue": 710291970,
     "total_expenditure": 676738407,
     "local_tax": 33553563,
     "consumption_tax_share": 55218328,
-    "real_balance": 8156364,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 8156364
   },
   {
     "fiscal_year": 2023,
     "prefecture": "46宮崎県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1069576,
     "total_revenue": 685628744,
     "total_expenditure": 656385854,
     "local_tax": 29242890,
     "consumption_tax_share": 54763450,
-    "real_balance": 13597252,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 13597252
   },
   {
     "fiscal_year": 2023,
     "prefecture": "47鹿児島県",
-    "habit_id": "dae95c20",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1588256,
     "total_revenue": 901447777,
     "total_expenditure": 856075115,
     "local_tax": 45372662,
     "consumption_tax_share": 78751426,
-    "real_balance": 16394446,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 16394446
   },
   {
     "fiscal_year": 2023,
     "prefecture": "48沖縄県",
-    "habit_id": "f534d3f2",
+    "source": "FY2023-settlementcard.xlsx",
     "population": 1467480,
     "total_revenue": 862154876,
     "total_expenditure": 846256545,
     "local_tax": 15898331,
     "consumption_tax_share": 68374490,
-    "real_balance": 4438368,
-    "source_file": "FY2023-settlementcard.xlsx"
+    "real_balance": 4438368
   }
 ]

@@ -2,565 +2,518 @@
   {
     "fiscal_year": 2017,
     "prefecture": "北海道",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 5381733,
     "total_revenue": 2437925058,
     "total_expenditure": 2427419344,
     "local_tax": 10505714,
     "consumption_tax_share": 213774366,
-    "real_balance": 6004750,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 6004750
   },
   {
     "fiscal_year": 2017,
     "prefecture": "青森県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1308265,
     "total_revenue": 692129270,
     "total_expenditure": 670924221,
     "local_tax": 21205049,
     "consumption_tax_share": 46063820,
-    "real_balance": 2335847,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 2335847
   },
   {
     "fiscal_year": 2017,
     "prefecture": "岩手県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1279594,
     "total_revenue": 1074872987,
     "total_expenditure": 986984123,
     "local_tax": 87888864,
     "consumption_tax_share": 45709210,
-    "real_balance": 24315296,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 24315296
   },
   {
     "fiscal_year": 2017,
     "prefecture": "宮城県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 2333899,
     "total_revenue": 1301708423,
     "total_expenditure": 1184973408,
     "local_tax": 116735015,
     "consumption_tax_share": 85316218,
-    "real_balance": 14870458,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 14870458
   },
   {
     "fiscal_year": 2017,
     "prefecture": "秋田県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1023119,
     "total_revenue": 600781473,
     "total_expenditure": 590985233,
     "local_tax": 9796240,
     "consumption_tax_share": 38904203,
-    "real_balance": 4850616,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 4850616
   },
   {
     "fiscal_year": 2017,
     "prefecture": "山形県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1123891,
     "total_revenue": 578426667,
     "total_expenditure": 569506636,
     "local_tax": 8920031,
     "consumption_tax_share": 40328605,
-    "real_balance": 4455396,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 4455396
   },
   {
     "fiscal_year": 2017,
     "prefecture": "福島県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1914039,
     "total_revenue": 1563862818,
     "total_expenditure": 1495793305,
     "local_tax": 68069513,
     "consumption_tax_share": 70988548,
-    "real_balance": 7229237,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 7229237
   },
   {
     "fiscal_year": 2017,
     "prefecture": "茨城県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 2916976,
     "total_revenue": 1055682801,
     "total_expenditure": 1029034715,
     "local_tax": 26648086,
     "consumption_tax_share": 98465747,
-    "real_balance": 7020356,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 7020356
   },
   {
     "fiscal_year": 2017,
     "prefecture": "栃木県",
-    "habit_id": "77eb6ee0",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1974255,
     "total_revenue": 755740379,
     "total_expenditure": 741534409,
     "local_tax": 14205970,
     "consumption_tax_share": 74644190,
-    "real_balance": 6583409,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 6583409
   },
   {
     "fiscal_year": 2017,
     "prefecture": "群馬県",
-    "habit_id": "77eb6ee0",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1973115,
     "total_revenue": 736480225,
     "total_expenditure": 727342685,
     "local_tax": 9137540,
     "consumption_tax_share": 74056528,
-    "real_balance": 4072059,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 4072059
   },
   {
     "fiscal_year": 2017,
     "prefecture": "埼玉県",
-    "habit_id": "77eb6ee0",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 7266534,
     "total_revenue": 1753196941,
     "total_expenditure": 1743622960,
     "local_tax": 9573981,
     "consumption_tax_share": 225206030,
-    "real_balance": 4868279,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 4868279
   },
   {
     "fiscal_year": 2017,
     "prefecture": "千葉県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 6222666,
     "total_revenue": 1698938900,
     "total_expenditure": 1673096766,
     "local_tax": 25842134,
     "consumption_tax_share": 210742099,
-    "real_balance": 15825863,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 15825863
   },
   {
     "fiscal_year": 2017,
     "prefecture": "東京都",
-    "habit_id": "a592ec74",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 13515272,
     "total_revenue": 7304356500,
     "total_expenditure": 6827470963,
     "local_tax": 476885537,
     "consumption_tax_share": 663598042,
-    "real_balance": 327812873,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 327812873
   },
   {
     "fiscal_year": 2017,
     "prefecture": "神奈川県",
-    "habit_id": "77eb6ee0",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 9126213,
     "total_revenue": 1988742343,
     "total_expenditure": 1960355329,
     "local_tax": 28387014,
     "consumption_tax_share": 307622514,
-    "real_balance": 6398549,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 6398549
   },
   {
     "fiscal_year": 2017,
     "prefecture": "新潟県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 2304264,
     "total_revenue": 1032500350,
     "total_expenditure": 995621169,
     "local_tax": 36879181,
     "consumption_tax_share": 81677519,
-    "real_balance": 5652644,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 5652644
   },
   {
     "fiscal_year": 2017,
     "prefecture": "富山県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1066328,
     "total_revenue": 495552779,
     "total_expenditure": 476865631,
     "local_tax": 18687148,
     "consumption_tax_share": 40070283,
-    "real_balance": 1601142,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 1601142
   },
   {
     "fiscal_year": 2017,
     "prefecture": "石川県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1154008,
     "total_revenue": 537052547,
     "total_expenditure": 527264987,
     "local_tax": 9787560,
     "consumption_tax_share": 44228138,
-    "real_balance": 790067,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 790067
   },
   {
     "fiscal_year": 2017,
     "prefecture": "福井県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 786740,
     "total_revenue": 461396606,
     "total_expenditure": 451217611,
     "local_tax": 10178995,
     "consumption_tax_share": 28412676,
-    "real_balance": 3765325,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 3765325
   },
   {
     "fiscal_year": 2017,
     "prefecture": "山梨県",
-    "habit_id": "77eb6ee0",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 834930,
     "total_revenue": 462932018,
     "total_expenditure": 446066984,
     "local_tax": 16865034,
     "consumption_tax_share": 31220213,
-    "real_balance": 4810034,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 4810034
   },
   {
     "fiscal_year": 2017,
     "prefecture": "長野県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 2098804,
     "total_revenue": 819490230,
     "total_expenditure": 808439310,
     "local_tax": 11050920,
     "consumption_tax_share": 80493684,
-    "real_balance": 5081352,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 5081352
   },
   {
     "fiscal_year": 2017,
     "prefecture": "岐阜県",
-    "habit_id": "77eb6ee0",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 2031903,
     "total_revenue": 764531070,
     "total_expenditure": 750933372,
     "local_tax": 13597698,
     "consumption_tax_share": 72481611,
-    "real_balance": 5521189,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 5521189
   },
   {
     "fiscal_year": 2017,
     "prefecture": "静岡県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 3700305,
     "total_revenue": 1171478994,
     "total_expenditure": 1155598609,
     "local_tax": 15880385,
     "consumption_tax_share": 143708894,
-    "real_balance": 6083577,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 6083577
   },
   {
     "fiscal_year": 2017,
     "prefecture": "愛知県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 7483128,
     "total_revenue": 2282711847,
     "total_expenditure": 2254887477,
     "local_tax": 27824370,
     "consumption_tax_share": 284652928,
-    "real_balance": 20563253,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 20563253
   },
   {
     "fiscal_year": 2017,
     "prefecture": "三重県",
-    "habit_id": "77eb6ee0",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1815865,
     "total_revenue": 688792950,
     "total_expenditure": 676040385,
     "local_tax": 12752565,
     "consumption_tax_share": 63845257,
-    "real_balance": 1882020,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 1882020
   },
   {
     "fiscal_year": 2017,
     "prefecture": "滋賀県",
-    "habit_id": "77eb6ee0",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1412916,
     "total_revenue": 512305768,
     "total_expenditure": 508238077,
     "local_tax": 4067691,
     "consumption_tax_share": 45747383,
-    "real_balance": 1030790,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 1030790
   },
   {
     "fiscal_year": 2017,
     "prefecture": "京都府",
-    "habit_id": "77eb6ee0",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 2610353,
     "total_revenue": 878651559,
     "total_expenditure": 874877256,
     "local_tax": 3774303,
     "consumption_tax_share": 91982572,
-    "real_balance": 757922,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 757922
   },
   {
     "fiscal_year": 2017,
     "prefecture": "大阪府",
-    "habit_id": "b34f7662",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 8839469,
     "total_revenue": 2670045873,
     "total_expenditure": 2647594211,
     "local_tax": 22451662,
     "consumption_tax_share": 339951295,
-    "real_balance": 8084035,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 8084035
   },
   {
     "fiscal_year": 2017,
     "prefecture": "兵庫県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 5534800,
     "total_revenue": 1941805730,
     "total_expenditure": 1931111121,
     "local_tax": 10694609,
     "consumption_tax_share": 186486374,
-    "real_balance": 1169891,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 1169891
   },
   {
     "fiscal_year": 2017,
     "prefecture": "奈良県",
-    "habit_id": "77eb6ee0",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1364316,
     "total_revenue": 498846800,
     "total_expenditure": 492304509,
     "local_tax": 6542291,
     "consumption_tax_share": 40601978,
-    "real_balance": 1816700,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 1816700
   },
   {
     "fiscal_year": 2017,
     "prefecture": "和歌山県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 963579,
     "total_revenue": 532338463,
     "total_expenditure": 518621711,
     "local_tax": 13716752,
     "consumption_tax_share": 32954728,
-    "real_balance": 5873728,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 5873728
   },
   {
     "fiscal_year": 2017,
     "prefecture": "鳥取県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 573441,
     "total_revenue": 365535049,
     "total_expenditure": 359247009,
     "local_tax": 6288040,
     "consumption_tax_share": 20661324,
-    "real_balance": 2906409,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 2906409
   },
   {
     "fiscal_year": 2017,
     "prefecture": "島根県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 694352,
     "total_revenue": 493233363,
     "total_expenditure": 473608648,
     "local_tax": 19624715,
     "consumption_tax_share": 24642747,
-    "real_balance": 8485983,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 8485983
   },
   {
     "fiscal_year": 2017,
     "prefecture": "岡山県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1921525,
     "total_revenue": 676305039,
     "total_expenditure": 669030178,
     "local_tax": 7274861,
     "consumption_tax_share": 70427003,
-    "real_balance": 1652456,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 1652456
   },
   {
     "fiscal_year": 2017,
     "prefecture": "広島県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 2843990,
     "total_revenue": 899318331,
     "total_expenditure": 887433102,
     "local_tax": 11885229,
     "consumption_tax_share": 105919821,
-    "real_balance": 1953251,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 1953251
   },
   {
     "fiscal_year": 2017,
     "prefecture": "山口県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1404729,
     "total_revenue": 625762201,
     "total_expenditure": 615865340,
     "local_tax": 9896861,
     "consumption_tax_share": 50305442,
-    "real_balance": 4689772,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 4689772
   },
   {
     "fiscal_year": 2017,
     "prefecture": "徳島県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 755733,
     "total_revenue": 481819916,
     "total_expenditure": 459630411,
     "local_tax": 22189505,
     "consumption_tax_share": 26653033,
-    "real_balance": 8661413,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 8661413
   },
   {
     "fiscal_year": 2017,
     "prefecture": "香川県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 976263,
     "total_revenue": 460728318,
     "total_expenditure": 451403627,
     "local_tax": 9324691,
     "consumption_tax_share": 36668187,
-    "real_balance": 5091737,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 5091737
   },
   {
     "fiscal_year": 2017,
     "prefecture": "愛媛県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1385262,
     "total_revenue": 629499168,
     "total_expenditure": 614958119,
     "local_tax": 14541049,
     "consumption_tax_share": 49250740,
-    "real_balance": 2098280,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 2098280
   },
   {
     "fiscal_year": 2017,
     "prefecture": "高知県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 728276,
     "total_revenue": 472385325,
     "total_expenditure": 460710254,
     "local_tax": 11675071,
     "consumption_tax_share": 26983539,
-    "real_balance": 2016337,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 2016337
   },
   {
     "fiscal_year": 2017,
     "prefecture": "福岡県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 5101556,
     "total_revenue": 1659599934,
     "total_expenditure": 1613717067,
     "local_tax": 45882867,
     "consumption_tax_share": 186443523,
-    "real_balance": 7604842,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 7604842
   },
   {
     "fiscal_year": 2017,
     "prefecture": "佐賀県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 832832,
     "total_revenue": 443259819,
     "total_expenditure": 433789513,
     "local_tax": 9470306,
     "consumption_tax_share": 29844574,
-    "real_balance": 4745801,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 4745801
   },
   {
     "fiscal_year": 2017,
     "prefecture": "長崎県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1377187,
     "total_revenue": 712952443,
     "total_expenditure": 690746272,
     "local_tax": 22206171,
     "consumption_tax_share": 48798385,
-    "real_balance": 907820,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 907820
   },
   {
     "fiscal_year": 2017,
     "prefecture": "熊本県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1786170,
     "total_revenue": 977425799,
     "total_expenditure": 942850999,
     "local_tax": 34574800,
     "consumption_tax_share": 62801964,
-    "real_balance": 19478492,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 19478492
   },
   {
     "fiscal_year": 2017,
     "prefecture": "大分県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1166338,
     "total_revenue": 583695133,
     "total_expenditure": 561387622,
     "local_tax": 22307511,
     "consumption_tax_share": 43791828,
-    "real_balance": 3149577,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 3149577
   },
   {
     "fiscal_year": 2017,
     "prefecture": "宮崎県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1104069,
     "total_revenue": 573922251,
     "total_expenditure": 559444108,
     "local_tax": 14478143,
     "consumption_tax_share": 41533043,
-    "real_balance": 6661804,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 6661804
   },
   {
     "fiscal_year": 2017,
     "prefecture": "鹿児島県",
-    "habit_id": "075c2b6f",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1648177,
     "total_revenue": 805010053,
     "total_expenditure": 786055448,
     "local_tax": 18954605,
     "consumption_tax_share": 60734403,
-    "real_balance": 3469683,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 3469683
   },
   {
     "fiscal_year": 2017,
     "prefecture": "沖縄県",
-    "habit_id": "b34f7662",
+    "source": "FY2017-settlementcard.xlsx",
     "population": 1433566,
     "total_revenue": 735773478,
     "total_expenditure": 723855924,
     "local_tax": 11917554,
     "consumption_tax_share": 45880386,
-    "real_balance": 3553042,
-    "source_file": "FY2017-settlementcard.xlsx"
+    "real_balance": 3553042
   }
 ]

@@ -1,14 +1,1 @@
-[
-  {
-    "fiscal_year": 2025,
-    "prefecture": "社会増減数",
-    "habit_id": "54bb5154",
-    "population": null,
-    "total_revenue": null,
-    "total_expenditure": null,
-    "local_tax": null,
-    "consumption_tax_share": null,
-    "real_balance": null,
-    "source_file": "FY2025-migration_prefecture.xlsx"
-  }
-]
+[]
