@@ -6,7 +6,7 @@
     "total_revenue": 2425830211,
     "total_expenditure": 2411637482,
     "local_tax": 667833580,
-    "consumption_tax_share": 210250363,
+    "local_consumption_tax": 210250363,
     "real_balance": 9565708
   },
   {
@@ -16,7 +16,7 @@
     "total_revenue": 665826953,
     "total_expenditure": 645964109,
     "local_tax": 166572347,
-    "consumption_tax_share": 47414416,
+    "local_consumption_tax": 47414416,
     "real_balance": 2421300
   },
   {
@@ -26,7 +26,7 @@
     "total_revenue": 993872330,
     "total_expenditure": 919328701,
     "local_tax": 155263033,
-    "consumption_tax_share": 46571243,
+    "local_consumption_tax": 46571243,
     "real_balance": 13086396
   },
   {
@@ -36,7 +36,7 @@
     "total_revenue": 1127971241,
     "total_expenditure": 1032718630,
     "local_tax": 312293008,
-    "consumption_tax_share": 86088572,
+    "local_consumption_tax": 86088572,
     "real_balance": 14619208
   },
   {
@@ -46,7 +46,7 @@
     "total_revenue": 591629505,
     "total_expenditure": 581507250,
     "local_tax": 113491140,
-    "consumption_tax_share": 37788781,
+    "local_consumption_tax": 37788781,
     "real_balance": 7407434
   },
   {
@@ -56,7 +56,7 @@
     "total_revenue": 589380862,
     "total_expenditure": 580058666,
     "local_tax": 131804908,
-    "consumption_tax_share": 41736213,
+    "local_consumption_tax": 41736213,
     "real_balance": 4974851
   },
   {
@@ -66,7 +66,7 @@
     "total_revenue": 1357615773,
     "total_expenditure": 1263963809,
     "local_tax": 271483890,
-    "consumption_tax_share": 74299240,
+    "local_consumption_tax": 74299240,
     "real_balance": 7560800
   },
   {
@@ -76,7 +76,7 @@
     "total_revenue": 1075186091,
     "total_expenditure": 1042053230,
     "local_tax": 415600843,
-    "consumption_tax_share": 105416108,
+    "local_consumption_tax": 105416108,
     "real_balance": 7072905
   },
   {
@@ -86,7 +86,7 @@
     "total_revenue": 759428886,
     "total_expenditure": 743025567,
     "local_tax": 284424955,
-    "consumption_tax_share": 74182014,
+    "local_consumption_tax": 74182014,
     "real_balance": 8082626
   },
   {
@@ -96,7 +96,7 @@
     "total_revenue": 741219142,
     "total_expenditure": 731153907,
     "local_tax": 278290808,
-    "consumption_tax_share": 74451725,
+    "local_consumption_tax": 74451725,
     "real_balance": 4179855
   },
   {
@@ -106,7 +106,7 @@
     "total_revenue": 1757492005,
     "total_expenditure": 1746304493,
     "local_tax": 894372700,
-    "consumption_tax_share": 247162273,
+    "local_consumption_tax": 247162273,
     "real_balance": 5328135
   },
   {
@@ -116,7 +116,7 @@
     "total_revenue": 1709086222,
     "total_expenditure": 1655110824,
     "local_tax": 821564946,
-    "consumption_tax_share": 235460317,
+    "local_consumption_tax": 235460317,
     "real_balance": 16887334
   },
   {
@@ -126,7 +126,7 @@
     "total_revenue": 8112851026,
     "total_expenditure": 7581114756,
     "local_tax": 5732615219,
-    "consumption_tax_share": 629401763,
+    "local_consumption_tax": 629401763,
     "real_balance": 437149608
   },
   {
@@ -136,7 +136,7 @@
     "total_revenue": 1882673722,
     "total_expenditure": 1862041161,
     "local_tax": 1154629956,
-    "consumption_tax_share": 321407960,
+    "local_consumption_tax": 321407960,
     "real_balance": 3683157
   },
   {
@@ -146,7 +146,7 @@
     "total_revenue": 1044959143,
     "total_expenditure": 1032642176,
     "local_tax": 281749316,
-    "consumption_tax_share": 84753844,
+    "local_consumption_tax": 84753844,
     "real_balance": 4942246
   },
   {
@@ -156,7 +156,7 @@
     "total_revenue": 503362128,
     "total_expenditure": 487588947,
     "local_tax": 152045374,
-    "consumption_tax_share": 41247967,
+    "local_consumption_tax": 41247967,
     "real_balance": 1339008
   },
   {
@@ -166,7 +166,7 @@
     "total_revenue": 541721213,
     "total_expenditure": 530771463,
     "local_tax": 167528005,
-    "consumption_tax_share": 44440278,
+    "local_consumption_tax": 44440278,
     "real_balance": 743240
   },
   {
@@ -176,7 +176,7 @@
     "total_revenue": 446162997,
     "total_expenditure": 437322620,
     "local_tax": 127593681,
-    "consumption_tax_share": 28799134,
+    "local_consumption_tax": 28799134,
     "real_balance": 6557720
   },
   {
@@ -186,7 +186,7 @@
     "total_revenue": 468395399,
     "total_expenditure": 451981211,
     "local_tax": 113584951,
-    "consumption_tax_share": 31136271,
+    "local_consumption_tax": 31136271,
     "real_balance": 4162611
   },
   {
@@ -196,7 +196,7 @@
     "total_revenue": 856767297,
     "total_expenditure": 839209530,
     "local_tax": 278809694,
-    "consumption_tax_share": 80219740,
+    "local_consumption_tax": 80219740,
     "real_balance": 5482575
   },
   {
@@ -206,7 +206,7 @@
     "total_revenue": 785103536,
     "total_expenditure": 769484514,
     "local_tax": 273291133,
-    "consumption_tax_share": 74613231,
+    "local_consumption_tax": 74613231,
     "real_balance": 7873221
   },
   {
@@ -216,7 +216,7 @@
     "total_revenue": 1141842344,
     "total_expenditure": 1128612580,
     "local_tax": 526115683,
-    "consumption_tax_share": 139279020,
+    "local_consumption_tax": 139279020,
     "real_balance": 6073272
   },
   {
@@ -226,7 +226,7 @@
     "total_revenue": 2295883257,
     "total_expenditure": 2256860944,
     "local_tax": 1228457795,
-    "consumption_tax_share": 286229678,
+    "local_consumption_tax": 286229678,
     "real_balance": 30111147
   },
   {
@@ -236,7 +236,7 @@
     "total_revenue": 685337671,
     "total_expenditure": 661375081,
     "local_tax": 267525672,
-    "consumption_tax_share": 69928174,
+    "local_consumption_tax": 69928174,
     "real_balance": 9044013
   },
   {
@@ -246,7 +246,7 @@
     "total_revenue": 525620290,
     "total_expenditure": 519955009,
     "local_tax": 199363027,
-    "consumption_tax_share": 48458541,
+    "local_consumption_tax": 48458541,
     "real_balance": 1073289
   },
   {
@@ -256,7 +256,7 @@
     "total_revenue": 871150268,
     "total_expenditure": 866555966,
     "local_tax": 325543717,
-    "consumption_tax_share": 93676126,
+    "local_consumption_tax": 93676126,
     "real_balance": 1428035
   },
   {
@@ -266,7 +266,7 @@
     "total_revenue": 2582153236,
     "total_expenditure": 2526284618,
     "local_tax": 1310357812,
-    "consumption_tax_share": 336516216,
+    "local_consumption_tax": 336516216,
     "real_balance": 36680668
   },
   {
@@ -276,7 +276,7 @@
     "total_revenue": 1843317792,
     "total_expenditure": 1835299819,
     "local_tax": 710792799,
-    "consumption_tax_share": 194631314,
+    "local_consumption_tax": 194631314,
     "real_balance": 87143
   },
   {
@@ -286,7 +286,7 @@
     "total_revenue": 514284495,
     "total_expenditure": 506792689,
     "local_tax": 149097109,
-    "consumption_tax_share": 43174432,
+    "local_consumption_tax": 43174432,
     "real_balance": 1463625
   },
   {
@@ -296,7 +296,7 @@
     "total_revenue": 548495105,
     "total_expenditure": 535861333,
     "local_tax": 110334840,
-    "consumption_tax_share": 34484818,
+    "local_consumption_tax": 34484818,
     "real_balance": 6719898
   },
   {
@@ -306,7 +306,7 @@
     "total_revenue": 351234325,
     "total_expenditure": 346276373,
     "local_tax": 65117076,
-    "consumption_tax_share": 20242856,
+    "local_consumption_tax": 20242856,
     "real_balance": 2882613
   },
   {
@@ -316,7 +316,7 @@
     "total_revenue": 487188668,
     "total_expenditure": 464501474,
     "local_tax": 82303262,
-    "consumption_tax_share": 24677555,
+    "local_consumption_tax": 24677555,
     "real_balance": 9478650
   },
   {
@@ -326,7 +326,7 @@
     "total_revenue": 706739670,
     "total_expenditure": 698349477,
     "local_tax": 242922476,
-    "consumption_tax_share": 69833515,
+    "local_consumption_tax": 69833515,
     "real_balance": 1170425
   },
   {
@@ -336,7 +336,7 @@
     "total_revenue": 964386725,
     "total_expenditure": 938507796,
     "local_tax": 365430058,
-    "consumption_tax_share": 105011039,
+    "local_consumption_tax": 105011039,
     "real_balance": 5372782
   },
   {
@@ -346,7 +346,7 @@
     "total_revenue": 630560989,
     "total_expenditure": 612769567,
     "local_tax": 181517681,
-    "consumption_tax_share": 51670885,
+    "local_consumption_tax": 51670885,
     "real_balance": 9011579
   },
   {
@@ -356,7 +356,7 @@
     "total_revenue": 483701670,
     "total_expenditure": 460416148,
     "local_tax": 90347212,
-    "consumption_tax_share": 25455695,
+    "local_consumption_tax": 25455695,
     "real_balance": 8067811
   },
   {
@@ -366,7 +366,7 @@
     "total_revenue": 446907282,
     "total_expenditure": 436102474,
     "local_tax": 133171086,
-    "consumption_tax_share": 36424762,
+    "local_consumption_tax": 36424762,
     "real_balance": 5256094
   },
   {
@@ -376,7 +376,7 @@
     "total_revenue": 638787137,
     "total_expenditure": 623659855,
     "local_tax": 170322579,
-    "consumption_tax_share": 50272970,
+    "local_consumption_tax": 50272970,
     "real_balance": 1889546
   },
   {
@@ -386,7 +386,7 @@
     "total_revenue": 457294946,
     "total_expenditure": 449350695,
     "local_tax": 79527880,
-    "consumption_tax_share": 26772720,
+    "local_consumption_tax": 26772720,
     "real_balance": 1119253
   },
   {
@@ -396,7 +396,7 @@
     "total_revenue": 1656889698,
     "total_expenditure": 1616681341,
     "local_tax": 630920143,
-    "consumption_tax_share": 187797013,
+    "local_consumption_tax": 187797013,
     "real_balance": 4081514
   },
   {
@@ -406,7 +406,7 @@
     "total_revenue": 451011101,
     "total_expenditure": 439921412,
     "local_tax": 104510377,
-    "consumption_tax_share": 29580089,
+    "local_consumption_tax": 29580089,
     "real_balance": 5479227
   },
   {
@@ -416,7 +416,7 @@
     "total_revenue": 691436115,
     "total_expenditure": 674611955,
     "local_tax": 143719335,
-    "consumption_tax_share": 49420175,
+    "local_consumption_tax": 49420175,
     "real_balance": 936590
   },
   {
@@ -426,7 +426,7 @@
     "total_revenue": 825323255,
     "total_expenditure": 797595012,
     "local_tax": 193509395,
-    "consumption_tax_share": 63767247,
+    "local_consumption_tax": 63767247,
     "real_balance": 12661723
   },
   {
@@ -436,7 +436,7 @@
     "total_revenue": 592035873,
     "total_expenditure": 570848815,
     "local_tax": 136050464,
-    "consumption_tax_share": 41927811,
+    "local_consumption_tax": 41927811,
     "real_balance": 3245482
   },
   {
@@ -446,7 +446,7 @@
     "total_revenue": 569336111,
     "total_expenditure": 554089542,
     "local_tax": 123660778,
-    "consumption_tax_share": 40558284,
+    "local_consumption_tax": 40558284,
     "real_balance": 7737606
   },
   {
@@ -456,7 +456,7 @@
     "total_revenue": 802278870,
     "total_expenditure": 769705576,
     "local_tax": 177801364,
-    "consumption_tax_share": 59407998,
+    "local_consumption_tax": 59407998,
     "real_balance": 6649640
   },
   {
@@ -466,7 +466,7 @@
     "total_revenue": 714232451,
     "total_expenditure": 703078586,
     "local_tax": 160297749,
-    "consumption_tax_share": 49507480,
+    "local_consumption_tax": 49507480,
     "real_balance": 3061177
   }
 ]
