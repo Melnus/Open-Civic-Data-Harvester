@@ -16,16 +16,17 @@ const CONFIG: any = {
       { key: "real_balance", keywords: ["実質収支"] }
     ]
   },
-  // 2. 人口移動（リスト形式：4ベクトル分離）
+  // 2. 人口移動（リスト形式）
   migration: {
     type: "list",
     row_key: "prefecture",
     columns: [
-      { key: "domestic_in", keywords: ["(A)", "国内"] },
-      { key: "domestic_out", keywords: ["(B)", "国内"] },
-      { key: "international_in", keywords: ["(C)", "国外"] },
-      { key: "international_out", keywords: ["(D)", "国外"] },
-      { key: "social_increase", keywords: ["(E)", "社会増減"] }
+      // 【修正】「国内」「国外」という曖昧な単語を削除し、記号とフル名称で特定する
+      { key: "domestic_in", keywords: ["(A)", "転入者数(国内)"] },
+      { key: "domestic_out", keywords: ["(B)", "転出者数(国内)"] },
+      { key: "international_in", keywords: ["(C)", "国外からの転入"] },
+      { key: "international_out", keywords: ["(D)", "国外への転出"] },
+      { key: "social_increase", keywords: ["(E)", "社会増減", "社会増加"] }
     ]
   },
   // 3. 人口動態（リスト形式）
@@ -43,10 +44,10 @@ const CONFIG: any = {
 const ROOT_DIR = process.cwd();
 const XLSX_DIR = path.join(ROOT_DIR, 'xlsx');
 const DATA_DIR = path.join(ROOT_DIR, 'data');
+const HABIT_DIR = path.join(ROOT_DIR, 'habits');
 
 const PREFECTURES = ["北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県", "茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県", "新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県", "岐阜県", "静岡県", "愛知県", "三重県", "滋賀県", "京都府", "大阪府", "兵庫県", "奈良県", "和歌山県", "鳥取県", "島根県", "岡山県", "広島県", "山口県", "徳島県", "香川県", "愛媛県", "高知県", "福岡県", "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"];
 
-// 数値パース
 function parseNumber(value: any): number | null {
   if (value === undefined || value === null || value === "") return null;
   if (typeof value === 'number') return value;
@@ -56,15 +57,9 @@ function parseNumber(value: any): number | null {
   return isNaN(num) ? null : num;
 }
 
-// 都道府県名の正規化（"01北海道" -> "北海道"）
-function normalizePrefecture(name: string): string {
-  // マスタに含まれる県名があれば、それを正式名称として返す
-  const found = PREFECTURES.find(p => name.includes(p));
-  return found ? found : name;
-}
-
 async function main() {
   await fs.ensureDir(DATA_DIR);
+  await fs.ensureDir(HABIT_DIR);
   const files = await fs.readdir(XLSX_DIR);
 
   for (const file of files) {
@@ -90,10 +85,7 @@ async function main() {
 
       if (config.type === "single") {
         // --- 決算カードモード ---
-        // シート名を正規化して都道府県名として使う
-        const cleanPref = normalizePrefecture(sheetName);
-        const entry: any = { fiscal_year: fiscalYear, prefecture: cleanPref, source: file };
-        
+        const entry: any = { fiscal_year: fiscalYear, prefecture: sheetName, source: file };
         config.keys.forEach((k: any) => {
           outer: for (const row of matrix) {
             for (let c = 0; c < row.length; c++) {
@@ -120,12 +112,19 @@ async function main() {
         let headerRowIndex = -1;
 
         // 1. ヘッダー解析
+        // 列の特定を厳密に行う。
         for (let r = 0; r < Math.min(20, matrix.length); r++) {
           config.columns.forEach((col: any) => {
             if (colMap[col.key] !== undefined) return;
             matrix[r].forEach((cell, cIdx) => {
                if (cIdx < 2) return; 
+
+               // 空白を除去して比較
                const cellStr = String(cell).replace(/\s/g, '');
+               
+               // キーワードの「いずれか」が含まれていればヒット
+               // 例："(A)" があれば確定。"転入者数(国内)" があっても確定。
+               // "国内" だけのような曖昧なワードはCONFIGから削除済み。
                if (col.keywords.some((kw: string) => cellStr.includes(kw))) {
                  colMap[col.key] = cIdx;
                  headerRowIndex = r;
@@ -142,12 +141,10 @@ async function main() {
           const nameCandidates = [row[0], row[1], row[2], row[3]].map(v => String(v || "").trim());
           
           let areaName = "";
-          // マスタと完全一致、または空白を除去して一致するか確認
           const prefMatch = nameCandidates.find(n => PREFECTURES.includes(n) || PREFECTURES.includes(n.replace(/\s/g, '')));
           
           if (prefMatch) {
-            // リストモードの場合も、見つけた名前を正規化して使う
-            areaName = normalizePrefecture(prefMatch);
+            areaName = prefMatch;
           } else if (config.row_key === "city") {
             const cityMatch = nameCandidates.find(n => n.match(/(市|区|町|村)$/) && !n.match(/^(合計|再掲|全国|県計|総数)$/));
             if (cityMatch) areaName = cityMatch;
@@ -163,7 +160,9 @@ async function main() {
               if (idx !== undefined) {
                 const val = parseNumber(row[idx]);
                 if (val !== null) {
-                    if (col.key.includes("population") && val < 10000) return;
+                    // 人口動態などで団体コードを拾わないためのガード
+                    if (col.key.includes("population") && val < 10000 && val > 0) return;
+                    
                     entry[col.key] = val;
                     hasData = true;
                 }
