@@ -1,7 +1,7 @@
 [
   {
     "fiscal_year": 2023,
-    "prefecture": "2北海道",
+    "prefecture": "北海道",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 2856219142,
     "total_expenditure": 2819962872,
@@ -11,7 +11,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "3青森県",
+    "prefecture": "青森県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 709754981,
     "total_expenditure": 681161044,
@@ -21,7 +21,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "4岩手県",
+    "prefecture": "岩手県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 809515999,
     "total_expenditure": 756669461,
@@ -31,7 +31,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "5宮城県",
+    "prefecture": "宮城県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 1024723861,
     "total_expenditure": 1008373713,
@@ -41,7 +41,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "6秋田県",
+    "prefecture": "秋田県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 617448721,
     "total_expenditure": 599529541,
@@ -51,7 +51,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "7山形県",
+    "prefecture": "山形県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 676811593,
     "total_expenditure": 664557243,
@@ -61,7 +61,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "8福島県",
+    "prefecture": "福島県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 1257263227,
     "total_expenditure": 1224298248,
@@ -71,7 +71,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "9茨城県",
+    "prefecture": "茨城県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 1259006243,
     "total_expenditure": 1220658113,
@@ -81,7 +81,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "10栃木県",
+    "prefecture": "栃木県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 931727812,
     "total_expenditure": 912533087,
@@ -91,7 +91,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "11群馬県",
+    "prefecture": "群馬県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 904925531,
     "total_expenditure": 886922117,
@@ -101,7 +101,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "12埼玉県",
+    "prefecture": "埼玉県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 2102354725,
     "total_expenditure": 2059405178,
@@ -111,7 +111,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "13千葉県",
+    "prefecture": "千葉県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 2045562522,
     "total_expenditure": 2011231816,
@@ -121,7 +121,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "14東京都",
+    "prefecture": "東京都",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 8898726626,
     "total_expenditure": 8353285707,
@@ -131,7 +131,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "15神奈川県",
+    "prefecture": "神奈川県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 2251237949,
     "total_expenditure": 2207423640,
@@ -141,7 +141,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "16新潟県",
+    "prefecture": "新潟県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 1148075153,
     "total_expenditure": 1122782289,
@@ -151,7 +151,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "17富山県",
+    "prefecture": "富山県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 617351150,
     "total_expenditure": 588990295,
@@ -161,7 +161,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "18石川県",
+    "prefecture": "石川県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 693732898,
     "total_expenditure": 652501500,
@@ -171,7 +171,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "19福井県",
+    "prefecture": "福井県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 539080066,
     "total_expenditure": 523817438,
@@ -181,7 +181,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "20山梨県",
+    "prefecture": "山梨県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 573586922,
     "total_expenditure": 544039848,
@@ -191,7 +191,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "21長野県",
+    "prefecture": "長野県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 1098347683,
     "total_expenditure": 1079564340,
@@ -201,7 +201,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "22岐阜県",
+    "prefecture": "岐阜県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 876508334,
     "total_expenditure": 859178419,
@@ -211,7 +211,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "23静岡県",
+    "prefecture": "静岡県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 1269197338,
     "total_expenditure": 1250356192,
@@ -221,7 +221,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "24愛知県",
+    "prefecture": "愛知県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 2620933437,
     "total_expenditure": 2547795499,
@@ -231,7 +231,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "25三重県",
+    "prefecture": "三重県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 807571927,
     "total_expenditure": 764500853,
@@ -241,7 +241,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "26滋賀県",
+    "prefecture": "滋賀県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 620385624,
     "total_expenditure": 611976612,
@@ -251,7 +251,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "27京都府",
+    "prefecture": "京都府",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 1042685775,
     "total_expenditure": 1024886167,
@@ -261,7 +261,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "28大阪府",
+    "prefecture": "大阪府",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 3358436064,
     "total_expenditure": 3325569052,
@@ -271,7 +271,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "29兵庫県",
+    "prefecture": "兵庫県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 2444905048,
     "total_expenditure": 2417645312,
@@ -281,7 +281,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "30奈良県",
+    "prefecture": "奈良県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 546695998,
     "total_expenditure": 536284251,
@@ -291,7 +291,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "31和歌山県",
+    "prefecture": "和歌山県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 636274296,
     "total_expenditure": 608065885,
@@ -301,7 +301,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "32鳥取県",
+    "prefecture": "鳥取県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 389626524,
     "total_expenditure": 370967375,
@@ -311,7 +311,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "33島根県",
+    "prefecture": "島根県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 561454234,
     "total_expenditure": 528059488,
@@ -321,7 +321,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "34岡山県",
+    "prefecture": "岡山県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 730821476,
     "total_expenditure": 721336380,
@@ -331,7 +331,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "35広島県",
+    "prefecture": "広島県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 1124841043,
     "total_expenditure": 1102901381,
@@ -341,7 +341,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "36山口県",
+    "prefecture": "山口県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 712962097,
     "total_expenditure": 678580641,
@@ -351,7 +351,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "37徳島県",
+    "prefecture": "徳島県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 531810865,
     "total_expenditure": 500502981,
@@ -361,7 +361,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "38香川県",
+    "prefecture": "香川県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 477854963,
     "total_expenditure": 462664477,
@@ -371,7 +371,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "39愛媛県",
+    "prefecture": "愛媛県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 765414818,
     "total_expenditure": 740769253,
@@ -381,7 +381,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "40高知県",
+    "prefecture": "高知県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 483884519,
     "total_expenditure": 473554741,
@@ -391,7 +391,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "41福岡県",
+    "prefecture": "福岡県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 2054311220,
     "total_expenditure": 1993404740,
@@ -401,7 +401,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "42佐賀県",
+    "prefecture": "佐賀県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 555571022,
     "total_expenditure": 539531062,
@@ -411,7 +411,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "43長崎県",
+    "prefecture": "長崎県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 747602171,
     "total_expenditure": 731783777,
@@ -421,7 +421,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "44熊本県",
+    "prefecture": "熊本県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 954296621,
     "total_expenditure": 903825031,
@@ -431,7 +431,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "45大分県",
+    "prefecture": "大分県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 710291970,
     "total_expenditure": 676738407,
@@ -441,7 +441,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "46宮崎県",
+    "prefecture": "宮崎県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 685628744,
     "total_expenditure": 656385854,
@@ -451,7 +451,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "47鹿児島県",
+    "prefecture": "鹿児島県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 901447777,
     "total_expenditure": 856075115,
@@ -461,7 +461,7 @@
   },
   {
     "fiscal_year": 2023,
-    "prefecture": "48沖縄県",
+    "prefecture": "沖縄県",
     "source": "FY2023-settlementcard.xlsx",
     "total_revenue": 862154876,
     "total_expenditure": 846256545,
