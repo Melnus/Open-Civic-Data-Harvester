@@ -12,110 +12,74 @@ export function extractPopulation(workbook: XLSX.WorkBook, fiscalYear: number, s
     const matrix = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1, defval: "" }) as any[][];
     if (matrix.length < 5) continue;
 
-    // --- 1. ヘッダー解析 (多段ヘッダー対応) ---
+    // --- 1. ヘッダー解析 (超厳密版) ---
     const colMap: { [key: string]: number } = {};
-    let dataStartRow = -1;
-
-    // ヘッダー領域（0行目〜20行目）を走査
-    // 戦略: 「出生者数」「死亡者数」は一意なワードなのでそのまま探す。
-    //       「総人口」は「人口」の下に「計」がある列を探す。
     
-    // まず、主要なキーワードがある行範囲を特定
-    for (let r = 0; r < Math.min(20, matrix.length); r++) {
-      const rowStr = matrix[r].join("").replace(/\s/g, '');
-      
-      // 出生・死亡の列特定（これらは1セルで完結していることが多い）
-      if (LEXICON.population.births.some(kw => rowStr.includes(kw))) {
-        matrix[r].forEach((cell, c) => {
-          const str = String(cell).replace(/\s/g, '');
-          if (LEXICON.population.births.some(kw => str === kw || str.includes(kw))) colMap['births'] = c;
-          if (LEXICON.population.deaths.some(kw => str === kw || str.includes(kw))) colMap['deaths'] = c;
-        });
-        // データ開始行はこのヘッダーの次の行以降と仮定（後で調整）
-        if (dataStartRow === -1) dataStartRow = r + 1;
-      }
+    for (let r = 0; r < Math.min(25, matrix.length); r++) {
+      const row = matrix[r];
+      for (let c = 0; c < row.length; c++) {
+        const cellStr = String(row[c]).replace(/\s/g, '');
 
-      // 人口列の特定（親：「人口」 → 子：「計/総数」）
-      // 例: 行4に「人口」、行5に「計」があるケース
-      if (LEXICON.population.total_population_label.some(kw => rowStr.includes(kw))) {
-        matrix[r].forEach((cell, c) => {
-          const str = String(cell).replace(/\s/g, '');
-          if (LEXICON.population.total_population_label.some(kw => str.includes(kw))) {
-            // 親ヘッダー「人口」を見つけた。
-            // 同じ列の直下(r+1)〜2行下(r+2)に「計」があるか確認
-            const subHeader1 = String(matrix[r+1]?.[c] || "").replace(/\s/g, '');
-            const subHeader2 = String(matrix[r+2]?.[c] || "").replace(/\s/g, '');
-            
-            if (LEXICON.population.total_population_sub_label.some(kw => subHeader1 === kw || subHeader2 === kw)) {
+        // 出生者数の列特定
+        if (LEXICON.population.births.some(kw => cellStr === kw)) colMap['births'] = c;
+        // 死亡者数の列特定
+        if (LEXICON.population.deaths.some(kw => cellStr === kw)) colMap['deaths'] = c;
+
+        // 人口「計」の特定ロジック
+        // 「人口」という単語を見つけたら、その同じ列の直下2行以内に「計」があるか探す
+        if (LEXICON.population.population_total.some(kw => cellStr === kw || cellStr.includes(kw))) {
+          for (let rowOffset = 1; rowOffset <= 2; rowOffset++) {
+            const subCell = String(matrix[r + rowOffset]?.[c] || "").replace(/\s/g, '');
+            if (LEXICON.population.sub_total.some(skw => subCell === skw)) {
               colMap['total_population'] = c;
-            } else {
-              // 「計」がない場合、その列自体が人口である可能性（単一行ヘッダーの場合）
-              // 他に「計」が見つからなければこれを採用する予備ロジック
-              if (colMap['total_population'] === undefined) {
-                 colMap['total_population'] = c;
-              }
+              break;
             }
           }
-        });
+        }
       }
     }
 
-    // 必須カラムが見つからなければスキップ
-    if (colMap['births'] === undefined || colMap['deaths'] === undefined) continue;
-    if (dataStartRow === -1) dataStartRow = 5; // フォールバック
+    // デバッグ用：見つかった列番号（出ない場合はヘッダー解析失敗）
+    // console.log(`  Columns found: Population:${colMap.total_population}, Births:${colMap.births}, Deaths:${colMap.deaths}`);
+
+    if (colMap['total_population'] === undefined) continue;
 
     // --- 2. データ抽出 ---
-    for (let r = dataStartRow; r < matrix.length; r++) {
+    for (let r = 0; r < matrix.length; r++) {
       const row = matrix[r];
-      const rowStr = row.join("");
-      if (rowStr.length < 5) continue; // 空行スキップ
+      // A列〜C列のいずれかが都道府県名かどうかを判定（団体コード A列は無視するロジック）
+      const colB = String(row[1] || "").trim();
+      const colC = String(row[2] || "").trim();
 
-      // 地域名の特定 (A列:団体コード, B列:都道府県, C列:市区町村 と仮定)
-      // 画像4を見ると、B列に都道府県、C列に市町村がある
-      const colB = String(row[1] || "").replace(/\s/g, '');
-      const colC = String(row[2] || "").replace(/\s/g, '');
-      const colD = String(row[3] || "").replace(/\s/g, ''); // 念のためD列も
+      // 都道府県名の特定
+      const prefMatch = PREFECTURES.find(p => colB.includes(p) || colC.includes(p));
+      if (!prefMatch) continue;
 
-      let pref = "";
+      const pref = normalizePrefecture(prefMatch);
+      // 市町村名の特定 (BかCに都道府県名が入っているなら、CかDに市町村名がある)
       let city = "";
-
-      // 都道府県名の検出
-      if (PREFECTURES.some(p => colB.includes(p))) {
-        pref = normalizePrefecture(colB);
-      } else if (PREFECTURES.some(p => colC.includes(p))) { // 稀なケース
-        pref = normalizePrefecture(colC);
+      if (colC && !PREFECTURES.includes(colC)) {
+        city = colC.replace(/\s/g, '');
+      } else if (String(row[3])) {
+        city = String(row[3]).trim();
       }
 
-      // 市区町村名の検出
-      // 市、区、町、村で終わる、かつ「合計」などではない
-      const candidateCity = colC || colD; // CになければDを見る
-      if (candidateCity && candidateCity.match(/(市|区|町|村)$/) && !candidateCity.match(/(計|総数|再掲)/)) {
-        city = candidateCity.trim();
-      } else if (colC === "合計" || colC === "計") {
-          // 合計行も必要ならここで取得（今回はスキップ、または area="合計" で取る）
-          // city = "合計"; 
-      }
+      // 団体コード行や合計行を除外
+      if (city.match(/(合計|再掲|部計|計)$/)) continue;
 
-      // エリア名決定
-      let areaName = "";
-      if (pref && city) {
-        areaName = `${pref}${city}`; // 例: 北海道札幌市
-      } else if (pref) {
-        areaName = pref; // 都道府県のみ（県計など）
-      } else {
-        continue; // 地域名が特定できない行はスキップ
-      }
+      const areaName = city ? `${pref}${city}` : pref;
 
-      // 値の抽出
+      // 解析済みの列番号から値を取得（ここが最重要：列を固定して取る）
       const valPopulation = parseNumber(row[colMap['total_population']]);
-      const valBirths = parseNumber(row[colMap['births']]);
-      const valDeaths = parseNumber(row[colMap['deaths']]);
+      const valBirths = colMap['births'] !== undefined ? parseNumber(row[colMap['births']]) : null;
+      const valDeaths = colMap['deaths'] !== undefined ? parseNumber(row[colMap['deaths']]) : null;
 
-      // 有効なデータがあれば追加
-      if (valPopulation !== null || valBirths !== null) {
+      // 数値が取れていて、かつ団体コード（10006等）と誤認していないかチェック
+      // 人口データとして不自然に小さい数値は除外
+      if (valPopulation !== null && valPopulation > 100) {
         results.push({
           fiscal_year: fiscalYear,
-          prefecture: pref || normalizePrefecture(areaName), // prefが取れてない場合（全国計など）のガード
+          prefecture: pref,
           area: areaName,
           source: sourceFile,
           total_population: valPopulation,
