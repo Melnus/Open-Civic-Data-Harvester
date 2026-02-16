@@ -4,422 +4,375 @@
     "area": "北海道",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "北海道",
-    "in_migration": 53656,
-    "out_migration": 58818,
-    "social_increase": null
+    "in_migration": 22807,
+    "out_migration": 15401
   },
   {
     "fiscal_year": 2025,
     "area": "青森県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "青森県",
-    "in_migration": 15801,
-    "out_migration": 20343,
-    "social_increase": null
+    "in_migration": 2402,
+    "out_migration": 1686
   },
   {
     "fiscal_year": 2025,
     "area": "岩手県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "岩手県",
-    "in_migration": 15835,
-    "out_migration": 19802,
-    "social_increase": null
+    "in_migration": 3084,
+    "out_migration": 1798
   },
   {
     "fiscal_year": 2025,
     "area": "宮城県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "宮城県",
-    "in_migration": 42841,
-    "out_migration": 44887,
-    "social_increase": null
+    "in_migration": 4131,
+    "out_migration": 3987
   },
   {
     "fiscal_year": 2025,
     "area": "秋田県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "秋田県",
-    "in_migration": 9849,
-    "out_migration": 13685,
-    "social_increase": null
+    "in_migration": 1713,
+    "out_migration": 1128
   },
   {
     "fiscal_year": 2025,
     "area": "山形県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "山形県",
-    "in_migration": 11901,
-    "out_migration": 16182,
-    "social_increase": null
+    "in_migration": 2153,
+    "out_migration": 1520
   },
   {
     "fiscal_year": 2025,
     "area": "福島県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "福島県",
-    "in_migration": 22788,
-    "out_migration": 29985,
-    "social_increase": null
+    "in_migration": 4265,
+    "out_migration": 2629
   },
   {
     "fiscal_year": 2025,
     "area": "茨城県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "茨城県",
-    "in_migration": 55683,
-    "out_migration": 61643,
-    "social_increase": null
+    "in_migration": 26360,
+    "out_migration": 10385
   },
   {
     "fiscal_year": 2025,
     "area": "栃木県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "栃木県",
-    "in_migration": 37053,
-    "out_migration": 39064,
-    "social_increase": null
+    "in_migration": 11775,
+    "out_migration": 5668
   },
   {
     "fiscal_year": 2025,
     "area": "群馬県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "群馬県",
-    "in_migration": 35943,
-    "out_migration": 37459,
-    "social_increase": null
+    "in_migration": 15150,
+    "out_migration": 6931
   },
   {
     "fiscal_year": 2025,
     "area": "埼玉県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "埼玉県",
-    "in_migration": 188323,
-    "out_migration": 165896,
-    "social_increase": null
+    "in_migration": 44333,
+    "out_migration": 20114
   },
   {
     "fiscal_year": 2025,
     "area": "千葉県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "千葉県",
-    "in_migration": 165248,
-    "out_migration": 157412,
-    "social_increase": null
+    "in_migration": 60476,
+    "out_migration": 19812
   },
   {
     "fiscal_year": 2025,
     "area": "東京都",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "東京都",
-    "in_migration": 451843,
-    "out_migration": 386624,
-    "social_increase": null
+    "in_migration": 150416,
+    "out_migration": 74903
   },
   {
     "fiscal_year": 2025,
     "area": "神奈川県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "神奈川県",
-    "in_migration": 235438,
-    "out_migration": 207386,
-    "social_increase": null
+    "in_migration": 51913,
+    "out_migration": 30150
   },
   {
     "fiscal_year": 2025,
     "area": "新潟県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "新潟県",
-    "in_migration": 22120,
-    "out_migration": 28499,
-    "social_increase": null
+    "in_migration": 6535,
+    "out_migration": 4276
   },
   {
     "fiscal_year": 2025,
     "area": "富山県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "富山県",
-    "in_migration": 13582,
-    "out_migration": 15906,
-    "social_increase": null
+    "in_migration": 5404,
+    "out_migration": 2928
   },
   {
     "fiscal_year": 2025,
     "area": "石川県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "石川県",
-    "in_migration": 18676,
-    "out_migration": 21450,
-    "social_increase": null
+    "in_migration": 6358,
+    "out_migration": 3148
   },
   {
     "fiscal_year": 2025,
     "area": "福井県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "福井県",
-    "in_migration": 9662,
-    "out_migration": 12819,
-    "social_increase": null
+    "in_migration": 4983,
+    "out_migration": 2706
   },
   {
     "fiscal_year": 2025,
     "area": "山梨県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "山梨県",
-    "in_migration": 15076,
-    "out_migration": 15938,
-    "social_increase": null
+    "in_migration": 4489,
+    "out_migration": 2422
   },
   {
     "fiscal_year": 2025,
     "area": "長野県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "長野県",
-    "in_migration": 31721,
-    "out_migration": 33136,
-    "social_increase": null
+    "in_migration": 13182,
+    "out_migration": 8203
   },
   {
     "fiscal_year": 2025,
     "area": "岐阜県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "岐阜県",
-    "in_migration": 32169,
-    "out_migration": 36697,
-    "social_increase": null
+    "in_migration": 14521,
+    "out_migration": 7864
   },
   {
     "fiscal_year": 2025,
     "area": "静岡県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "静岡県",
-    "in_migration": 55876,
-    "out_migration": 62587,
-    "social_increase": null
+    "in_migration": 19871,
+    "out_migration": 12183
   },
   {
     "fiscal_year": 2025,
     "area": "愛知県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "愛知県",
-    "in_migration": 124856,
-    "out_migration": 127037,
-    "social_increase": null
+    "in_migration": 65024,
+    "out_migration": 34964
   },
   {
     "fiscal_year": 2025,
     "area": "三重県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "三重県",
-    "in_migration": 29448,
-    "out_migration": 35434,
-    "social_increase": null
+    "in_migration": 11765,
+    "out_migration": 7307
   },
   {
     "fiscal_year": 2025,
     "area": "滋賀県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "滋賀県",
-    "in_migration": 29797,
-    "out_migration": 29444,
-    "social_increase": null
+    "in_migration": 7855,
+    "out_migration": 4991
   },
   {
     "fiscal_year": 2025,
     "area": "京都府",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "京都府",
-    "in_migration": 58430,
-    "out_migration": 62183,
-    "social_increase": null
+    "in_migration": 20293,
+    "out_migration": 11258
   },
   {
     "fiscal_year": 2025,
     "area": "大阪府",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "大阪府",
-    "in_migration": 184232,
-    "out_migration": 168565,
-    "social_increase": null
+    "in_migration": 42808,
+    "out_migration": 29111
   },
   {
     "fiscal_year": 2025,
     "area": "兵庫県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "兵庫県",
-    "in_migration": 94929,
-    "out_migration": 97031,
-    "social_increase": null
+    "in_migration": 26886,
+    "out_migration": 15388
   },
   {
     "fiscal_year": 2025,
     "area": "奈良県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "奈良県",
-    "in_migration": 23893,
-    "out_migration": 24963,
-    "social_increase": null
+    "in_migration": 4877,
+    "out_migration": 2995
   },
   {
     "fiscal_year": 2025,
     "area": "和歌山県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "和歌山県",
-    "in_migration": 11485,
-    "out_migration": 14298,
-    "social_increase": null
+    "in_migration": 2723,
+    "out_migration": 1423
   },
   {
     "fiscal_year": 2025,
     "area": "鳥取県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "鳥取県",
-    "in_migration": 7781,
-    "out_migration": 9809,
-    "social_increase": null
+    "in_migration": 1468,
+    "out_migration": 924
   },
   {
     "fiscal_year": 2025,
     "area": "島根県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "島根県",
-    "in_migration": 10419,
-    "out_migration": 12140,
-    "social_increase": null
+    "in_migration": 2125,
+    "out_migration": 1414
   },
   {
     "fiscal_year": 2025,
     "area": "岡山県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "岡山県",
-    "in_migration": 27712,
-    "out_migration": 33306,
-    "social_increase": null
+    "in_migration": 10462,
+    "out_migration": 5186
   },
   {
     "fiscal_year": 2025,
     "area": "広島県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "広島県",
-    "in_migration": 43316,
-    "out_migration": 53237,
-    "social_increase": null
+    "in_migration": 18079,
+    "out_migration": 9359
   },
   {
     "fiscal_year": 2025,
     "area": "山口県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "山口県",
-    "in_migration": 20749,
-    "out_migration": 25656,
-    "social_increase": null
+    "in_migration": 4548,
+    "out_migration": 3284
   },
   {
     "fiscal_year": 2025,
     "area": "徳島県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "徳島県",
-    "in_migration": 9155,
-    "out_migration": 11602,
-    "social_increase": null
+    "in_migration": 2627,
+    "out_migration": 1275
   },
   {
     "fiscal_year": 2025,
     "area": "香川県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "香川県",
-    "in_migration": 16048,
-    "out_migration": 18286,
-    "social_increase": null
+    "in_migration": 5643,
+    "out_migration": 2799
   },
   {
     "fiscal_year": 2025,
     "area": "愛媛県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "愛媛県",
-    "in_migration": 16400,
-    "out_migration": 22094,
-    "social_increase": null
+    "in_migration": 6167,
+    "out_migration": 3238
   },
   {
     "fiscal_year": 2025,
     "area": "高知県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "高知県",
-    "in_migration": 8129,
-    "out_migration": 11046,
-    "social_increase": null
+    "in_migration": 1627,
+    "out_migration": 1245
   },
   {
     "fiscal_year": 2025,
     "area": "福岡県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "福岡県",
-    "in_migration": 102453,
-    "out_migration": 97317,
-    "social_increase": null
+    "in_migration": 30106,
+    "out_migration": 12324
   },
   {
     "fiscal_year": 2025,
     "area": "佐賀県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "佐賀県",
-    "in_migration": 15834,
-    "out_migration": 16985,
-    "social_increase": null
+    "in_migration": 3391,
+    "out_migration": 1697
   },
   {
     "fiscal_year": 2025,
     "area": "長崎県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "長崎県",
-    "in_migration": 20980,
-    "out_migration": 26588,
-    "social_increase": null
+    "in_migration": 4832,
+    "out_migration": 2623
   },
   {
     "fiscal_year": 2025,
     "area": "熊本県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "熊本県",
-    "in_migration": 28923,
-    "out_migration": 31256,
-    "social_increase": null
+    "in_migration": 8457,
+    "out_migration": 4747
   },
   {
     "fiscal_year": 2025,
     "area": "大分県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "大分県",
-    "in_migration": 19302,
-    "out_migration": 22274,
-    "social_increase": null
+    "in_migration": 6615,
+    "out_migration": 3025
   },
   {
     "fiscal_year": 2025,
     "area": "宮崎県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "宮崎県",
-    "in_migration": 17063,
-    "out_migration": 20087,
-    "social_increase": null
+    "in_migration": 3133,
+    "out_migration": 1977
   },
   {
     "fiscal_year": 2025,
     "area": "鹿児島県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "鹿児島県",
-    "in_migration": 24814,
-    "out_migration": 29817,
-    "social_increase": null
+    "in_migration": 5579,
+    "out_migration": 2776
   },
   {
     "fiscal_year": 2025,
     "area": "沖縄県",
     "source": "FY2025-migration_prefecture.xlsx",
     "prefecture": "沖縄県",
-    "in_migration": 28499,
-    "out_migration": 29058,
-    "social_increase": null
+    "in_migration": 8754,
+    "out_migration": 4420
   }
 ]
