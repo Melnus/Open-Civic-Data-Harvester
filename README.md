@@ -53,7 +53,7 @@
 
 | データ種別 | 狩り場 (URL) | 推奨ファイル名 |取りに行くもの|
 | :--- | :--- | :--- | :--- |
-| **地方財政** |  [総務省｜地方財政状況調査関係資料｜決算カード](https://www.soumu.go.jp/iken/zaisei/card.html) | `FYxxxx-settlementcard.xls` | xxxx年度都道府県決算カード |
+| **地方財政** |  [総務省｜地方財政状況調査関係資料｜決算カード](https://www.soumu.go.jp/iken/zaisei/card.html) | `FYxxxx-settlementcard.xlsx` | xxxx年度都道府県決算カード |
 | **人口移動** | [統計局ホームページ/住民基本台帳人口移動報告](https://www.stat.go.jp/data/idou/index.html) | `FYxxxx-migration_prefecture.xlsx` | 都道府県別社会増減数（xxxx年） |
 | **人口動態** | [総務省｜住民基本台帳等｜住民基本台帳に基づく人口、人口動態及び世帯数](https://www.soumu.go.jp/main_sosiki/jichi_gyousei/daityo/jinkou_jinkoudoutai-setaisuu.html) | `FYxxxx-population_dynamics_municipal.xlsx` | 【総計】xxxx年住民基本台帳人口・世帯数、xxxx年人口動態（市区町村別） |
   
