@@ -1,3 +1,12 @@
+## 🤖 For AI Agents & LLMs (Context File)
+
+開発支援AI（Cursor, ChatGPT, Claudeなど）を使用する場合、以下のファイルを読み込ませることで、プロジェクトの全容、ディレクトリ構造、型定義、変換ロジックを即座に理解させることができます。
+
+- **📄 [LLM.md](./LLM.md)** : This file contains the entire project context, source code, and data structures.
+
+**プロンプト例:**
+> `LLM.md` を読んで、このプロジェクトのデータ変換ロジックとディレクトリ構造を理解してください。
+
 # Open-Civic-Data-Harvester 🚜
 
 日本の行政データ（Excel/PDF）を収集し、機械可読なJSON形式に変換してAPI化するためのデータパイプライン。
