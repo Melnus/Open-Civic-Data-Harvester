@@ -2,7 +2,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "北海道",
-    "area": "北海道",
+    "area": "北海道-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 5183687,
     "births": 28934,
@@ -1711,62 +1711,8 @@
   },
   {
     "fiscal_year": 2022,
-    "prefecture": "北海道",
-    "area": "北海道色丹郡色丹村",
-    "source": "FY2022-population_dynamics_municipal.xlsx",
-    "total_population": 0,
-    "births": 0,
-    "deaths": 0
-  },
-  {
-    "fiscal_year": 2022,
-    "prefecture": "北海道",
-    "area": "北海道国後郡泊村",
-    "source": "FY2022-population_dynamics_municipal.xlsx",
-    "total_population": 0,
-    "births": 0,
-    "deaths": 0
-  },
-  {
-    "fiscal_year": 2022,
-    "prefecture": "北海道",
-    "area": "北海道国後郡留夜別村",
-    "source": "FY2022-population_dynamics_municipal.xlsx",
-    "total_population": 0,
-    "births": 0,
-    "deaths": 0
-  },
-  {
-    "fiscal_year": 2022,
-    "prefecture": "北海道",
-    "area": "北海道択捉郡留別村",
-    "source": "FY2022-population_dynamics_municipal.xlsx",
-    "total_population": 0,
-    "births": 0,
-    "deaths": 0
-  },
-  {
-    "fiscal_year": 2022,
-    "prefecture": "北海道",
-    "area": "北海道紗那郡紗那村",
-    "source": "FY2022-population_dynamics_municipal.xlsx",
-    "total_population": 0,
-    "births": 0,
-    "deaths": 0
-  },
-  {
-    "fiscal_year": 2022,
-    "prefecture": "北海道",
-    "area": "北海道蘂取郡蘂取村",
-    "source": "FY2022-population_dynamics_municipal.xlsx",
-    "total_population": 0,
-    "births": 0,
-    "deaths": 0
-  },
-  {
-    "fiscal_year": 2022,
     "prefecture": "青森県",
-    "area": "青森県",
+    "area": "青森県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1243081,
     "births": 6502,
@@ -1865,6 +1811,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "青森県",
+    "area": "青森県東津軽郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 21017,
+    "births": 64,
+    "deaths": 432
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "青森県",
     "area": "青森県東津軽郡平内町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 10422,
@@ -1901,6 +1856,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "青森県",
+    "area": "青森県西津軽郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 16773,
+    "births": 45,
+    "deaths": 402
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "青森県",
     "area": "青森県西津軽郡鰺ヶ沢町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 9235,
@@ -1919,11 +1883,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "青森県",
+    "area": "青森県中津軽郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 1301,
+    "births": 5,
+    "deaths": 17
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "青森県",
     "area": "青森県中津軽郡西目屋村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1301,
     "births": 5,
     "deaths": 17
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "青森県",
+    "area": "青森県南津軽郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 31229,
+    "births": 148,
+    "deaths": 535
   },
   {
     "fiscal_year": 2022,
@@ -1955,6 +1937,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "青森県",
+    "area": "青森県北津軽郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 35503,
+    "births": 142,
+    "deaths": 643
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "青森県",
     "area": "青森県北津軽郡板柳町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 12987,
@@ -1978,6 +1969,15 @@
     "total_population": 10278,
     "births": 33,
     "deaths": 190
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "青森県",
+    "area": "青森県上北郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 95046,
+    "births": 518,
+    "deaths": 1391
   },
   {
     "fiscal_year": 2022,
@@ -2045,6 +2045,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "青森県",
+    "area": "青森県下北郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 14574,
+    "births": 50,
+    "deaths": 314
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "青森県",
     "area": "青森県下北郡大間町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4972,
@@ -2077,6 +2086,15 @@
     "total_population": 1825,
     "births": 3,
     "deaths": 61
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "青森県",
+    "area": "青森県三戸郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 63654,
+    "births": 235,
+    "deaths": 1083
   },
   {
     "fiscal_year": 2022,
@@ -2135,7 +2153,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岩手県",
-    "area": "岩手県",
+    "area": "岩手県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1206479,
     "births": 6500,
@@ -2270,6 +2288,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岩手県",
+    "area": "岩手県岩手郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 33965,
+    "births": 118,
+    "deaths": 637
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岩手県",
     "area": "岩手県岩手郡雫石町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 15795,
@@ -2297,6 +2324,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岩手県",
+    "area": "岩手県紫波郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 60128,
+    "births": 368,
+    "deaths": 674
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岩手県",
     "area": "岩手県紫波郡紫波町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 33188,
@@ -2315,11 +2351,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岩手県",
+    "area": "岩手県和賀郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 5219,
+    "births": 9,
+    "deaths": 117
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岩手県",
     "area": "岩手県和賀郡西和賀町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 5219,
     "births": 9,
     "deaths": 117
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岩手県",
+    "area": "岩手県胆沢郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 15419,
+    "births": 90,
+    "deaths": 211
   },
   {
     "fiscal_year": 2022,
@@ -2333,11 +2387,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岩手県",
+    "area": "岩手県西磐井郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 7232,
+    "births": 24,
+    "deaths": 126
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岩手県",
     "area": "岩手県西磐井郡平泉町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7232,
     "births": 24,
     "deaths": 126
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岩手県",
+    "area": "岩手県気仙郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 5050,
+    "births": 20,
+    "deaths": 127
   },
   {
     "fiscal_year": 2022,
@@ -2351,11 +2423,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岩手県",
+    "area": "岩手県上閉伊郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 11158,
+    "births": 52,
+    "deaths": 206
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岩手県",
     "area": "岩手県上閉伊郡大槌町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11158,
     "births": 52,
     "deaths": 206
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岩手県",
+    "area": "岩手県下閉伊郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 28999,
+    "births": 122,
+    "deaths": 564
   },
   {
     "fiscal_year": 2022,
@@ -2396,6 +2486,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岩手県",
+    "area": "岩手県九戸郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 33845,
+    "births": 97,
+    "deaths": 585
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岩手県",
     "area": "岩手県九戸郡軽米町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 8555,
@@ -2432,6 +2531,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岩手県",
+    "area": "岩手県二戸郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 11560,
+    "births": 36,
+    "deaths": 248
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岩手県",
     "area": "岩手県二戸郡一戸町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11560,
@@ -2441,7 +2549,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "宮城県",
-    "area": "宮城県",
+    "area": "宮城県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 2268355,
     "births": 13854,
@@ -2621,6 +2729,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "宮城県",
+    "area": "宮城県刈田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 12775,
+    "births": 56,
+    "deaths": 239
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮城県",
     "area": "宮城県刈田郡蔵王町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11490,
@@ -2635,6 +2752,15 @@
     "total_population": 1285,
     "births": 5,
     "deaths": 34
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮城県",
+    "area": "宮城県柴田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 79761,
+    "births": 451,
+    "deaths": 989
   },
   {
     "fiscal_year": 2022,
@@ -2675,11 +2801,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "宮城県",
+    "area": "宮城県伊具郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 12534,
+    "births": 29,
+    "deaths": 261
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮城県",
     "area": "宮城県伊具郡丸森町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 12534,
     "births": 29,
     "deaths": 261
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮城県",
+    "area": "宮城県亘理郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 45364,
+    "births": 226,
+    "deaths": 603
   },
   {
     "fiscal_year": 2022,
@@ -2698,6 +2842,15 @@
     "total_population": 11945,
     "births": 49,
     "deaths": 192
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮城県",
+    "area": "宮城県宮城郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 67823,
+    "births": 375,
+    "deaths": 733
   },
   {
     "fiscal_year": 2022,
@@ -2729,6 +2882,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "宮城県",
+    "area": "宮城県黒川郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 41731,
+    "births": 244,
+    "deaths": 511
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮城県",
     "area": "宮城県黒川郡大和町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 28130,
@@ -2756,6 +2918,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "宮城県",
+    "area": "宮城県加美郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 28638,
+    "births": 110,
+    "deaths": 487
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮城県",
     "area": "宮城県加美郡色麻町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 6523,
@@ -2770,6 +2941,15 @@
     "total_population": 22115,
     "births": 81,
     "deaths": 385
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮城県",
+    "area": "宮城県遠田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 39027,
+    "births": 171,
+    "deaths": 641
   },
   {
     "fiscal_year": 2022,
@@ -2792,11 +2972,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "宮城県",
+    "area": "宮城県牡鹿郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 6098,
+    "births": 39,
+    "deaths": 99
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮城県",
     "area": "宮城県牡鹿郡女川町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 6098,
     "births": 39,
     "deaths": 99
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮城県",
+    "area": "宮城県本吉郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 12218,
+    "births": 55,
+    "deaths": 218
   },
   {
     "fiscal_year": 2022,
@@ -2810,7 +3008,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "秋田県",
-    "area": "秋田県",
+    "area": "秋田県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 956836,
     "births": 4358,
@@ -2936,6 +3134,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "秋田県",
+    "area": "秋田県鹿角郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 4794,
+    "births": 16,
+    "deaths": 105
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "秋田県",
     "area": "秋田県鹿角郡小坂町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4794,
@@ -2945,11 +3152,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "秋田県",
+    "area": "秋田県北秋田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 2113,
+    "births": 7,
+    "deaths": 78
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "秋田県",
     "area": "秋田県北秋田郡上小阿仁村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 2113,
     "births": 7,
     "deaths": 78
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "秋田県",
+    "area": "秋田県山本郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 25048,
+    "births": 62,
+    "deaths": 590
   },
   {
     "fiscal_year": 2022,
@@ -2977,6 +3202,15 @@
     "total_population": 6693,
     "births": 14,
     "deaths": 145
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "秋田県",
+    "area": "秋田県南秋田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 21682,
+    "births": 85,
+    "deaths": 393
   },
   {
     "fiscal_year": 2022,
@@ -3017,11 +3251,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "秋田県",
+    "area": "秋田県仙北郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 18549,
+    "births": 72,
+    "deaths": 365
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "秋田県",
     "area": "秋田県仙北郡美郷町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 18549,
     "births": 72,
     "deaths": 365
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "秋田県",
+    "area": "秋田県雄勝郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 16379,
+    "births": 54,
+    "deaths": 343
   },
   {
     "fiscal_year": 2022,
@@ -3044,7 +3296,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山形県",
-    "area": "山形県",
+    "area": "山形県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1056682,
     "births": 5929,
@@ -3170,6 +3422,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山形県",
+    "area": "山形県東村山郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 24792,
+    "births": 110,
+    "deaths": 317
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山形県",
     "area": "山形県東村山郡山辺町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 13895,
@@ -3184,6 +3445,15 @@
     "total_population": 10897,
     "births": 37,
     "deaths": 127
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山形県",
+    "area": "山形県西村山郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 36527,
+    "births": 140,
+    "deaths": 714
   },
   {
     "fiscal_year": 2022,
@@ -3224,11 +3494,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山形県",
+    "area": "山形県北村山郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 6518,
+    "births": 23,
+    "deaths": 119
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山形県",
     "area": "山形県北村山郡大石田町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 6518,
     "births": 23,
     "deaths": 119
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山形県",
+    "area": "山形県最上郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 36450,
+    "births": 136,
+    "deaths": 737
   },
   {
     "fiscal_year": 2022,
@@ -3296,6 +3584,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山形県",
+    "area": "山形県東置賜郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 36814,
+    "births": 172,
+    "deaths": 615
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山形県",
     "area": "山形県東置賜郡高畠町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 22454,
@@ -3310,6 +3607,15 @@
     "total_population": 14360,
     "births": 61,
     "deaths": 258
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山形県",
+    "area": "山形県西置賜郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 26741,
+    "births": 92,
+    "deaths": 488
   },
   {
     "fiscal_year": 2022,
@@ -3341,6 +3647,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山形県",
+    "area": "山形県東田川郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 27618,
+    "births": 157,
+    "deaths": 456
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山形県",
     "area": "山形県東田川郡三川町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7311,
@@ -3359,6 +3674,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山形県",
+    "area": "山形県飽海郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 13059,
+    "births": 47,
+    "deaths": 247
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山形県",
     "area": "山形県飽海郡遊佐町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 13059,
@@ -3368,7 +3692,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福島県",
-    "area": "福島県",
+    "area": "福島県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1841244,
     "births": 10721,
@@ -3494,6 +3818,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福島県",
+    "area": "福島県伊達郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 32370,
+    "births": 123,
+    "deaths": 636
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
     "area": "福島県伊達郡桑折町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11422,
@@ -3521,11 +3854,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福島県",
+    "area": "福島県安達郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 8735,
+    "births": 58,
+    "deaths": 109
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
     "area": "福島県安達郡大玉村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 8735,
     "births": 58,
     "deaths": 109
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
+    "area": "福島県岩瀬郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 18018,
+    "births": 122,
+    "deaths": 256
   },
   {
     "fiscal_year": 2022,
@@ -3544,6 +3895,15 @@
     "total_population": 5403,
     "births": 29,
     "deaths": 106
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
+    "area": "福島県南会津郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 24389,
+    "births": 88,
+    "deaths": 555
   },
   {
     "fiscal_year": 2022,
@@ -3584,6 +3944,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福島県",
+    "area": "福島県耶麻郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 25177,
+    "births": 112,
+    "deaths": 450
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
     "area": "福島県耶麻郡北塩原村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 2591,
@@ -3620,6 +3989,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福島県",
+    "area": "福島県河沼郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 21390,
+    "births": 114,
+    "deaths": 349
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
     "area": "福島県河沼郡会津坂下町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 15116,
@@ -3643,6 +4021,15 @@
     "total_population": 3135,
     "births": 8,
     "deaths": 67
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
+    "area": "福島県大沼郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 23847,
+    "births": 102,
+    "deaths": 505
   },
   {
     "fiscal_year": 2022,
@@ -3683,6 +4070,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福島県",
+    "area": "福島県西白河郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 48512,
+    "births": 318,
+    "deaths": 639
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
     "area": "福島県西白河郡西郷村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 20201,
@@ -3719,6 +4115,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福島県",
+    "area": "福島県東白川郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 30429,
+    "births": 130,
+    "deaths": 479
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
     "area": "福島県東白川郡棚倉町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 13490,
@@ -3751,6 +4156,15 @@
     "total_population": 3121,
     "births": 8,
     "deaths": 65
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
+    "area": "福島県石川郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 37586,
+    "births": 177,
+    "deaths": 623
   },
   {
     "fiscal_year": 2022,
@@ -3800,6 +4214,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福島県",
+    "area": "福島県田村郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 26207,
+    "births": 103,
+    "deaths": 371
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
     "area": "福島県田村郡三春町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 16662,
@@ -3814,6 +4237,15 @@
     "total_population": 9545,
     "births": 33,
     "deaths": 144
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
+    "area": "福島県双葉郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 59203,
+    "births": 280,
+    "deaths": 901
   },
   {
     "fiscal_year": 2022,
@@ -3890,6 +4322,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福島県",
+    "area": "福島県相馬郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 12808,
+    "births": 56,
+    "deaths": 205
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福島県",
     "area": "福島県相馬郡新地町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7812,
@@ -3908,7 +4349,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "茨城県",
-    "area": "茨城県",
+    "area": "茨城県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 2890377,
     "births": 16920,
@@ -4205,6 +4646,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "茨城県",
+    "area": "茨城県東茨城郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 66230,
+    "births": 265,
+    "deaths": 1001
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "茨城県",
     "area": "茨城県東茨城郡茨城町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 31518,
@@ -4232,6 +4682,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "茨城県",
+    "area": "茨城県那珂郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 38328,
+    "births": 244,
+    "deaths": 414
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "茨城県",
     "area": "茨城県那珂郡東海村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 38328,
@@ -4241,11 +4700,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "茨城県",
+    "area": "茨城県久慈郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 15833,
+    "births": 47,
+    "deaths": 346
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "茨城県",
     "area": "茨城県久慈郡大子町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 15833,
     "births": 47,
     "deaths": 346
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "茨城県",
+    "area": "茨城県稲敷郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 71508,
+    "births": 419,
+    "deaths": 853
   },
   {
     "fiscal_year": 2022,
@@ -4277,11 +4754,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "茨城県",
+    "area": "茨城県結城郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 21281,
+    "births": 100,
+    "deaths": 289
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "茨城県",
     "area": "茨城県結城郡八千代町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 21281,
     "births": 100,
     "deaths": 289
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "茨城県",
+    "area": "茨城県猿島郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 33184,
+    "births": 188,
+    "deaths": 383
   },
   {
     "fiscal_year": 2022,
@@ -4304,6 +4799,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "茨城県",
+    "area": "茨城県北相馬郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 15556,
+    "births": 39,
+    "deaths": 190
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "茨城県",
     "area": "茨城県北相馬郡利根町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 15556,
@@ -4313,7 +4817,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "栃木県",
-    "area": "栃木県",
+    "area": "栃木県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1942494,
     "births": 11771,
@@ -4448,11 +4952,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "栃木県",
+    "area": "栃木県河内郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 31177,
+    "births": 209,
+    "deaths": 295
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "栃木県",
     "area": "栃木県河内郡上三川町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 31177,
     "births": 209,
     "deaths": 295
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "栃木県",
+    "area": "栃木県芳賀郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 61523,
+    "births": 283,
+    "deaths": 841
   },
   {
     "fiscal_year": 2022,
@@ -4493,6 +5015,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "栃木県",
+    "area": "栃木県下都賀郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 64136,
+    "births": 330,
+    "deaths": 717
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "栃木県",
     "area": "栃木県下都賀郡壬生町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 38831,
@@ -4507,6 +5038,15 @@
     "total_population": 25305,
     "births": 126,
     "deaths": 287
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "栃木県",
+    "area": "栃木県塩谷郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 39907,
+    "births": 247,
+    "deaths": 472
   },
   {
     "fiscal_year": 2022,
@@ -4529,6 +5069,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "栃木県",
+    "area": "栃木県那須郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 39824,
+    "births": 131,
+    "deaths": 653
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "栃木県",
     "area": "栃木県那須郡那須町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 24538,
@@ -4547,7 +5096,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "群馬県",
-    "area": "群馬県",
+    "area": "群馬県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1943667,
     "births": 11812,
@@ -4664,6 +5213,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "群馬県",
+    "area": "群馬県北群馬郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 36688,
+    "births": 296,
+    "deaths": 327
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "群馬県",
     "area": "群馬県北群馬郡榛東村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 14577,
@@ -4682,6 +5240,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "群馬県",
+    "area": "群馬県多野郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 2837,
+    "births": 11,
+    "deaths": 76
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "群馬県",
     "area": "群馬県多野郡上野村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1138,
@@ -4696,6 +5263,15 @@
     "total_population": 1699,
     "births": 4,
     "deaths": 56
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "群馬県",
+    "area": "群馬県甘楽郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 21185,
+    "births": 63,
+    "deaths": 412
   },
   {
     "fiscal_year": 2022,
@@ -4723,6 +5299,15 @@
     "total_population": 12767,
     "births": 49,
     "deaths": 198
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "群馬県",
+    "area": "群馬県吾妻郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 52501,
+    "births": 219,
+    "deaths": 858
   },
   {
     "fiscal_year": 2022,
@@ -4781,6 +5366,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "群馬県",
+    "area": "群馬県利根郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 32340,
+    "births": 126,
+    "deaths": 530
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "群馬県",
     "area": "群馬県利根郡片品村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4185,
@@ -4817,11 +5411,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "群馬県",
+    "area": "群馬県佐波郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 36099,
+    "births": 244,
+    "deaths": 334
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "群馬県",
     "area": "群馬県佐波郡玉村町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 36099,
     "births": 244,
     "deaths": 334
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "群馬県",
+    "area": "群馬県邑楽郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 103775,
+    "births": 623,
+    "deaths": 1153
   },
   {
     "fiscal_year": 2022,
@@ -4871,7 +5483,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "埼玉県",
-    "area": "埼玉県",
+    "area": "埼玉県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7385848,
     "births": 47143,
@@ -5330,11 +5942,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "埼玉県",
+    "area": "埼玉県北足立郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 45030,
+    "births": 284,
+    "deaths": 390
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "埼玉県",
     "area": "埼玉県北足立郡伊奈町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 45030,
     "births": 284,
     "deaths": 390
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "埼玉県",
+    "area": "埼玉県入間郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 82090,
+    "births": 346,
+    "deaths": 1004
   },
   {
     "fiscal_year": 2022,
@@ -5362,6 +5992,15 @@
     "total_population": 11248,
     "births": 40,
     "deaths": 145
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "埼玉県",
+    "area": "埼玉県比企郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 127730,
+    "births": 527,
+    "deaths": 1776
   },
   {
     "fiscal_year": 2022,
@@ -5429,6 +6068,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "埼玉県",
+    "area": "埼玉県秩父郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 37623,
+    "births": 145,
+    "deaths": 700
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "埼玉県",
     "area": "埼玉県秩父郡横瀬町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7976,
@@ -5474,6 +6122,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "埼玉県",
+    "area": "埼玉県児玉郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 54869,
+    "births": 262,
+    "deaths": 821
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "埼玉県",
     "area": "埼玉県児玉郡美里町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 10994,
@@ -5501,6 +6158,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "埼玉県",
+    "area": "埼玉県大里郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 32587,
+    "births": 131,
+    "deaths": 460
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "埼玉県",
     "area": "埼玉県大里郡寄居町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 32587,
@@ -5510,11 +6176,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "埼玉県",
+    "area": "埼玉県南埼玉郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 33664,
+    "births": 216,
+    "deaths": 376
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "埼玉県",
     "area": "埼玉県南埼玉郡宮代町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 33664,
     "births": 216,
     "deaths": 376
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "埼玉県",
+    "area": "埼玉県北葛飾郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 72769,
+    "births": 287,
+    "deaths": 818
   },
   {
     "fiscal_year": 2022,
@@ -5537,7 +6221,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "千葉県",
-    "area": "千葉県",
+    "area": "千葉県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 6310875,
     "births": 39805,
@@ -5933,6 +6617,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "千葉県",
+    "area": "千葉県印旛郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 40546,
+    "births": 161,
+    "deaths": 415
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "千葉県",
     "area": "千葉県印旛郡酒々井町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 20460,
@@ -5947,6 +6640,15 @@
     "total_population": 20086,
     "births": 70,
     "deaths": 227
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "千葉県",
+    "area": "千葉県香取郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 33216,
+    "births": 120,
+    "deaths": 542
   },
   {
     "fiscal_year": 2022,
@@ -5978,6 +6680,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "千葉県",
+    "area": "千葉県山武郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 44992,
+    "births": 154,
+    "deaths": 750
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "千葉県",
     "area": "千葉県山武郡九十九里町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 14953,
@@ -6001,6 +6712,15 @@
     "total_population": 23041,
     "births": 99,
     "deaths": 375
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "千葉県",
+    "area": "千葉県長生郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 58117,
+    "births": 234,
+    "deaths": 935
   },
   {
     "fiscal_year": 2022,
@@ -6059,6 +6779,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "千葉県",
+    "area": "千葉県夷隅郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 15745,
+    "births": 30,
+    "deaths": 336
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "千葉県",
     "area": "千葉県夷隅郡大多喜町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 8544,
@@ -6077,6 +6806,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "千葉県",
+    "area": "千葉県安房郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 7183,
+    "births": 15,
+    "deaths": 172
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "千葉県",
     "area": "千葉県安房郡鋸南町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7183,
@@ -6086,7 +6824,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "東京都",
-    "area": "東京都",
+    "area": "東京都-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 13794933,
     "births": 98656,
@@ -6536,6 +7274,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "東京都",
+    "area": "東京都西多摩郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 55843,
+    "births": 252,
+    "deaths": 1062
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "東京都",
     "area": "東京都西多摩郡瑞穂町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 32328,
@@ -6568,6 +7315,15 @@
     "total_population": 4897,
     "births": 14,
     "deaths": 178
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "東京都",
+    "area": "東京都島しょ",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 24552,
+    "births": 134,
+    "deaths": 391
   },
   {
     "fiscal_year": 2022,
@@ -6653,7 +7409,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "神奈川県",
-    "area": "神奈川県",
+    "area": "神奈川県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 9215210,
     "births": 60551,
@@ -7085,6 +7841,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "神奈川県",
+    "area": "神奈川県三浦郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 32864,
+    "births": 127,
+    "deaths": 366
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "神奈川県",
     "area": "神奈川県三浦郡葉山町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 32864,
@@ -7094,11 +7859,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "神奈川県",
+    "area": "神奈川県高座郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 49064,
+    "births": 306,
+    "deaths": 520
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "神奈川県",
     "area": "神奈川県高座郡寒川町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 49064,
     "births": 306,
     "deaths": 520
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "神奈川県",
+    "area": "神奈川県中郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 60647,
+    "births": 256,
+    "deaths": 758
   },
   {
     "fiscal_year": 2022,
@@ -7117,6 +7900,15 @@
     "total_population": 28183,
     "births": 116,
     "deaths": 363
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "神奈川県",
+    "area": "神奈川県足柄上郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 65375,
+    "births": 374,
+    "deaths": 754
   },
   {
     "fiscal_year": 2022,
@@ -7166,6 +7958,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "神奈川県",
+    "area": "神奈川県足柄下郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 42167,
+    "births": 125,
+    "deaths": 756
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "神奈川県",
     "area": "神奈川県足柄下郡箱根町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11032,
@@ -7193,6 +7994,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "神奈川県",
+    "area": "神奈川県愛甲郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 42550,
+    "births": 198,
+    "deaths": 493
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "神奈川県",
     "area": "神奈川県愛甲郡愛川町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 39690,
@@ -7211,7 +8021,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "新潟県",
-    "area": "新潟県",
+    "area": "新潟県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 2188469,
     "births": 12693,
@@ -7472,11 +8282,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "新潟県",
+    "area": "新潟県北蒲原郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 14115,
+    "births": 146,
+    "deaths": 181
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "新潟県",
     "area": "新潟県北蒲原郡聖籠町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 14115,
     "births": 146,
     "deaths": 181
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "新潟県",
+    "area": "新潟県西蒲原郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 7802,
+    "births": 26,
+    "deaths": 106
   },
   {
     "fiscal_year": 2022,
@@ -7490,11 +8318,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "新潟県",
+    "area": "新潟県南蒲原郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 11197,
+    "births": 35,
+    "deaths": 183
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "新潟県",
     "area": "新潟県南蒲原郡田上町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11197,
     "births": 35,
     "deaths": 183
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "新潟県",
+    "area": "新潟県東蒲原郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 10090,
+    "births": 32,
+    "deaths": 250
   },
   {
     "fiscal_year": 2022,
@@ -7508,11 +8354,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "新潟県",
+    "area": "新潟県三島郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 4193,
+    "births": 7,
+    "deaths": 107
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "新潟県",
     "area": "新潟県三島郡出雲崎町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4193,
     "births": 7,
     "deaths": 107
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "新潟県",
+    "area": "新潟県南魚沼郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 8002,
+    "births": 31,
+    "deaths": 110
   },
   {
     "fiscal_year": 2022,
@@ -7526,6 +8390,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "新潟県",
+    "area": "新潟県中魚沼郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 9057,
+    "births": 38,
+    "deaths": 160
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "新潟県",
     "area": "新潟県中魚沼郡津南町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 9057,
@@ -7535,11 +8408,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "新潟県",
+    "area": "新潟県刈羽郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 4374,
+    "births": 15,
+    "deaths": 57
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "新潟県",
     "area": "新潟県刈羽郡刈羽村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4374,
     "births": 15,
     "deaths": 57
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "新潟県",
+    "area": "新潟県岩船郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 5500,
+    "births": 14,
+    "deaths": 129
   },
   {
     "fiscal_year": 2022,
@@ -7562,7 +8453,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "富山県",
-    "area": "富山県",
+    "area": "富山県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1037319,
     "births": 6178,
@@ -7661,6 +8552,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "富山県",
+    "area": "富山県中新川郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 48086,
+    "births": 228,
+    "deaths": 659
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "富山県",
     "area": "富山県中新川郡舟橋村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 3274,
@@ -7688,6 +8588,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "富山県",
+    "area": "富山県下新川郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 34869,
+    "births": 137,
+    "deaths": 571
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "富山県",
     "area": "富山県下新川郡入善町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 23576,
@@ -7706,7 +8615,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "石川県",
-    "area": "石川県",
+    "area": "石川県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1124501,
     "births": 7340,
@@ -7814,11 +8723,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "石川県",
+    "area": "石川県能美郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 6161,
+    "births": 50,
+    "deaths": 52
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "石川県",
     "area": "石川県能美郡川北町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 6161,
     "births": 50,
     "deaths": 52
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "石川県",
+    "area": "石川県河北郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 63845,
+    "births": 394,
+    "deaths": 558
   },
   {
     "fiscal_year": 2022,
@@ -7841,6 +8768,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "石川県",
+    "area": "石川県羽咋郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 31719,
+    "births": 106,
+    "deaths": 503
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "石川県",
     "area": "石川県羽咋郡志賀町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 19178,
@@ -7859,11 +8795,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "石川県",
+    "area": "石川県鹿島郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 17351,
+    "births": 87,
+    "deaths": 274
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "石川県",
     "area": "石川県鹿島郡中能登町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 17351,
     "births": 87,
     "deaths": 274
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "石川県",
+    "area": "石川県鳳珠郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 23840,
+    "births": 91,
+    "deaths": 522
   },
   {
     "fiscal_year": 2022,
@@ -7886,7 +8840,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福井県",
-    "area": "福井県",
+    "area": "福井県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 767561,
     "births": 5292,
@@ -7976,11 +8930,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福井県",
+    "area": "福井県吉田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 18149,
+    "births": 114,
+    "deaths": 253
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福井県",
     "area": "福井県吉田郡永平寺町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 18149,
     "births": 114,
     "deaths": 253
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福井県",
+    "area": "福井県今立郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 2397,
+    "births": 12,
+    "deaths": 53
   },
   {
     "fiscal_year": 2022,
@@ -7994,11 +8966,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福井県",
+    "area": "福井県南条郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 10083,
+    "births": 61,
+    "deaths": 161
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福井県",
     "area": "福井県南条郡南越前町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 10083,
     "births": 61,
     "deaths": 161
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福井県",
+    "area": "福井県丹生郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 20581,
+    "births": 113,
+    "deaths": 327
   },
   {
     "fiscal_year": 2022,
@@ -8012,11 +9002,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福井県",
+    "area": "福井県三方郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 9130,
+    "births": 67,
+    "deaths": 139
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福井県",
     "area": "福井県三方郡美浜町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 9130,
     "births": 67,
     "deaths": 139
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福井県",
+    "area": "福井県大飯郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 18154,
+    "births": 142,
+    "deaths": 262
   },
   {
     "fiscal_year": 2022,
@@ -8039,6 +9047,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福井県",
+    "area": "福井県三方上中郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 14131,
+    "births": 83,
+    "deaths": 253
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福井県",
     "area": "福井県三方上中郡若狭町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 14131,
@@ -8048,7 +9065,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山梨県",
-    "area": "山梨県",
+    "area": "山梨県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 816340,
     "births": 5039,
@@ -8174,11 +9191,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山梨県",
+    "area": "山梨県西八代郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 15196,
+    "births": 78,
+    "deaths": 260
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山梨県",
     "area": "山梨県西八代郡市川三郷町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 15196,
     "births": 78,
     "deaths": 260
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山梨県",
+    "area": "山梨県南巨摩郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 33386,
+    "births": 117,
+    "deaths": 671
   },
   {
     "fiscal_year": 2022,
@@ -8219,11 +9254,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山梨県",
+    "area": "山梨県中巨摩郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 20849,
+    "births": 201,
+    "deaths": 171
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山梨県",
     "area": "山梨県中巨摩郡昭和町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 20849,
     "births": 201,
     "deaths": 171
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山梨県",
+    "area": "山梨県南都留郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 51137,
+    "births": 391,
+    "deaths": 460
   },
   {
     "fiscal_year": 2022,
@@ -8282,6 +9335,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山梨県",
+    "area": "山梨県北都留郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 1211,
+    "births": 2,
+    "deaths": 26
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山梨県",
     "area": "山梨県北都留郡小菅村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 679,
@@ -8300,7 +9362,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長野県",
-    "area": "長野県",
+    "area": "長野県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 2056970,
     "births": 12633,
@@ -8480,6 +9542,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長野県",
+    "area": "長野県南佐久郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 23587,
+    "births": 123,
+    "deaths": 364
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
     "area": "長野県南佐久郡小海町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4414,
@@ -8534,6 +9605,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長野県",
+    "area": "長野県北佐久郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 44253,
+    "births": 249,
+    "deaths": 549
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
     "area": "長野県北佐久郡軽井沢町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 21231,
@@ -8561,6 +9641,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長野県",
+    "area": "長野県小県郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 10108,
+    "births": 46,
+    "deaths": 176
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
     "area": "長野県小県郡青木村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4293,
@@ -8575,6 +9664,15 @@
     "total_population": 5815,
     "births": 25,
     "deaths": 99
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
+    "area": "長野県諏訪郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 41699,
+    "births": 212,
+    "deaths": 637
   },
   {
     "fiscal_year": 2022,
@@ -8602,6 +9700,15 @@
     "total_population": 8041,
     "births": 46,
     "deaths": 106
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
+    "area": "長野県上伊那郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 82321,
+    "births": 495,
+    "deaths": 973
   },
   {
     "fiscal_year": 2022,
@@ -8656,6 +9763,15 @@
     "total_population": 8908,
     "births": 51,
     "deaths": 102
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
+    "area": "長野県下伊那郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 58075,
+    "births": 318,
+    "deaths": 943
   },
   {
     "fiscal_year": 2022,
@@ -8777,6 +9893,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長野県",
+    "area": "長野県木曽郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 25471,
+    "births": 89,
+    "deaths": 467
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
     "area": "長野県木曽郡上松町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4160,
@@ -8831,6 +9956,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長野県",
+    "area": "長野県東筑摩郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 21548,
+    "births": 105,
+    "deaths": 303
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
     "area": "長野県東筑摩郡麻績村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 2581,
@@ -8876,6 +10010,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長野県",
+    "area": "長野県北安曇郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 30437,
+    "births": 134,
+    "deaths": 428
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
     "area": "長野県北安曇郡池田町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 9557,
@@ -8912,11 +10055,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長野県",
+    "area": "長野県埴科郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 14407,
+    "births": 70,
+    "deaths": 231
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
     "area": "長野県埴科郡坂城町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 14407,
     "births": 70,
     "deaths": 231
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
+    "area": "長野県上高井郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 17740,
+    "births": 82,
+    "deaths": 234
   },
   {
     "fiscal_year": 2022,
@@ -8935,6 +10096,15 @@
     "total_population": 6720,
     "births": 22,
     "deaths": 106
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
+    "area": "長野県下高井郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 19642,
+    "births": 77,
+    "deaths": 384
   },
   {
     "fiscal_year": 2022,
@@ -8966,6 +10136,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長野県",
+    "area": "長野県上水内郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 20993,
+    "births": 90,
+    "deaths": 366
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
     "area": "長野県上水内郡信濃町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7923,
@@ -8993,6 +10172,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長野県",
+    "area": "長野県下水内郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 1692,
+    "births": 5,
+    "deaths": 44
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長野県",
     "area": "長野県下水内郡栄村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1692,
@@ -9002,7 +10190,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岐阜県",
-    "area": "岐阜県",
+    "area": "岐阜県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1996682,
     "births": 12144,
@@ -9200,6 +10388,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岐阜県",
+    "area": "岐阜県羽島郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 48257,
+    "births": 467,
+    "deaths": 478
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岐阜県",
     "area": "岐阜県羽島郡岐南町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 26272,
@@ -9218,11 +10415,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岐阜県",
+    "area": "岐阜県養老郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 27381,
+    "births": 104,
+    "deaths": 408
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岐阜県",
     "area": "岐阜県養老郡養老町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 27381,
     "births": 104,
     "deaths": 408
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岐阜県",
+    "area": "岐阜県不破郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 33192,
+    "births": 162,
+    "deaths": 455
   },
   {
     "fiscal_year": 2022,
@@ -9241,6 +10456,15 @@
     "total_population": 6645,
     "births": 13,
     "deaths": 108
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岐阜県",
+    "area": "岐阜県安八郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 42730,
+    "births": 224,
+    "deaths": 472
   },
   {
     "fiscal_year": 2022,
@@ -9272,6 +10496,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岐阜県",
+    "area": "岐阜県揖斐郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 65486,
+    "births": 288,
+    "deaths": 913
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岐阜県",
     "area": "岐阜県揖斐郡揖斐川町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 19953,
@@ -9299,11 +10532,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岐阜県",
+    "area": "岐阜県本巣郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 18550,
+    "births": 123,
+    "deaths": 162
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岐阜県",
     "area": "岐阜県本巣郡北方町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 18550,
     "births": 123,
     "deaths": 162
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岐阜県",
+    "area": "岐阜県加茂郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 47464,
+    "births": 230,
+    "deaths": 742
   },
   {
     "fiscal_year": 2022,
@@ -9371,11 +10622,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岐阜県",
+    "area": "岐阜県可児郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 17968,
+    "births": 85,
+    "deaths": 233
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岐阜県",
     "area": "岐阜県可児郡御嵩町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 17968,
     "births": 85,
     "deaths": 233
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岐阜県",
+    "area": "岐阜県大野郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 1541,
+    "births": 7,
+    "deaths": 21
   },
   {
     "fiscal_year": 2022,
@@ -9389,7 +10658,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "静岡県",
-    "area": "静岡県",
+    "area": "静岡県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 3658375,
     "births": 22429,
@@ -9695,6 +10964,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "静岡県",
+    "area": "静岡県賀茂郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 39846,
+    "births": 100,
+    "deaths": 821
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "静岡県",
     "area": "静岡県賀茂郡東伊豆町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11657,
@@ -9740,11 +11018,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "静岡県",
+    "area": "静岡県田方郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 37280,
+    "births": 212,
+    "deaths": 408
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "静岡県",
     "area": "静岡県田方郡函南町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 37280,
     "births": 212,
     "deaths": 408
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "静岡県",
+    "area": "静岡県駿東郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 93229,
+    "births": 696,
+    "deaths": 985
   },
   {
     "fiscal_year": 2022,
@@ -9776,6 +11072,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "静岡県",
+    "area": "静岡県榛原郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 35488,
+    "births": 211,
+    "deaths": 464
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "静岡県",
     "area": "静岡県榛原郡吉田町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 29230,
@@ -9794,6 +11099,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "静岡県",
+    "area": "静岡県周智郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 17684,
+    "births": 80,
+    "deaths": 261
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "静岡県",
     "area": "静岡県周智郡森町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 17684,
@@ -9803,7 +11117,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "愛知県",
-    "area": "愛知県",
+    "area": "愛知県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7528519,
     "births": 56156,
@@ -10298,6 +11612,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "愛知県",
+    "area": "愛知県愛知郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 43757,
+    "births": 296,
+    "deaths": 376
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛知県",
     "area": "愛知県愛知郡東郷町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 43757,
@@ -10307,11 +11630,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "愛知県",
+    "area": "愛知県西春日井郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 15831,
+    "births": 120,
+    "deaths": 133
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛知県",
     "area": "愛知県西春日井郡豊山町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 15831,
     "births": 120,
     "deaths": 133
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛知県",
+    "area": "愛知県丹羽郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 59281,
+    "births": 483,
+    "deaths": 593
   },
   {
     "fiscal_year": 2022,
@@ -10330,6 +11671,15 @@
     "total_population": 34999,
     "births": 281,
     "deaths": 374
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛知県",
+    "area": "愛知県海部郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 75087,
+    "births": 654,
+    "deaths": 680
   },
   {
     "fiscal_year": 2022,
@@ -10357,6 +11707,15 @@
     "total_population": 4706,
     "births": 32,
     "deaths": 59
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛知県",
+    "area": "愛知県知多郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 160399,
+    "births": 990,
+    "deaths": 1763
   },
   {
     "fiscal_year": 2022,
@@ -10406,11 +11765,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "愛知県",
+    "area": "愛知県額田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 42532,
+    "births": 386,
+    "deaths": 316
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛知県",
     "area": "愛知県額田郡幸田町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 42532,
     "births": 386,
     "deaths": 316
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛知県",
+    "area": "愛知県北設楽郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 8493,
+    "births": 32,
+    "deaths": 194
   },
   {
     "fiscal_year": 2022,
@@ -10442,7 +11819,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "三重県",
-    "area": "三重県",
+    "area": "三重県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1784968,
     "births": 11477,
@@ -10577,6 +11954,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "三重県",
+    "area": "三重県桑名郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 6081,
+    "births": 30,
+    "deaths": 64
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "三重県",
     "area": "三重県桑名郡木曽岬町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 6081,
@@ -10586,11 +11972,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "三重県",
+    "area": "三重県員弁郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 25891,
+    "births": 188,
+    "deaths": 247
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "三重県",
     "area": "三重県員弁郡東員町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 25891,
     "births": 188,
     "deaths": 247
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "三重県",
+    "area": "三重県三重郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 68024,
+    "births": 518,
+    "deaths": 603
   },
   {
     "fiscal_year": 2022,
@@ -10622,6 +12026,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "三重県",
+    "area": "三重県多気郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 45877,
+    "births": 300,
+    "deaths": 673
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "三重県",
     "area": "三重県多気郡多気町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 14176,
@@ -10645,6 +12058,15 @@
     "total_population": 8710,
     "births": 33,
     "deaths": 180
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "三重県",
+    "area": "三重県度会郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 42675,
+    "births": 194,
+    "deaths": 771
   },
   {
     "fiscal_year": 2022,
@@ -10685,11 +12107,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "三重県",
+    "area": "三重県北牟婁郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 14824,
+    "births": 53,
+    "deaths": 322
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "三重県",
     "area": "三重県北牟婁郡紀北町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 14824,
     "births": 53,
     "deaths": 322
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "三重県",
+    "area": "三重県南牟婁郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 18822,
+    "births": 89,
+    "deaths": 320
   },
   {
     "fiscal_year": 2022,
@@ -10712,7 +12152,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "滋賀県",
-    "area": "滋賀県",
+    "area": "滋賀県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1415222,
     "births": 10379,
@@ -10838,6 +12278,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "滋賀県",
+    "area": "滋賀県蒲生郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 32884,
+    "births": 208,
+    "deaths": 355
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "滋賀県",
     "area": "滋賀県蒲生郡日野町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 21160,
@@ -10856,11 +12305,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "滋賀県",
+    "area": "滋賀県愛知郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 21389,
+    "births": 170,
+    "deaths": 199
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "滋賀県",
     "area": "滋賀県愛知郡愛荘町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 21389,
     "births": 170,
     "deaths": 199
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "滋賀県",
+    "area": "滋賀県犬上郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 21460,
+    "births": 122,
+    "deaths": 308
   },
   {
     "fiscal_year": 2022,
@@ -10892,7 +12359,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "京都府",
-    "area": "京都府",
+    "area": "京都府-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 2511494,
     "births": 16123,
@@ -11135,6 +12602,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "京都府",
+    "area": "京都府乙訓郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 16437,
+    "births": 187,
+    "deaths": 137
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "京都府",
     "area": "京都府乙訓郡大山崎町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 16437,
@@ -11144,11 +12620,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "京都府",
+    "area": "京都府久世郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 15553,
+    "births": 79,
+    "deaths": 180
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "京都府",
     "area": "京都府久世郡久御山町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 15553,
     "births": 79,
     "deaths": 180
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "京都府",
+    "area": "京都府綴喜郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 16099,
+    "births": 83,
+    "deaths": 219
   },
   {
     "fiscal_year": 2022,
@@ -11167,6 +12661,15 @@
     "total_population": 8947,
     "births": 47,
     "deaths": 109
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "京都府",
+    "area": "京都府相楽郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 44433,
+    "births": 221,
+    "deaths": 445
   },
   {
     "fiscal_year": 2022,
@@ -11207,11 +12710,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "京都府",
+    "area": "京都府船井郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 13320,
+    "births": 47,
+    "deaths": 260
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "京都府",
     "area": "京都府船井郡京丹波町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 13320,
     "births": 47,
     "deaths": 260
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "京都府",
+    "area": "京都府与謝郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 22649,
+    "births": 97,
+    "deaths": 350
   },
   {
     "fiscal_year": 2022,
@@ -11234,7 +12755,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "大阪府",
-    "area": "大阪府",
+    "area": "大阪府-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 8800753,
     "births": 61197,
@@ -11819,11 +13340,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "大阪府",
+    "area": "大阪府三島郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 31899,
+    "births": 284,
+    "deaths": 269
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "大阪府",
     "area": "大阪府三島郡島本町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 31899,
     "births": 284,
     "deaths": 269
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "大阪府",
+    "area": "大阪府豊能郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 28310,
+    "births": 82,
+    "deaths": 407
   },
   {
     "fiscal_year": 2022,
@@ -11846,11 +13385,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "大阪府",
+    "area": "大阪府泉北郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 16793,
+    "births": 109,
+    "deaths": 180
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "大阪府",
     "area": "大阪府泉北郡忠岡町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 16793,
     "births": 109,
     "deaths": 180
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "大阪府",
+    "area": "大阪府泉南郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 66681,
+    "births": 375,
+    "deaths": 776
   },
   {
     "fiscal_year": 2022,
@@ -11882,6 +13439,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "大阪府",
+    "area": "大阪府南河内郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 33193,
+    "births": 124,
+    "deaths": 437
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "大阪府",
     "area": "大阪府南河内郡太子町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 13076,
@@ -11909,7 +13475,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "兵庫県",
-    "area": "兵庫県",
+    "area": "兵庫県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 5488605,
     "births": 36214,
@@ -12260,6 +13826,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "兵庫県",
+    "area": "兵庫県川辺郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 30006,
+    "births": 80,
+    "deaths": 326
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "兵庫県",
     "area": "兵庫県川辺郡猪名川町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 30006,
@@ -12269,11 +13844,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "兵庫県",
+    "area": "兵庫県多可郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 19766,
+    "births": 81,
+    "deaths": 306
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "兵庫県",
     "area": "兵庫県多可郡多可町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 19766,
     "births": 81,
     "deaths": 306
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "兵庫県",
+    "area": "兵庫県加古郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 65498,
+    "births": 409,
+    "deaths": 699
   },
   {
     "fiscal_year": 2022,
@@ -12292,6 +13885,15 @@
     "total_population": 34793,
     "births": 233,
     "deaths": 368
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "兵庫県",
+    "area": "兵庫県神崎郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 41167,
+    "births": 213,
+    "deaths": 541
   },
   {
     "fiscal_year": 2022,
@@ -12323,11 +13925,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "兵庫県",
+    "area": "兵庫県揖保郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 33815,
+    "births": 232,
+    "deaths": 341
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "兵庫県",
     "area": "兵庫県揖保郡太子町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 33815,
     "births": 232,
     "deaths": 341
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "兵庫県",
+    "area": "兵庫県赤穂郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 14313,
+    "births": 39,
+    "deaths": 215
   },
   {
     "fiscal_year": 2022,
@@ -12341,11 +13961,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "兵庫県",
+    "area": "兵庫県佐用郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 15869,
+    "births": 60,
+    "deaths": 293
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "兵庫県",
     "area": "兵庫県佐用郡佐用町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 15869,
     "births": 60,
     "deaths": 293
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "兵庫県",
+    "area": "兵庫県美方郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 30086,
+    "births": 111,
+    "deaths": 508
   },
   {
     "fiscal_year": 2022,
@@ -12368,7 +14006,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "奈良県",
-    "area": "奈良県",
+    "area": "奈良県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1335378,
     "births": 7806,
@@ -12485,11 +14123,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "奈良県",
+    "area": "奈良県山辺郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 3307,
+    "births": 6,
+    "deaths": 64
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "奈良県",
     "area": "奈良県山辺郡山添村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 3307,
     "births": 6,
     "deaths": 64
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "奈良県",
+    "area": "奈良県生駒郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 76734,
+    "births": 489,
+    "deaths": 905
   },
   {
     "fiscal_year": 2022,
@@ -12530,6 +14186,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "奈良県",
+    "area": "奈良県磯城郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 46795,
+    "births": 282,
+    "deaths": 571
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "奈良県",
     "area": "奈良県磯城郡川西町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 8370,
@@ -12557,6 +14222,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "奈良県",
+    "area": "奈良県宇陀郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 2867,
+    "births": 5,
+    "deaths": 82
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "奈良県",
     "area": "奈良県宇陀郡曽爾村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1361,
@@ -12575,6 +14249,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "奈良県",
+    "area": "奈良県高市郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 11796,
+    "births": 44,
+    "deaths": 214
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "奈良県",
     "area": "奈良県高市郡高取町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 6415,
@@ -12589,6 +14272,15 @@
     "total_population": 5381,
     "births": 30,
     "deaths": 84
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "奈良県",
+    "area": "奈良県北葛城郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 98574,
+    "births": 600,
+    "deaths": 1032
   },
   {
     "fiscal_year": 2022,
@@ -12625,6 +14317,15 @@
     "total_population": 17277,
     "births": 62,
     "deaths": 210
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "奈良県",
+    "area": "奈良県吉野郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 37735,
+    "births": 109,
+    "deaths": 780
   },
   {
     "fiscal_year": 2022,
@@ -12728,7 +14429,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "和歌山県",
-    "area": "和歌山県",
+    "area": "和歌山県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 935084,
     "births": 5547,
@@ -12818,11 +14519,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "和歌山県",
+    "area": "和歌山県海草郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 8302,
+    "births": 27,
+    "deaths": 188
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "和歌山県",
     "area": "和歌山県海草郡紀美野町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 8302,
     "births": 27,
     "deaths": 188
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "和歌山県",
+    "area": "和歌山県伊都郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 22912,
+    "births": 95,
+    "deaths": 402
   },
   {
     "fiscal_year": 2022,
@@ -12854,6 +14573,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "和歌山県",
+    "area": "和歌山県有田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 44067,
+    "births": 257,
+    "deaths": 668
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "和歌山県",
     "area": "和歌山県有田郡湯浅町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11397,
@@ -12877,6 +14605,15 @@
     "total_population": 25909,
     "births": 174,
     "deaths": 367
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "和歌山県",
+    "area": "和歌山県日高郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 49778,
+    "births": 263,
+    "deaths": 816
   },
   {
     "fiscal_year": 2022,
@@ -12935,6 +14672,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "和歌山県",
+    "area": "和歌山県西牟婁郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 40073,
+    "births": 227,
+    "deaths": 615
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "和歌山県",
     "area": "和歌山県西牟婁郡白浜町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 20675,
@@ -12958,6 +14704,15 @@
     "total_population": 3713,
     "births": 6,
     "deaths": 109
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "和歌山県",
+    "area": "和歌山県東牟婁郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 35435,
+    "births": 126,
+    "deaths": 695
   },
   {
     "fiscal_year": 2022,
@@ -13007,7 +14762,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "鳥取県",
-    "area": "鳥取県",
+    "area": "鳥取県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 551806,
     "births": 3714,
@@ -13052,11 +14807,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "鳥取県",
+    "area": "鳥取県岩美郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 11145,
+    "births": 77,
+    "deaths": 162
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鳥取県",
     "area": "鳥取県岩美郡岩美町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11145,
     "births": 77,
     "deaths": 162
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鳥取県",
+    "area": "鳥取県八頭郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 25925,
+    "births": 113,
+    "deaths": 449
   },
   {
     "fiscal_year": 2022,
@@ -13084,6 +14857,15 @@
     "total_population": 16412,
     "births": 83,
     "deaths": 262
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鳥取県",
+    "area": "鳥取県東伯郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 54246,
+    "births": 348,
+    "deaths": 856
   },
   {
     "fiscal_year": 2022,
@@ -13124,6 +14906,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "鳥取県",
+    "area": "鳥取県西伯郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 40327,
+    "births": 180,
+    "deaths": 664
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鳥取県",
     "area": "鳥取県西伯郡日吉津村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 3575,
@@ -13160,6 +14951,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "鳥取県",
+    "area": "鳥取県日野郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 9852,
+    "births": 32,
+    "deaths": 256
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鳥取県",
     "area": "鳥取県日野郡日南町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4251,
@@ -13187,7 +14987,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "島根県",
-    "area": "島根県",
+    "area": "島根県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 666331,
     "births": 4481,
@@ -13268,6 +15068,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "島根県",
+    "area": "島根県仁多郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 11923,
+    "births": 47,
+    "deaths": 222
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "島根県",
     "area": "島根県仁多郡奥出雲町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11923,
@@ -13277,11 +15086,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "島根県",
+    "area": "島根県飯石郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 4656,
+    "births": 17,
+    "deaths": 93
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "島根県",
     "area": "島根県飯石郡飯南町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4656,
     "births": 17,
     "deaths": 93
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "島根県",
+    "area": "島根県邑智郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 17709,
+    "births": 88,
+    "deaths": 383
   },
   {
     "fiscal_year": 2022,
@@ -13313,6 +15140,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "島根県",
+    "area": "島根県鹿足郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 12912,
+    "births": 61,
+    "deaths": 262
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "島根県",
     "area": "島根県鹿足郡津和野町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 6964,
@@ -13327,6 +15163,15 @@
     "total_population": 5948,
     "births": 30,
     "deaths": 118
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "島根県",
+    "area": "島根県隠岐郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 19259,
+    "births": 112,
+    "deaths": 340
   },
   {
     "fiscal_year": 2022,
@@ -13367,7 +15212,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岡山県",
-    "area": "岡山県",
+    "area": "岡山県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1879280,
     "births": 13252,
@@ -13547,11 +15392,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岡山県",
+    "area": "岡山県和気郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 13689,
+    "births": 46,
+    "deaths": 217
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岡山県",
     "area": "岡山県和気郡和気町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 13689,
     "births": 46,
     "deaths": 217
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岡山県",
+    "area": "岡山県都窪郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 12726,
+    "births": 107,
+    "deaths": 122
   },
   {
     "fiscal_year": 2022,
@@ -13565,11 +15428,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岡山県",
+    "area": "岡山県浅口郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 11062,
+    "births": 81,
+    "deaths": 120
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岡山県",
     "area": "岡山県浅口郡里庄町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11062,
     "births": 81,
     "deaths": 120
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岡山県",
+    "area": "岡山県小田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 13698,
+    "births": 70,
+    "deaths": 223
   },
   {
     "fiscal_year": 2022,
@@ -13583,6 +15464,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岡山県",
+    "area": "岡山県真庭郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 873,
+    "births": 1,
+    "deaths": 19
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岡山県",
     "area": "岡山県真庭郡新庄村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 873,
@@ -13592,11 +15482,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岡山県",
+    "area": "岡山県苫田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 12610,
+    "births": 87,
+    "deaths": 234
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岡山県",
     "area": "岡山県苫田郡鏡野町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 12610,
     "births": 87,
     "deaths": 234
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岡山県",
+    "area": "岡山県勝田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 16749,
+    "births": 157,
+    "deaths": 245
   },
   {
     "fiscal_year": 2022,
@@ -13619,11 +15527,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岡山県",
+    "area": "岡山県英田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 1395,
+    "births": 10,
+    "deaths": 28
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岡山県",
     "area": "岡山県英田郡西粟倉村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1395,
     "births": 10,
     "deaths": 28
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岡山県",
+    "area": "岡山県久米郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 18118,
+    "births": 103,
+    "deaths": 393
   },
   {
     "fiscal_year": 2022,
@@ -13646,6 +15572,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "岡山県",
+    "area": "岡山県加賀郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 10680,
+    "births": 38,
+    "deaths": 196
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "岡山県",
     "area": "岡山県加賀郡吉備中央町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 10680,
@@ -13655,7 +15590,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "広島県",
-    "area": "広島県",
+    "area": "広島県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 2788687,
     "births": 18941,
@@ -13862,6 +15797,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "広島県",
+    "area": "広島県安芸郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 119870,
+    "births": 1004,
+    "deaths": 1114
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "広島県",
     "area": "広島県安芸郡府中町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 52935,
@@ -13898,6 +15842,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "広島県",
+    "area": "広島県山県郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 23637,
+    "births": 110,
+    "deaths": 450
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "広島県",
     "area": "広島県山県郡安芸太田町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 5840,
@@ -13916,11 +15869,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "広島県",
+    "area": "広島県豊田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 7153,
+    "births": 25,
+    "deaths": 168
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "広島県",
     "area": "広島県豊田郡大崎上島町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7153,
     "births": 25,
     "deaths": 168
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "広島県",
+    "area": "広島県世羅郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 15452,
+    "births": 68,
+    "deaths": 271
   },
   {
     "fiscal_year": 2022,
@@ -13934,6 +15905,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "広島県",
+    "area": "広島県神石郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 8496,
+    "births": 28,
+    "deaths": 167
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "広島県",
     "area": "広島県神石郡神石高原町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 8496,
@@ -13943,7 +15923,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山口県",
-    "area": "山口県",
+    "area": "山口県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1340458,
     "births": 8008,
@@ -14069,6 +16049,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山口県",
+    "area": "山口県大島郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 14808,
+    "births": 37,
+    "deaths": 436
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山口県",
     "area": "山口県大島郡周防大島町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 14808,
@@ -14078,11 +16067,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山口県",
+    "area": "山口県玖珂郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 6076,
+    "births": 44,
+    "deaths": 76
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山口県",
     "area": "山口県玖珂郡和木町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 6076,
     "births": 44,
     "deaths": 76
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山口県",
+    "area": "山口県熊毛郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 28631,
+    "births": 131,
+    "deaths": 508
   },
   {
     "fiscal_year": 2022,
@@ -14114,6 +16121,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "山口県",
+    "area": "山口県阿武郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 3118,
+    "births": 9,
+    "deaths": 75
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "山口県",
     "area": "山口県阿武郡阿武町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 3118,
@@ -14123,7 +16139,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "徳島県",
-    "area": "徳島県",
+    "area": "徳島県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 726729,
     "births": 4384,
@@ -14204,6 +16220,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "徳島県",
+    "area": "徳島県勝浦郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 6419,
+    "births": 20,
+    "deaths": 129
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "徳島県",
     "area": "徳島県勝浦郡勝浦町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4962,
@@ -14222,11 +16247,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "徳島県",
+    "area": "徳島県名東郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 2203,
+    "births": 6,
+    "deaths": 48
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "徳島県",
     "area": "徳島県名東郡佐那河内村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 2203,
     "births": 6,
     "deaths": 48
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "徳島県",
+    "area": "徳島県名西郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 30288,
+    "births": 183,
+    "deaths": 486
   },
   {
     "fiscal_year": 2022,
@@ -14249,11 +16292,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "徳島県",
+    "area": "徳島県那賀郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 7716,
+    "births": 23,
+    "deaths": 200
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "徳島県",
     "area": "徳島県那賀郡那賀町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7716,
     "births": 23,
     "deaths": 200
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "徳島県",
+    "area": "徳島県海部郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 18830,
+    "births": 73,
+    "deaths": 437
   },
   {
     "fiscal_year": 2022,
@@ -14281,6 +16342,15 @@
     "total_population": 8768,
     "births": 33,
     "deaths": 174
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "徳島県",
+    "area": "徳島県板野郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 98562,
+    "births": 743,
+    "deaths": 1018
   },
   {
     "fiscal_year": 2022,
@@ -14330,11 +16400,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "徳島県",
+    "area": "徳島県美馬郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 8161,
+    "births": 31,
+    "deaths": 222
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "徳島県",
     "area": "徳島県美馬郡つるぎ町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 8161,
     "births": 31,
     "deaths": 222
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "徳島県",
+    "area": "徳島県三好郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 13878,
+    "births": 82,
+    "deaths": 225
   },
   {
     "fiscal_year": 2022,
@@ -14348,7 +16436,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "香川県",
-    "area": "香川県",
+    "area": "香川県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 964885,
     "births": 6294,
@@ -14429,6 +16517,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "香川県",
+    "area": "香川県小豆郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 27146,
+    "births": 93,
+    "deaths": 538
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "香川県",
     "area": "香川県小豆郡土庄町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 13265,
@@ -14447,6 +16544,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "香川県",
+    "area": "香川県木田郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 27432,
+    "births": 156,
+    "deaths": 369
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "香川県",
     "area": "香川県木田郡三木町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 27432,
@@ -14456,11 +16562,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "香川県",
+    "area": "香川県香川郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 3009,
+    "births": 20,
+    "deaths": 36
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "香川県",
     "area": "香川県香川郡直島町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 3009,
     "births": 20,
     "deaths": 36
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "香川県",
+    "area": "香川県綾歌郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 42017,
+    "births": 331,
+    "deaths": 526
   },
   {
     "fiscal_year": 2022,
@@ -14479,6 +16603,15 @@
     "total_population": 23563,
     "births": 145,
     "deaths": 368
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "香川県",
+    "area": "香川県仲多度郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 48878,
+    "births": 256,
+    "deaths": 762
   },
   {
     "fiscal_year": 2022,
@@ -14510,7 +16643,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "愛媛県",
-    "area": "愛媛県",
+    "area": "愛媛県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1341539,
     "births": 8067,
@@ -14618,6 +16751,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "愛媛県",
+    "area": "愛媛県越智郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 6437,
+    "births": 16,
+    "deaths": 124
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛媛県",
     "area": "愛媛県越智郡上島町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 6437,
@@ -14627,11 +16769,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "愛媛県",
+    "area": "愛媛県上浮穴郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 7650,
+    "births": 25,
+    "deaths": 231
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛媛県",
     "area": "愛媛県上浮穴郡久万高原町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7650,
     "births": 25,
     "deaths": 231
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛媛県",
+    "area": "愛媛県伊予郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 50924,
+    "births": 289,
+    "deaths": 623
   },
   {
     "fiscal_year": 2022,
@@ -14654,6 +16814,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "愛媛県",
+    "area": "愛媛県喜多郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 15758,
+    "births": 74,
+    "deaths": 282
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛媛県",
     "area": "愛媛県喜多郡内子町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 15758,
@@ -14663,11 +16832,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "愛媛県",
+    "area": "愛媛県西宇和郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 8689,
+    "births": 26,
+    "deaths": 198
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛媛県",
     "area": "愛媛県西宇和郡伊方町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 8689,
     "births": 26,
     "deaths": 198
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛媛県",
+    "area": "愛媛県北宇和郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 13488,
+    "births": 65,
+    "deaths": 298
   },
   {
     "fiscal_year": 2022,
@@ -14690,6 +16877,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "愛媛県",
+    "area": "愛媛県南宇和郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 20052,
+    "births": 65,
+    "deaths": 389
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "愛媛県",
     "area": "愛媛県南宇和郡愛南町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 20052,
@@ -14699,7 +16895,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "高知県",
-    "area": "高知県",
+    "area": "高知県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 693369,
     "births": 4119,
@@ -14807,6 +17003,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "高知県",
+    "area": "高知県安芸郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 16054,
+    "births": 63,
+    "deaths": 342
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "高知県",
     "area": "高知県安芸郡東洋町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 2239,
@@ -14870,6 +17075,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "高知県",
+    "area": "高知県長岡郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 6682,
+    "births": 22,
+    "deaths": 179
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "高知県",
     "area": "高知県長岡郡本山町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 3340,
@@ -14884,6 +17098,15 @@
     "total_population": 3342,
     "births": 11,
     "deaths": 84
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "高知県",
+    "area": "高知県土佐郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 4075,
+    "births": 22,
+    "deaths": 108
   },
   {
     "fiscal_year": 2022,
@@ -14906,6 +17129,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "高知県",
+    "area": "高知県吾川郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 26836,
+    "births": 127,
+    "deaths": 530
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "高知県",
     "area": "高知県吾川郡いの町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 21866,
@@ -14920,6 +17152,15 @@
     "total_population": 4970,
     "births": 17,
     "deaths": 142
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "高知県",
+    "area": "高知県高岡郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 53854,
+    "births": 245,
+    "deaths": 1110
   },
   {
     "fiscal_year": 2022,
@@ -14987,6 +17228,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "高知県",
+    "area": "高知県幡多郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 16774,
+    "births": 67,
+    "deaths": 376
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "高知県",
     "area": "高知県幡多郡大月町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4712,
@@ -15014,7 +17264,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福岡県",
-    "area": "福岡県",
+    "area": "福岡県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 5108507,
     "births": 38078,
@@ -15410,6 +17660,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福岡県",
+    "area": "福岡県糟屋郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 235624,
+    "births": 2158,
+    "deaths": 1995
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福岡県",
     "area": "福岡県糟屋郡宇美町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 37250,
@@ -15473,6 +17732,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福岡県",
+    "area": "福岡県遠賀郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 92040,
+    "births": 582,
+    "deaths": 1170
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福岡県",
     "area": "福岡県遠賀郡芦屋町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 13303,
@@ -15509,6 +17777,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福岡県",
+    "area": "福岡県鞍手郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 22627,
+    "births": 92,
+    "deaths": 395
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福岡県",
     "area": "福岡県鞍手郡小竹町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7281,
@@ -15527,11 +17804,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福岡県",
+    "area": "福岡県嘉穂郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 13200,
+    "births": 82,
+    "deaths": 175
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福岡県",
     "area": "福岡県嘉穂郡桂川町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 13200,
     "births": 82,
     "deaths": 175
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福岡県",
+    "area": "福岡県朝倉郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 32083,
+    "births": 272,
+    "deaths": 393
   },
   {
     "fiscal_year": 2022,
@@ -15554,11 +17849,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福岡県",
+    "area": "福岡県三井郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 15867,
+    "births": 141,
+    "deaths": 155
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福岡県",
     "area": "福岡県三井郡大刀洗町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 15867,
     "births": 141,
     "deaths": 155
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福岡県",
+    "area": "福岡県三潴郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 13995,
+    "births": 95,
+    "deaths": 148
   },
   {
     "fiscal_year": 2022,
@@ -15572,11 +17885,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福岡県",
+    "area": "福岡県八女郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 19422,
+    "births": 144,
+    "deaths": 267
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福岡県",
     "area": "福岡県八女郡広川町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 19422,
     "births": 144,
     "deaths": 267
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福岡県",
+    "area": "福岡県田川郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 74332,
+    "births": 383,
+    "deaths": 1381
   },
   {
     "fiscal_year": 2022,
@@ -15644,6 +17975,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "福岡県",
+    "area": "福岡県京都郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 56170,
+    "births": 406,
+    "deaths": 695
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福岡県",
     "area": "福岡県京都郡苅田町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 37406,
@@ -15658,6 +17998,15 @@
     "total_population": 18764,
     "births": 87,
     "deaths": 313
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "福岡県",
+    "area": "福岡県築上郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 31707,
+    "births": 166,
+    "deaths": 467
   },
   {
     "fiscal_year": 2022,
@@ -15689,7 +18038,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "佐賀県",
-    "area": "佐賀県",
+    "area": "佐賀県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 812193,
     "births": 5912,
@@ -15788,11 +18137,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "佐賀県",
+    "area": "佐賀県神埼郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 16234,
+    "births": 157,
+    "deaths": 119
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "佐賀県",
     "area": "佐賀県神埼郡吉野ヶ里町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 16234,
     "births": 157,
     "deaths": 119
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "佐賀県",
+    "area": "佐賀県三養基郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 53027,
+    "births": 393,
+    "deaths": 591
   },
   {
     "fiscal_year": 2022,
@@ -15824,6 +18191,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "佐賀県",
+    "area": "佐賀県東松浦郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 5292,
+    "births": 22,
+    "deaths": 79
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "佐賀県",
     "area": "佐賀県東松浦郡玄海町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 5292,
@@ -15833,11 +18209,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "佐賀県",
+    "area": "佐賀県西松浦郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 19265,
+    "births": 102,
+    "deaths": 249
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "佐賀県",
     "area": "佐賀県西松浦郡有田町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 19265,
     "births": 102,
     "deaths": 249
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "佐賀県",
+    "area": "佐賀県杵島郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 38042,
+    "births": 248,
+    "deaths": 581
   },
   {
     "fiscal_year": 2022,
@@ -15869,6 +18263,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "佐賀県",
+    "area": "佐賀県藤津郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 8413,
+    "births": 50,
+    "deaths": 126
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "佐賀県",
     "area": "佐賀県藤津郡太良町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 8413,
@@ -15878,7 +18281,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長崎県",
-    "area": "長崎県",
+    "area": "長崎県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1320055,
     "births": 8898,
@@ -16004,6 +18407,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長崎県",
+    "area": "長崎県西彼杵郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 70395,
+    "births": 593,
+    "deaths": 640
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長崎県",
     "area": "長崎県西彼杵郡長与町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 40922,
@@ -16018,6 +18430,15 @@
     "total_population": 29473,
     "births": 266,
     "deaths": 276
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長崎県",
+    "area": "長崎県東彼杵郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 35703,
+    "births": 212,
+    "deaths": 455
   },
   {
     "fiscal_year": 2022,
@@ -16049,6 +18470,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長崎県",
+    "area": "長崎県北松浦郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 16323,
+    "births": 138,
+    "deaths": 219
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長崎県",
     "area": "長崎県北松浦郡小値賀町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 2284,
@@ -16067,6 +18497,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "長崎県",
+    "area": "長崎県南松浦郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 18035,
+    "births": 80,
+    "deaths": 368
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "長崎県",
     "area": "長崎県南松浦郡新上五島町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 18035,
@@ -16076,7 +18515,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "熊本県",
-    "area": "熊本県",
+    "area": "熊本県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1747513,
     "births": 12736,
@@ -16256,11 +18695,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "熊本県",
+    "area": "熊本県下益城郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 9386,
+    "births": 29,
+    "deaths": 229
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "熊本県",
     "area": "熊本県下益城郡美里町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 9386,
     "births": 29,
     "deaths": 229
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "熊本県",
+    "area": "熊本県玉名郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 39549,
+    "births": 223,
+    "deaths": 622
   },
   {
     "fiscal_year": 2022,
@@ -16301,6 +18758,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "熊本県",
+    "area": "熊本県菊池郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 79142,
+    "births": 832,
+    "deaths": 589
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "熊本県",
     "area": "熊本県菊池郡大津町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 35807,
@@ -16315,6 +18781,15 @@
     "total_population": 43335,
     "births": 457,
     "deaths": 301
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "熊本県",
+    "area": "熊本県阿蘇郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 35158,
+    "births": 193,
+    "deaths": 557
   },
   {
     "fiscal_year": 2022,
@@ -16373,6 +18848,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "熊本県",
+    "area": "熊本県上益城郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 84719,
+    "births": 606,
+    "deaths": 1159
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "熊本県",
     "area": "熊本県上益城郡御船町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 17048,
@@ -16418,11 +18902,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "熊本県",
+    "area": "熊本県八代郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 11334,
+    "births": 49,
+    "deaths": 197
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "熊本県",
     "area": "熊本県八代郡氷川町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11334,
     "births": 49,
     "deaths": 197
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "熊本県",
+    "area": "熊本県葦北郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 20549,
+    "births": 83,
+    "deaths": 395
   },
   {
     "fiscal_year": 2022,
@@ -16441,6 +18943,15 @@
     "total_population": 4408,
     "births": 22,
     "deaths": 72
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "熊本県",
+    "area": "熊本県球磨郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 51824,
+    "births": 268,
+    "deaths": 913
   },
   {
     "fiscal_year": 2022,
@@ -16526,6 +19037,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "熊本県",
+    "area": "熊本県天草郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 6758,
+    "births": 23,
+    "deaths": 124
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "熊本県",
     "area": "熊本県天草郡苓北町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 6758,
@@ -16535,7 +19055,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "大分県",
-    "area": "大分県",
+    "area": "大分県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1131140,
     "births": 7378,
@@ -16670,6 +19190,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "大分県",
+    "area": "大分県東国東郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 1878,
+    "births": 5,
+    "deaths": 48
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "大分県",
     "area": "大分県東国東郡姫島村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1878,
@@ -16679,11 +19208,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "大分県",
+    "area": "大分県速見郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 28240,
+    "births": 216,
+    "deaths": 363
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "大分県",
     "area": "大分県速見郡日出町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 28240,
     "births": 216,
     "deaths": 363
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "大分県",
+    "area": "大分県玖珠郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 23610,
+    "births": 132,
+    "deaths": 392
   },
   {
     "fiscal_year": 2022,
@@ -16706,7 +19253,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "宮崎県",
-    "area": "宮崎県",
+    "area": "宮崎県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1078313,
     "births": 7647,
@@ -16796,6 +19343,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "宮崎県",
+    "area": "宮崎県北諸県郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 26098,
+    "births": 236,
+    "deaths": 287
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮崎県",
     "area": "宮崎県北諸県郡三股町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 26098,
@@ -16805,11 +19361,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "宮崎県",
+    "area": "宮崎県西諸県郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 9009,
+    "births": 36,
+    "deaths": 171
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮崎県",
     "area": "宮崎県西諸県郡高原町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 9009,
     "births": 36,
     "deaths": 171
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮崎県",
+    "area": "宮崎県東諸県郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 26035,
+    "births": 136,
+    "deaths": 362
   },
   {
     "fiscal_year": 2022,
@@ -16828,6 +19402,15 @@
     "total_population": 7112,
     "births": 36,
     "deaths": 81
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮崎県",
+    "area": "宮崎県児湯郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 68716,
+    "births": 444,
+    "deaths": 997
   },
   {
     "fiscal_year": 2022,
@@ -16886,6 +19469,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "宮崎県",
+    "area": "宮崎県東臼杵郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 26817,
+    "births": 175,
+    "deaths": 455
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮崎県",
     "area": "宮崎県東臼杵郡門川町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 17644,
@@ -16922,6 +19514,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "宮崎県",
+    "area": "宮崎県西臼杵郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 18987,
+    "births": 86,
+    "deaths": 360
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "宮崎県",
     "area": "宮崎県西臼杵郡高千穂町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 11655,
@@ -16949,7 +19550,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "鹿児島県",
-    "area": "鹿児島県",
+    "area": "鹿児島県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1605419,
     "births": 11621,
@@ -17129,6 +19730,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "鹿児島県",
+    "area": "鹿児島県鹿児島郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 1069,
+    "births": 12,
+    "deaths": 12
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鹿児島県",
     "area": "鹿児島県鹿児島郡三島村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 388,
@@ -17147,11 +19757,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "鹿児島県",
+    "area": "鹿児島県薩摩郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 20050,
+    "births": 83,
+    "deaths": 386
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鹿児島県",
     "area": "鹿児島県薩摩郡さつま町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 20050,
     "births": 83,
     "deaths": 386
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鹿児島県",
+    "area": "鹿児島県出水郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 10017,
+    "births": 69,
+    "deaths": 189
   },
   {
     "fiscal_year": 2022,
@@ -17165,6 +19793,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "鹿児島県",
+    "area": "鹿児島県姶良郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 8869,
+    "births": 36,
+    "deaths": 169
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鹿児島県",
     "area": "鹿児島県姶良郡湧水町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 8869,
@@ -17174,11 +19811,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "鹿児島県",
+    "area": "鹿児島県曽於郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 12448,
+    "births": 64,
+    "deaths": 232
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鹿児島県",
     "area": "鹿児島県曽於郡大崎町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 12448,
     "births": 64,
     "deaths": 232
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鹿児島県",
+    "area": "鹿児島県肝属郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 34631,
+    "births": 172,
+    "deaths": 787
   },
   {
     "fiscal_year": 2022,
@@ -17219,6 +19874,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "鹿児島県",
+    "area": "鹿児島県熊毛郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 24996,
+    "births": 149,
+    "deaths": 399
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鹿児島県",
     "area": "鹿児島県熊毛郡中種子町",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 7629,
@@ -17242,6 +19906,15 @@
     "total_population": 11938,
     "births": 70,
     "deaths": 179
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "鹿児島県",
+    "area": "鹿児島県大島郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 64306,
+    "births": 443,
+    "deaths": 1224
   },
   {
     "fiscal_year": 2022,
@@ -17345,7 +20018,7 @@
   {
     "fiscal_year": 2022,
     "prefecture": "沖縄県",
-    "area": "沖縄県",
+    "area": "沖縄県-",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1485670,
     "births": 14689,
@@ -17453,6 +20126,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "沖縄県",
+    "area": "沖縄県国頭郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 65099,
+    "births": 493,
+    "deaths": 813
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "沖縄県",
     "area": "沖縄県国頭郡国頭村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 4596,
@@ -17534,6 +20216,15 @@
   {
     "fiscal_year": 2022,
     "prefecture": "沖縄県",
+    "area": "沖縄県中頭郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 159777,
+    "births": 1520,
+    "deaths": 1348
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "沖縄県",
     "area": "沖縄県中頭郡読谷村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 41793,
@@ -17584,6 +20275,15 @@
     "total_population": 35582,
     "births": 322,
     "deaths": 255
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "沖縄県",
+    "area": "沖縄県島尻郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 107355,
+    "births": 1290,
+    "deaths": 932
   },
   {
     "fiscal_year": 2022,
@@ -17696,11 +20396,29 @@
   {
     "fiscal_year": 2022,
     "prefecture": "沖縄県",
+    "area": "沖縄県宮古郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 1092,
+    "births": 4,
+    "deaths": 14
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "沖縄県",
     "area": "沖縄県宮古郡多良間村",
     "source": "FY2022-population_dynamics_municipal.xlsx",
     "total_population": 1092,
     "births": 4,
     "deaths": 14
+  },
+  {
+    "fiscal_year": 2022,
+    "prefecture": "沖縄県",
+    "area": "沖縄県八重山郡",
+    "source": "FY2022-population_dynamics_municipal.xlsx",
+    "total_population": 5988,
+    "births": 48,
+    "deaths": 64
   },
   {
     "fiscal_year": 2022,
