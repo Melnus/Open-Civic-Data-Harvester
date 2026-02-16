@@ -1,9 +1,9 @@
 [
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "2北海道",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 1,
+    "population": 5224614,
     "total_revenue": 2856219142,
     "total_expenditure": 2819962872,
     "local_tax": 752046629,
@@ -11,10 +11,10 @@
     "real_balance": 28406655
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "3青森県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 2,
+    "population": 1237984,
     "total_revenue": 709754981,
     "total_expenditure": 681161044,
     "local_tax": 182723845,
@@ -22,10 +22,10 @@
     "real_balance": 5899444
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "4岩手県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 3,
+    "population": 1210534,
     "total_revenue": 809515999,
     "total_expenditure": 756669461,
     "local_tax": 168353665,
@@ -33,10 +33,10 @@
     "real_balance": 19464700
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "5宮城県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 4,
+    "population": 2301996,
     "total_revenue": 1024723861,
     "total_expenditure": 1008373713,
     "local_tax": 348372942,
@@ -44,10 +44,10 @@
     "real_balance": 1762212
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "6秋田県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 5,
+    "population": 959502,
     "total_revenue": 617448721,
     "total_expenditure": 599529541,
     "local_tax": 128520899,
@@ -55,10 +55,10 @@
     "real_balance": 10215482
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "7山形県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 6,
+    "population": 1068027,
     "total_revenue": 676811593,
     "total_expenditure": 664557243,
     "local_tax": 148478513,
@@ -66,10 +66,10 @@
     "real_balance": 6151871
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "8福島県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 7,
+    "population": 1833152,
     "total_revenue": 1257263227,
     "total_expenditure": 1224298248,
     "local_tax": 301967791,
@@ -77,10 +77,10 @@
     "real_balance": 7701625
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "9茨城県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 8,
+    "population": 2867009,
     "total_revenue": 1259006243,
     "total_expenditure": 1220658113,
     "local_tax": 480320332,
@@ -88,10 +88,10 @@
     "real_balance": 21470395
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "10栃木県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 9,
+    "population": 1933146,
     "total_revenue": 931727812,
     "total_expenditure": 912533087,
     "local_tax": 318940283,
@@ -99,10 +99,10 @@
     "real_balance": 10051371
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "11群馬県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 10,
+    "population": 1939110,
     "total_revenue": 904925531,
     "total_expenditure": 886922117,
     "local_tax": 321552570,
@@ -110,10 +110,10 @@
     "real_balance": 10256713
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "12埼玉県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 11,
+    "population": 7344765,
     "total_revenue": 2102354725,
     "total_expenditure": 2059405178,
     "local_tax": 1033433564,
@@ -121,10 +121,10 @@
     "real_balance": 35047782
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "13千葉県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 12,
+    "population": 6284480,
     "total_revenue": 2045562522,
     "total_expenditure": 2011231816,
     "local_tax": 928947034,
@@ -132,10 +132,10 @@
     "real_balance": 14854867
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "14東京都",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 13,
+    "population": 14047598,
     "total_revenue": 8898726626,
     "total_expenditure": 8353285707,
     "local_tax": 6345075503,
@@ -143,10 +143,10 @@
     "real_balance": 285659720
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "15神奈川県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 14,
+    "population": 9237333,
     "total_revenue": 2251237949,
     "total_expenditure": 2207423640,
     "local_tax": 1349970733,
@@ -154,10 +154,10 @@
     "real_balance": 22937841
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "16新潟県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 15,
+    "population": 2201272,
     "total_revenue": 1148075153,
     "total_expenditure": 1122782289,
     "local_tax": 316204283,
@@ -165,10 +165,10 @@
     "real_balance": 13134020
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "17富山県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 16,
+    "population": 1034814,
     "total_revenue": 617351150,
     "total_expenditure": 588990295,
     "local_tax": 171242294,
@@ -176,10 +176,10 @@
     "real_balance": 1377268
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "18石川県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 17,
+    "population": 1132526,
     "total_revenue": 693732898,
     "total_expenditure": 652501500,
     "local_tax": 185696404,
@@ -187,10 +187,10 @@
     "real_balance": 2735650
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "19福井県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 18,
+    "population": 766863,
     "total_revenue": 539080066,
     "total_expenditure": 523817438,
     "local_tax": 146531016,
@@ -198,10 +198,10 @@
     "real_balance": 6709032
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "20山梨県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 19,
+    "population": 809974,
     "total_revenue": 573586922,
     "total_expenditure": 544039848,
     "local_tax": 133339660,
@@ -209,10 +209,10 @@
     "real_balance": 5994349
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "21長野県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 20,
+    "population": 2048011,
     "total_revenue": 1098347683,
     "total_expenditure": 1079564340,
     "local_tax": 321564070,
@@ -220,10 +220,10 @@
     "real_balance": 8379121
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "22岐阜県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 21,
+    "population": 1978742,
     "total_revenue": 876508334,
     "total_expenditure": 859178419,
     "local_tax": 306379147,
@@ -231,10 +231,10 @@
     "real_balance": 7289681
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "23静岡県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 22,
+    "population": 3633202,
     "total_revenue": 1269197338,
     "total_expenditure": 1250356192,
     "local_tax": 585904682,
@@ -242,10 +242,10 @@
     "real_balance": 7339239
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "24愛知県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 23,
+    "population": 7542415,
     "total_revenue": 2620933437,
     "total_expenditure": 2547795499,
     "local_tax": 1389688897,
@@ -253,10 +253,10 @@
     "real_balance": 57662657
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "25三重県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 24,
+    "population": 1770254,
     "total_revenue": 807571927,
     "total_expenditure": 764500853,
     "local_tax": 303126320,
@@ -264,10 +264,10 @@
     "real_balance": 11178757
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "26滋賀県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 25,
+    "population": 1413610,
     "total_revenue": 620385624,
     "total_expenditure": 611976612,
     "local_tax": 226462804,
@@ -275,10 +275,10 @@
     "real_balance": 1090825
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "27京都府",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 26,
+    "population": 2578087,
     "total_revenue": 1042685775,
     "total_expenditure": 1024886167,
     "local_tax": 377132017,
@@ -286,10 +286,10 @@
     "real_balance": 13183086
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "28大阪府",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 27,
+    "population": 8837685,
     "total_revenue": 3358436064,
     "total_expenditure": 3325569052,
     "local_tax": 1478135691,
@@ -297,10 +297,10 @@
     "real_balance": 15531497
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "29兵庫県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 28,
+    "population": 5465002,
     "total_revenue": 2444905048,
     "total_expenditure": 2417645312,
     "local_tax": 818640340,
@@ -308,10 +308,10 @@
     "real_balance": 14150575
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "30奈良県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 29,
+    "population": 1324473,
     "total_revenue": 546695998,
     "total_expenditure": 536284251,
     "local_tax": 168224334,
@@ -319,10 +319,10 @@
     "real_balance": 4871393
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "31和歌山県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 30,
+    "population": 922584,
     "total_revenue": 636274296,
     "total_expenditure": 608065885,
     "local_tax": 122077427,
@@ -330,10 +330,10 @@
     "real_balance": 18516786
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "32鳥取県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 31,
+    "population": 553407,
     "total_revenue": 389626524,
     "total_expenditure": 370967375,
     "local_tax": 74007924,
@@ -341,10 +341,10 @@
     "real_balance": 9404147
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "33島根県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 32,
+    "population": 671126,
     "total_revenue": 561454234,
     "total_expenditure": 528059488,
     "local_tax": 95698824,
@@ -352,10 +352,10 @@
     "real_balance": 17519582
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "34岡山県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 33,
+    "population": 1888432,
     "total_revenue": 730821476,
     "total_expenditure": 721336380,
     "local_tax": 268508917,
@@ -363,10 +363,10 @@
     "real_balance": 2204159
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "35広島県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 34,
+    "population": 2799702,
     "total_revenue": 1124841043,
     "total_expenditure": 1102901381,
     "local_tax": 410527765,
@@ -374,10 +374,10 @@
     "real_balance": 5467362
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "36山口県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 35,
+    "population": 1342059,
     "total_revenue": 712962097,
     "total_expenditure": 678580641,
     "local_tax": 198016830,
@@ -385,10 +385,10 @@
     "real_balance": 23739995
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "37徳島県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 36,
+    "population": 719559,
     "total_revenue": 531810865,
     "total_expenditure": 500502981,
     "local_tax": 105039537,
@@ -396,10 +396,10 @@
     "real_balance": 15009687
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "38香川県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 37,
+    "population": 950244,
     "total_revenue": 477854963,
     "total_expenditure": 462664477,
     "local_tax": 147991488,
@@ -407,10 +407,10 @@
     "real_balance": 7106688
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "39愛媛県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 38,
+    "population": 1334841,
     "total_revenue": 765414818,
     "total_expenditure": 740769253,
     "local_tax": 196688537,
@@ -418,10 +418,10 @@
     "real_balance": 5247092
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "40高知県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 39,
+    "population": 691527,
     "total_revenue": 483884519,
     "total_expenditure": 473554741,
     "local_tax": 88592678,
@@ -429,10 +429,10 @@
     "real_balance": 2723923
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "41福岡県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 40,
+    "population": 5135214,
     "total_revenue": 2054311220,
     "total_expenditure": 1993404740,
     "local_tax": 730868711,
@@ -440,10 +440,10 @@
     "real_balance": 11837303
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "42佐賀県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 41,
+    "population": 811442,
     "total_revenue": 555571022,
     "total_expenditure": 539531062,
     "local_tax": 119740424,
@@ -451,10 +451,10 @@
     "real_balance": 9639205
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "43長崎県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 42,
+    "population": 1312317,
     "total_revenue": 747602171,
     "total_expenditure": 731783777,
     "local_tax": 162149462,
@@ -462,10 +462,10 @@
     "real_balance": 1075872
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "44熊本県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 43,
+    "population": 1738301,
     "total_revenue": 954296621,
     "total_expenditure": 903825031,
     "local_tax": 225860631,
@@ -473,10 +473,10 @@
     "real_balance": 30922991
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "45大分県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 44,
+    "population": 1123852,
     "total_revenue": 710291970,
     "total_expenditure": 676738407,
     "local_tax": 154042990,
@@ -484,10 +484,10 @@
     "real_balance": 8156364
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "46宮崎県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 45,
+    "population": 1069576,
     "total_revenue": 685628744,
     "total_expenditure": 656385854,
     "local_tax": 142700346,
@@ -495,10 +495,10 @@
     "real_balance": 13597252
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "47鹿児島県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 46,
+    "population": 1588256,
     "total_revenue": 901447777,
     "total_expenditure": 856075115,
     "local_tax": 204841000,
@@ -506,10 +506,10 @@
     "real_balance": 16394446
   },
   {
-    "fiscal_year": 2023,
+    "fiscal_year": "2023",
     "prefecture": "48沖縄県",
     "source": "FY2023-settlementcard.xlsx",
-    "population": 47,
+    "population": 1467480,
     "total_revenue": 862154876,
     "total_expenditure": 846256545,
     "local_tax": 186467987,

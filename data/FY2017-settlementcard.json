@@ -1,9 +1,9 @@
 [
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "北海道",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 1,
+    "population": 5381733,
     "total_revenue": 2437925058,
     "total_expenditure": 2427419344,
     "local_tax": 695812140,
@@ -11,10 +11,10 @@
     "real_balance": 6004750
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "青森県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 2,
+    "population": 1308265,
     "total_revenue": 692129270,
     "total_expenditure": 670924221,
     "local_tax": 167954955,
@@ -22,10 +22,10 @@
     "real_balance": 2335847
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "岩手県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 3,
+    "population": 1279594,
     "total_revenue": 1074872987,
     "total_expenditure": 986984123,
     "local_tax": 155951549,
@@ -33,10 +33,10 @@
     "real_balance": 24315296
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "宮城県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 4,
+    "population": 2333899,
     "total_revenue": 1301708423,
     "total_expenditure": 1184973408,
     "local_tax": 335182778,
@@ -44,10 +44,10 @@
     "real_balance": 14870458
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "秋田県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 5,
+    "population": 1023119,
     "total_revenue": 600781473,
     "total_expenditure": 590985233,
     "local_tax": 113824612,
@@ -55,10 +55,10 @@
     "real_balance": 4850616
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "山形県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 6,
+    "population": 1123891,
     "total_revenue": 578426667,
     "total_expenditure": 569506636,
     "local_tax": 131492453,
@@ -66,10 +66,10 @@
     "real_balance": 4455396
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "福島県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 7,
+    "population": 1914039,
     "total_revenue": 1563862818,
     "total_expenditure": 1495793305,
     "local_tax": 270982365,
@@ -77,10 +77,10 @@
     "real_balance": 7229237
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "茨城県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 8,
+    "population": 2916976,
     "total_revenue": 1055682801,
     "total_expenditure": 1029034715,
     "local_tax": 411107290,
@@ -88,10 +88,10 @@
     "real_balance": 7020356
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "栃木県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 9,
+    "population": 1974255,
     "total_revenue": 755740379,
     "total_expenditure": 741534409,
     "local_tax": 289130264,
@@ -99,10 +99,10 @@
     "real_balance": 6583409
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "群馬県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 10,
+    "population": 1973115,
     "total_revenue": 736480225,
     "total_expenditure": 727342685,
     "local_tax": 275828373,
@@ -110,10 +110,10 @@
     "real_balance": 4072059
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "埼玉県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 11,
+    "population": 7266534,
     "total_revenue": 1753196941,
     "total_expenditure": 1743622960,
     "local_tax": 895524715,
@@ -121,10 +121,10 @@
     "real_balance": 4868279
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "千葉県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 12,
+    "population": 6222666,
     "total_revenue": 1698938900,
     "total_expenditure": 1673096766,
     "local_tax": 820359033,
@@ -132,10 +132,10 @@
     "real_balance": 15825863
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "東京都",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 13,
+    "population": 13515272,
     "total_revenue": 7304356500,
     "total_expenditure": 6827470963,
     "local_tax": 5289244641,
@@ -143,10 +143,10 @@
     "real_balance": 327812873
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "神奈川県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 14,
+    "population": 9126213,
     "total_revenue": 1988742343,
     "total_expenditure": 1960355329,
     "local_tax": 1295865290,
@@ -154,10 +154,10 @@
     "real_balance": 6398549
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "新潟県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 15,
+    "population": 2304264,
     "total_revenue": 1032500350,
     "total_expenditure": 995621169,
     "local_tax": 291298597,
@@ -165,10 +165,10 @@
     "real_balance": 5652644
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "富山県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 16,
+    "population": 1066328,
     "total_revenue": 495552779,
     "total_expenditure": 476865631,
     "local_tax": 148625171,
@@ -176,10 +176,10 @@
     "real_balance": 1601142
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "石川県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 17,
+    "population": 1154008,
     "total_revenue": 537052547,
     "total_expenditure": 527264987,
     "local_tax": 163880011,
@@ -187,10 +187,10 @@
     "real_balance": 790067
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "福井県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 18,
+    "population": 786740,
     "total_revenue": 461396606,
     "total_expenditure": 451217611,
     "local_tax": 120537658,
@@ -198,10 +198,10 @@
     "real_balance": 3765325
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "山梨県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 19,
+    "population": 834930,
     "total_revenue": 462932018,
     "total_expenditure": 446066984,
     "local_tax": 114451378,
@@ -209,10 +209,10 @@
     "real_balance": 4810034
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "長野県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 20,
+    "population": 2098804,
     "total_revenue": 819490230,
     "total_expenditure": 808439310,
     "local_tax": 274773737,
@@ -220,10 +220,10 @@
     "real_balance": 5081352
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "岐阜県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 21,
+    "population": 2031903,
     "total_revenue": 764531070,
     "total_expenditure": 750933372,
     "local_tax": 266772434,
@@ -231,10 +231,10 @@
     "real_balance": 5521189
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "静岡県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 22,
+    "population": 3700305,
     "total_revenue": 1171478994,
     "total_expenditure": 1155598609,
     "local_tax": 556619879,
@@ -242,10 +242,10 @@
     "real_balance": 6083577
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "愛知県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 23,
+    "population": 7483128,
     "total_revenue": 2282711847,
     "total_expenditure": 2254887477,
     "local_tax": 1231373367,
@@ -253,10 +253,10 @@
     "real_balance": 20563253
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "三重県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 24,
+    "population": 1815865,
     "total_revenue": 688792950,
     "total_expenditure": 676040385,
     "local_tax": 260275786,
@@ -264,10 +264,10 @@
     "real_balance": 1882020
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "滋賀県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 25,
+    "population": 1412916,
     "total_revenue": 512305768,
     "total_expenditure": 508238077,
     "local_tax": 190095235,
@@ -275,10 +275,10 @@
     "real_balance": 1030790
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "京都府",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 26,
+    "population": 2610353,
     "total_revenue": 878651559,
     "total_expenditure": 874877256,
     "local_tax": 334538245,
@@ -286,10 +286,10 @@
     "real_balance": 757922
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "大阪府",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 27,
+    "population": 8839469,
     "total_revenue": 2670045873,
     "total_expenditure": 2647594211,
     "local_tax": 1328869569,
@@ -297,10 +297,10 @@
     "real_balance": 8084035
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "兵庫県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 28,
+    "population": 5534800,
     "total_revenue": 1941805730,
     "total_expenditure": 1931111121,
     "local_tax": 723040976,
@@ -308,10 +308,10 @@
     "real_balance": 1169891
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "奈良県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 29,
+    "population": 1364316,
     "total_revenue": 498846800,
     "total_expenditure": 492304509,
     "local_tax": 146746601,
@@ -319,10 +319,10 @@
     "real_balance": 1816700
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "和歌山県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 30,
+    "population": 963579,
     "total_revenue": 532338463,
     "total_expenditure": 518621711,
     "local_tax": 108128102,
@@ -330,10 +330,10 @@
     "real_balance": 5873728
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "鳥取県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 31,
+    "population": 573441,
     "total_revenue": 365535049,
     "total_expenditure": 359247009,
     "local_tax": 66401665,
@@ -341,10 +341,10 @@
     "real_balance": 2906409
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "島根県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 32,
+    "population": 694352,
     "total_revenue": 493233363,
     "total_expenditure": 473608648,
     "local_tax": 80604106,
@@ -352,10 +352,10 @@
     "real_balance": 8485983
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "岡山県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 33,
+    "population": 1921525,
     "total_revenue": 676305039,
     "total_expenditure": 669030178,
     "local_tax": 251618522,
@@ -363,10 +363,10 @@
     "real_balance": 1652456
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "広島県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 34,
+    "population": 2843990,
     "total_revenue": 899318331,
     "total_expenditure": 887433102,
     "local_tax": 386249528,
@@ -374,10 +374,10 @@
     "real_balance": 1953251
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "山口県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 35,
+    "population": 1404729,
     "total_revenue": 625762201,
     "total_expenditure": 615865340,
     "local_tax": 180715192,
@@ -385,10 +385,10 @@
     "real_balance": 4689772
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "徳島県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 36,
+    "population": 755733,
     "total_revenue": 481819916,
     "total_expenditure": 459630411,
     "local_tax": 92577230,
@@ -396,10 +396,10 @@
     "real_balance": 8661413
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "香川県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 37,
+    "population": 976263,
     "total_revenue": 460728318,
     "total_expenditure": 451403627,
     "local_tax": 135107965,
@@ -407,10 +407,10 @@
     "real_balance": 5091737
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "愛媛県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 38,
+    "population": 1385262,
     "total_revenue": 629499168,
     "total_expenditure": 614958119,
     "local_tax": 166509638,
@@ -418,10 +418,10 @@
     "real_balance": 2098280
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "高知県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 39,
+    "population": 728276,
     "total_revenue": 472385325,
     "total_expenditure": 460710254,
     "local_tax": 79904593,
@@ -429,10 +429,10 @@
     "real_balance": 2016337
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "福岡県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 40,
+    "population": 5101556,
     "total_revenue": 1659599934,
     "total_expenditure": 1613717067,
     "local_tax": 660081826,
@@ -440,10 +440,10 @@
     "real_balance": 7604842
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "佐賀県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 41,
+    "population": 832832,
     "total_revenue": 443259819,
     "total_expenditure": 433789513,
     "local_tax": 100802437,
@@ -451,10 +451,10 @@
     "real_balance": 4745801
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "長崎県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 42,
+    "population": 1377187,
     "total_revenue": 712952443,
     "total_expenditure": 690746272,
     "local_tax": 142807843,
@@ -462,10 +462,10 @@
     "real_balance": 907820
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "熊本県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 43,
+    "population": 1786170,
     "total_revenue": 977425799,
     "total_expenditure": 942850999,
     "local_tax": 201888053,
@@ -473,10 +473,10 @@
     "real_balance": 19478492
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "大分県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 44,
+    "population": 1166338,
     "total_revenue": 583695133,
     "total_expenditure": 561387622,
     "local_tax": 137654929,
@@ -484,10 +484,10 @@
     "real_balance": 3149577
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "宮崎県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 45,
+    "population": 1104069,
     "total_revenue": 573922251,
     "total_expenditure": 559444108,
     "local_tax": 123635388,
@@ -495,10 +495,10 @@
     "real_balance": 6661804
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "鹿児島県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 46,
+    "population": 1648177,
     "total_revenue": 805010053,
     "total_expenditure": 786055448,
     "local_tax": 180084010,
@@ -506,10 +506,10 @@
     "real_balance": 3469683
   },
   {
-    "fiscal_year": 2017,
+    "fiscal_year": "2017",
     "prefecture": "沖縄県",
     "source": "FY2017-settlementcard.xlsx",
-    "population": 47,
+    "population": 1433566,
     "total_revenue": 735773478,
     "total_expenditure": 723855924,
     "local_tax": 147904573,
