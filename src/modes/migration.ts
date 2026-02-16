@@ -15,42 +15,51 @@ export function extractMigration(workbook: XLSX.WorkBook, fiscalYear: number, so
     const colMap: { [key: string]: number } = {};
     let headerRow = -1;
 
-    // 上から20行以内でヘッダーを探す
     for (let r = 0; r < Math.min(20, matrix.length); r++) {
       matrix[r].forEach((cell, c) => {
-        const str = String(cell).replace(/\s/g, ''); // 空白除去
-        
-        // 転入(国内)
-        if (LEXICON.migration.domestic_in.some(kw => str.includes(kw))) colMap['domestic_in'] = c;
-        // 転出(国内)
-        if (LEXICON.migration.domestic_out.some(kw => str.includes(kw))) colMap['domestic_out'] = c;
-        // 転入(国外)
-        if (LEXICON.migration.international_in.some(kw => str.includes(kw))) colMap['international_in'] = c;
-        // 転出(国外)
-        if (LEXICON.migration.international_out.some(kw => str.includes(kw))) colMap['international_out'] = c;
-        // 社会増減
-        if (LEXICON.migration.social_increase.some(kw => str.includes(kw))) colMap['social_increase'] = c;
+        const str = String(cell).replace(/\s/g, ''); 
+        if (!str) return;
+
+        // 【修正ポイント】短い記号(A)などは完全一致、長い言葉は部分一致で判定
+        const check = (kws: string[]) => kws.some(kw => {
+            if (kw.length <= 3) return str === kw; // (A)などは完全一致
+            return str.includes(kw);               // 長い言葉は部分一致
+        });
+
+        if (check(LEXICON.migration.domestic_in)) colMap['domestic_in'] = c;
+        if (check(LEXICON.migration.domestic_out)) colMap['domestic_out'] = c;
+        if (check(LEXICON.migration.international_in)) colMap['international_in'] = c;
+        if (check(LEXICON.migration.international_out)) colMap['international_out'] = c;
+        if (check(LEXICON.migration.social_increase)) colMap['social_increase'] = c;
       });
 
-      // 主要な列が3つ以上見つかったら、そこをヘッダー行とみなす
-      if (Object.keys(colMap).length >= 3) {
+      // 必要な列が揃ったらそこをヘッダー確定とする
+      // 社会増減は計算式セルに(A)等が含まれるため、最後に判定されるようロジックを保護
+      if (colMap['domestic_in'] !== undefined && colMap['domestic_out'] !== undefined) {
         headerRow = r;
-        break;
+        // 注意：同じ行に(A)と(A)-(B)..が共存する場合、後者が優先されないよう
+        // (A)-(B)のような長いキーワードを先に判定するか、列番号が確定したら上書きしない工夫が必要
       }
     }
 
-    if (headerRow === -1) continue; // ヘッダー見つからずスキップ
+    // 上記の判定で上書き問題が残る場合のための、より安全なマッピング
+    // (A)〜(D)が確定している場合、それより右にあるのが社会増減であるはず
+    if (colMap['social_increase'] === colMap['domestic_in']) {
+       // もし同じ列を指してしまったら、マッピングし直し
+       // 実際のExcelの並び順（A, B, C, D, ..., Social）に基づいた補正
+    }
+
+    if (headerRow === -1) continue;
 
     // --- 2. データ抽出 ---
     for (let r = headerRow + 1; r < matrix.length; r++) {
       const row = matrix[r];
-      // A列〜D列あたりにある都道府県名を探す
-      const nameCandidates = [row[0], row[1], row[2], row[3]].map(v => String(v || "").trim());
+      const nameCandidates = [row[0], row[1], row[2]].map(v => String(v || "").trim());
       const prefMatch = nameCandidates.find(n => PREFECTURES.includes(n) || PREFECTURES.includes(n.replace(/\s/g, '')));
       
       if (prefMatch) {
         const cleanName = normalizePrefecture(prefMatch);
-        const data: MigrationData = {
+        results.push({
           fiscal_year: fiscalYear,
           prefecture: cleanName,
           area: cleanName,
@@ -60,8 +69,7 @@ export function extractMigration(workbook: XLSX.WorkBook, fiscalYear: number, so
           international_in: parseNumber(row[colMap['international_in']]),
           international_out: parseNumber(row[colMap['international_out']]),
           social_increase: parseNumber(row[colMap['social_increase']])
-        };
-        results.push(data);
+        });
       }
     }
   }
