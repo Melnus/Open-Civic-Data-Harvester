@@ -6,12 +6,13 @@ import { PopulationData } from '../types';
 export function extractPopulation(workbook: XLSX.WorkBook, fiscalYear: number, sourceFile: string): PopulationData[] {
   const results: PopulationData[] = [];
 
-  // 拡張子が .xls (古いExcel) かどうかを判定
+  // ファイル拡張子が .xls (古いExcel) かどうかを判定
   const isLegacyXls = sourceFile.toLowerCase().endsWith('.xls');
 
   for (const sheetName of workbook.SheetNames) {
     // 目次や注意書きシートはスキップ
-    if (sheetName.match(/(目次|index|注意|原本|表紙|概況|付表|人口動態)/i)) continue;
+    // ※ "人口動態" というシート名を除外しないように修正 (データシートである可能性があるため)
+    if (sheetName.match(/(目次|index|注意|原本|表紙|概況|付表)/i)) continue;
 
     const matrix = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1, defval: "" }) as any[][];
     if (matrix.length < 5) continue;
@@ -26,6 +27,7 @@ export function extractPopulation(workbook: XLSX.WorkBook, fiscalYear: number, s
         
         // 【重要】古い.xls形式の場合、A列(0)とB列(1)はコードや名称用とみなし、
         // 数値データ列としてのヘッダー探索から強制的に除外する
+        // (A列の団体コードを人口と誤認するのを防ぐ)
         if (isLegacyXls && c <= 1) continue;
 
         const cellStr = String(row[c]).replace(/\s/g, '');
@@ -49,7 +51,7 @@ export function extractPopulation(workbook: XLSX.WorkBook, fiscalYear: number, s
 
         if (isPopulationHeader) {
           // その列の直下数行以内に「計」や「総数」があるか探す
-          // .xlsなどでは結合セルの関係で2〜4行下に「計」が来ることがある
+          // .xlsなどでは結合セルの関係で2〜4行下に「計」が来ることがあるため範囲を広げる
           for (let rowOffset = 1; rowOffset <= 4; rowOffset++) {
             const subCell = String(matrix[r + rowOffset]?.[c] || "").replace(/\s/g, '');
             if (LEXICON.population.total_population_sub_label.some(skw => subCell === skw || subCell.includes(skw))) {
@@ -72,6 +74,7 @@ export function extractPopulation(workbook: XLSX.WorkBook, fiscalYear: number, s
     // --- 2. データ抽出 ---
     for (let r = 0; r < matrix.length; r++) {
       const row = matrix[r];
+      // A〜D列あたりにある都道府県・市区町村名を探す
       const colB = String(row[1] || "").trim();
       const colC = String(row[2] || "").trim();
 
@@ -84,6 +87,7 @@ export function extractPopulation(workbook: XLSX.WorkBook, fiscalYear: number, s
       // 市町村名の特定
       let city = "";
       // 都道府県名が入っていない方の列、もしくはD列(index 3)以降を市町村名候補とする
+      // xlsファイルでは結合セルの影響で列がズレることがあるため複数列をチェック
       const candidateCells = [row[2], row[3], row[4]].map(v => String(v||"").replace(/\s/g, ''));
       
       for (const cand of candidateCells) {
@@ -96,9 +100,10 @@ export function extractPopulation(workbook: XLSX.WorkBook, fiscalYear: number, s
         }
       }
 
-      // 「合計」行などはスキップ
+      // 「合計」行や「再掲」行などはスキップ
       if (colC.includes("合計") || city.includes("合計")) continue;
 
+      // エリア名作成 (市区町村が見つからなければ都道府県名のみ＝県計として扱う)
       const areaName = city ? `${pref}${city}` : pref;
 
       // 数値取得
