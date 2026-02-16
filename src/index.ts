@@ -98,9 +98,19 @@ async function main() {
             for (let c = 0; c < row.length; c++) {
               if (config.keys.some((chk: any) => String(row[c]).includes(chk.keywords[0]))) {
                 if (String(row[c]).includes(k.keywords[0])) {
+                  // キーワードが見つかったセルの右側を探索
                   for (let nc = c + 1; nc < Math.min(c + 50, row.length); nc++) {
                     const val = parseNumber(row[nc]);
-                    if (val !== null) { entry[k.key] = val; break outer; }
+                    if (val !== null) { 
+                      // 【修正箇所】人口(population)の場合、10,000未満の数値は
+                      // 都道府県コードや団体コードの誤検知とみなしてスキップする
+                      if (k.key === "population" && val < 10000) {
+                        continue;
+                      }
+                      
+                      entry[k.key] = val; 
+                      break outer; 
+                    }
                   }
                 }
               }
@@ -121,19 +131,12 @@ async function main() {
           config.columns.forEach((col: any) => {
             if (colMap[col.key] !== undefined) return;
             matrix[r].forEach((cell, cIdx) => {
-               // 【修正】C列(index=2)からデータが始まるため、index < 2 (A,B列) だけスキップする
+               // C列(index=2)からデータが始まるため、index < 2 (A,B列) だけスキップ
                if (cIdx < 2) return; 
 
                const cellStr = String(cell).replace(/\s/g, '');
                
-               // キーワード判定（全て含まれているか、またはいずれかが含まれているか）
-               // ここでは "国内" AND "転入" のように複合条件が必要なため、
-               // キーワード配列の要素が「全て」含まれているかをチェックするロジックに変更しても良いが、
-               // 今回は (A) (B) 等の記号が強力なため、OR条件(some)でも記号がヒットすれば確定する
                if (col.keywords.some((kw: string) => cellStr.includes(kw))) {
-                 // 誤爆防止：例えば「国内」だけで判定すると「国内転入」と「国内転出」が区別できない
-                 // したがって、ターゲット列が未定義の場合のみセットする（左から順に見つかる前提）
-                 // または、(A) (B) があればそれを優先
                  colMap[col.key] = cIdx;
                  headerRowIndex = r;
                }
