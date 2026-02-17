@@ -35,5 +35,5 @@ jobs:
         run: |
           git config --global user.name "Reality-Harvester-Bot"
           git config --global user.email "bot@example.com"
-          git add data/*.json
-          git diff --staged --quiet || (git commit -m "chore: update reality data [skip ci]" && git push)
+          git add data/*.json docs/lexicon.json
+          git diff --staged --quiet || (git commit -m "chore: update reality data and lexicon [skip ci]" && git push)
