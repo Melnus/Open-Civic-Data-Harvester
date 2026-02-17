@@ -35,10 +35,8 @@ src/
 
 ---
 
-## 🛠 使い方 (Human Protocol)
-
-官公庁のURLは頻繁に変更されるため、以下の手順で手動収集（Harvest）を行います。
-### 0. 注意
+# 🛠 使い方
+## 注意
 
 **和暦の禁止😠:**
    令和何年平成何年という書き方ではなく、『FY〇〇〇〇-英語.拡張子』にしてください。**これが世界標準です。**
@@ -66,7 +64,7 @@ src/
 |令和10年|2028|
 </details>
 
-### 1. データを狩る（Download）
+## データを狩る（Download）
 以下の「主要な狩り場」から最新の統計データ（Excel形式）をダウンロードしてください。
 
 | データ種別 | 狩り場 (URL) | 推奨ファイル名 |取りに行くもの|
@@ -75,14 +73,23 @@ src/
 | **人口移動** | [統計局ホームページ/住民基本台帳人口移動報告](https://www.stat.go.jp/data/idou/index.html) | `FYxxxx-migration_prefecture.xlsx` | 都道府県別社会増減数（xxxx年） |
 | **人口動態** | [総務省｜住民基本台帳等｜住民基本台帳に基づく人口、人口動態及び世帯数](https://www.soumu.go.jp/main_sosiki/jichi_gyousei/daityo/jinkou_jinkoudoutai-setaisuu.html) | `FYxxxx-population_dynamics_municipal.xlsx` | 【総計】xxxx年住民基本台帳人口・世帯数、xxxx年人口動態（市区町村別） |
   
-  
-### 2. データを投入する（Ingest）
+
+## github-io によるAI変換モード
+<img src="https://github.com/Melnus/Open-Civic-Data-Harvester/blob/main/images/Screenshot.png?raw=true" width="300" alt="Screenshot">
+
+1. **自分で発行した**トークンを入れてください。
+**※パスワード形式なのでこちらに保存されることはありません。**
+2. ファイルをアップロードしてください。
+3. 念のため現物と見比べてから保存してください。
+
+## github-Actionによる自動変換モード
+### 1. データを投入する（Ingest）
 1. GitHubの **`xlsx`** フォルダを開きます。
 2. 右上の「Add file」→「Upload files」を選択します。
 3. ダウンロードしたExcelファイルをドラッグ＆ドロップ（または選択）します。
 4. 「Commit changes」を押して保存します。
 
-### 3. 変換と公開（Auto-Transform）
+### 2. 変換と公開（Auto-Transform）
 ファイルがコミットされると、GitHub Actionsが自動的に起動します。
 - **約1〜2分後**、`data/` フォルダに同名の `.json` ファイルが生成されます。
 - 以下のURLでAPIとしてアクセス可能になります：
