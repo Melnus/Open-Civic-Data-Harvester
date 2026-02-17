@@ -1,1 +1,78 @@
-
+{
+  "settlement": {
+    "revenue": [
+      "歳入合計",
+      "歳入決算総額"
+    ],
+    "expenditure": [
+      "歳出合計",
+      "歳出決算総額"
+    ],
+    "real_balance": [
+      "実質収支",
+      "実質収支額"
+    ],
+    "local_tax": [
+      "地方税"
+    ],
+    "local_consumption_tax": [
+      "地方消費税"
+    ],
+    "population": [
+      "住民基本台帳人口",
+      "住基人口"
+    ]
+  },
+  "migration": {
+    "domestic_in": [
+      "転入者数(国内)",
+      "転入者数（国内）",
+      "(A)"
+    ],
+    "domestic_out": [
+      "転出者数(国内)",
+      "転出者数（国内）",
+      "(B)"
+    ],
+    "international_in": [
+      "国外からの転入者数",
+      "国外転入",
+      "(C)"
+    ],
+    "international_out": [
+      "国外への転出者数",
+      "国外転出",
+      "(D)"
+    ],
+    "social_increase": [
+      "社会増加数",
+      "社会増減",
+      "(A)-(B)+(C)-(D)"
+    ]
+  },
+  "population": {
+    "births": [
+      "出生者数",
+      "出生数"
+    ],
+    "deaths": [
+      "死亡者数",
+      "死亡数"
+    ],
+    "population_total": [
+      "住民基本台帳人口",
+      "人口"
+    ],
+    "sub_total": [
+      "計",
+      "総数"
+    ],
+    "total_population_label": [
+      "人口"
+    ],
+    "total_population_sub_label": [
+      "計",
+      "総数"
+    ]
+  }
+}
