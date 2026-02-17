@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Reality Harvester Portal 3.0</title>
+    <title>Reality Harvester Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="importmap">
       { "imports": { "@google/generative-ai": "https://esm.run/@google/generative-ai" } }
@@ -24,7 +24,7 @@
     <header class="flex-none p-4 bg-gray-800 border-b border-purple-900/50 shadow-md z-10">
         <div class="flex justify-between items-center mb-3">
             <h1 class="text-xl font-bold flex items-center gap-2">
-                <span class="text-2xl">🚜</span> Harvester <span class="text-[10px] bg-purple-600 px-2 py-0.5 rounded text-white font-black uppercase">v3.0 Flash</span>
+                <span class="text-2xl">🚜</span> Harvester <span class="text-[10px] bg-purple-600 px-2 py-0.5 rounded text-white font-black uppercase">v2.5 Flash</span>
             </h1>
             <button onclick="location.reload()" class="text-xs bg-gray-700 px-3 py-1 rounded-full text-gray-400">Reset</button>
         </div>
@@ -76,7 +76,7 @@
         `;
 
         const SYSTEM_INSTRUCTION = `
-        あなたは行政データ抽出の専門家です。モデル: Gemini 3.0 Flash。
+        あなたは行政データ抽出の専門家です。モデル: Gemini Flash。
         1. 悪用チェック: 漫画、イラスト、無関係な写真は「それは〇〇なので使えません」と拒否。
         2. 判定と抽出: 資料を判定し、以下のスキーマに基づきJSONを生成。 ${PROJECT_SCHEMAS}
         3. 出力: JSONを \`\`\`json ... \`\`\` で囲んで出力。
@@ -118,7 +118,7 @@
             const apiKey = document.getElementById('api-key').value;
             if (!apiKey) throw new Error("API KEYを入力してください");
             const genAI = new GoogleGenerativeAI(apiKey);
-            const model = genAI.getGenerativeModel({ model: "gemini-3.0-flash" });
+            const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" }); <!-- ★モデル変えるときはここ見て！ -->
             return model.startChat({
                 history: [
                     { role: "user", parts: [{ text: SYSTEM_INSTRUCTION }] },
