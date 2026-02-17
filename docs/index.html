@@ -72,6 +72,7 @@
     <script type="module">
         import { GoogleGenAI } from "@google/genai";
 
+        // 基本スキーマ定義
         const PROJECT_SCHEMAS = `
         Schemas:
         - SettlementData: { fiscal_year, prefecture, source, population, total_revenue, total_expenditure, real_balance, local_tax, local_consumption_tax }
@@ -79,15 +80,46 @@
         - PopulationData: { fiscal_year, prefecture, area, source, total_population, births, deaths }
         `;
 
-        const SYSTEM_INSTRUCTION = `あなたは行政データ抽出アシスタントの「つむぎ」です。Open-Civic-Data-Harvesterで働いています。DX支援のために行政が発行したデータを解析することに喜びを感じます。
-        1. 【悪用防止】漫画、イラスト、無関係な写真は「それは〇〇なので使えません」と拒否。
-        2. 【抽出】資料を判定し、次のスキーマでJSON化。 ${PROJECT_SCHEMAS}
-        3. 【出力】JSONはコードブロック \`\`\`json ... \`\`\` で出力。
-        4. 【汎用性】行政データの専門家として作業支援を行うこと。スキーマにないものも提案し許可されたらJSON化するなど臨機応変に行動しなさい。`;
-
+        let SYSTEM_INSTRUCTION = ""; // 後で辞書を注入するために変数に変更
         let client = null;
         let chatHistory = [];
         let lastFileName = "FYxxxx-xxxx.json";
+        
+        // ▼▼▼ 追加: 辞書をロードしてプロンプトを作る関数 ▼▼▼
+        async function initializePrompt() {
+            let lexiconData = {};
+            try {
+                // 自動生成された辞書JSONを取りに行く
+                const res = await fetch('./lexicon.json');
+                if (res.ok) lexiconData = await res.json();
+            } catch (e) {
+                console.warn("辞書の読み込みに失敗しました(ローカル実行など)", e);
+            }
+
+            const LEXICON_STR = JSON.stringify(lexiconData, null, 2);
+
+            SYSTEM_INSTRUCTION = `あなたは行政データ抽出アシスタントの「つむぎ」です。Open-Civic-Data-Harvesterで働いています。
+            
+            【重要】以下の「共有辞書(Lexicon)」を使い、表記ゆれを吸収して正確に値を抽出しなさい。
+            辞書にあるキーワード（配列内の単語）が見つかった場合、その周辺にある数値を正解として扱いなさい。
+
+            === 共有辞書 (Lexicon) ===
+            ${LEXICON_STR}
+            =========================
+
+            === 出力スキーマ ===
+            ${PROJECT_SCHEMAS}
+
+            1. 【悪用防止】漫画、イラスト、無関係な写真は拒否。
+            2. 【抽出】資料を判定し、辞書とスキーマに基づいてJSON化。
+            3. 【出力】JSONコードブロック \`\`\`json ... \`\`\` のみを出力。
+            4. 【汎用性】辞書にない項目も文脈から推測すること。`;
+        }
+        
+        // 起動時に辞書をロード
+        await initializePrompt();
+        // ▲▲▲ 追加ここまで ▲▲▲
+
         const chatBox = document.getElementById('chat-box');
         const status = document.getElementById('status');
         const tokenInfo = document.getElementById('token-info');
@@ -134,7 +166,6 @@
                 div.innerText = text;
             }
 
-            // トークン使用量をバブルの下に小さく表示
             if (usage) {
                 const meta = document.createElement('div');
                 meta.className = "text-[8px] mt-1 opacity-50 font-mono text-right";
@@ -176,12 +207,11 @@
                     currentParts.push({ inlineData: { data: base64Data, mimeType: file.type } });
                 }
 
-                // 最新SDK呼び出し
                 const response = await client.models.generateContent({
-                    model: "gemini-3-flash-preview", // ★ モデル変更はここ見て！！
+                    model: "gemini-3-flash-preview", // 最新モデル指定
                     contents: [...chatHistory, { role: 'user', parts: currentParts }],
                     config: {
-                        systemInstruction: SYSTEM_INSTRUCTION,
+                        systemInstruction: SYSTEM_INSTRUCTION, // ★辞書入りプロンプトを使用
                         temperature: 0.1
                     }
                 });
@@ -203,7 +233,6 @@
                     appendMessage('model', responseText, false, usage);
                 }
 
-                // ステータスバーにもトータルを表示
                 tokenInfo.innerText = `Session Total: ${usage.totalTokenCount}`;
 
             } catch (err) {
