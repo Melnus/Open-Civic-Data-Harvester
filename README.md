@@ -79,8 +79,8 @@ src/
   
 <img src="https://github.com/Melnus/Open-Civic-Data-Harvester/blob/main/images/Screenshot.png?raw=true" width="300" alt="Screenshot">
 
-1. **自分で発行した**トークンを入れてください。
-**※パスワード形式なのでこちらに保存されることはありません。**
+1. **自分で発行した**トークンを入れてください。  
+**※パスワード形式なのでこちらに保存されることはありません。**  
 2. ファイルをアップロードしてください。
 3. 念のため現物と見比べてから保存してください。
 
