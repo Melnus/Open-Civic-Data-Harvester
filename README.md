@@ -75,6 +75,8 @@ src/
   
 
 ## github-io によるAI変換モード
+[👉 変換ポータルを開く](https://Melnus.github.io/Open-Civic-Data-Harvester/)
+  
 <img src="https://github.com/Melnus/Open-Civic-Data-Harvester/blob/main/images/Screenshot.png?raw=true" width="300" alt="Screenshot">
 
 1. **自分で発行した**トークンを入れてください。
