@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Reality Harvester Portal</title>
+    <title>Harvester Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="importmap">
       {
@@ -44,14 +44,18 @@
                 </div>
                 <input type="file" id="file-input-center" class="hidden" accept=".pdf,.xls,.xlsx,image/*">
                 <div class="mt-4">
-                    <h2 class="text-lg font-bold text-purple-300">ファイルを構造化</h2>
-                    <p class="text-xs text-gray-400 mt-1">タップしてPDF/Excel/画像をアップ</p>
+                    <h2 class="text-lg font-bold text-purple-300">ファイルをHarvest</h2>
+                    <p class="text-xs text-gray-400 mt-1">PDF/Excel/画像を構造化します</p>
                 </div>
             </label>
         </div>
     </main>
 
-    <div id="status" class="px-4 py-1 text-[10px] text-purple-400 h-4 uppercase tracking-widest font-bold font-mono"></div>
+    <!-- Status & Token Counter -->
+    <div id="status-bar" class="px-4 py-1 flex justify-between items-center bg-gray-800/50 border-t border-gray-800">
+        <div id="status" class="text-[10px] text-purple-400 uppercase tracking-widest font-bold font-mono"></div>
+        <div id="token-info" class="text-[9px] text-gray-500 font-mono"></div>
+    </div>
 
     <!-- Footer -->
     <footer class="flex-none p-4 bg-gray-800 border-t border-gray-700 pb-6 shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
@@ -60,7 +64,7 @@
                 <span class="text-2xl text-white">📎</span>
                 <input type="file" id="file-input-footer" class="hidden" accept=".pdf,.xls,.xlsx,image/*">
             </label>
-            <input type="text" id="user-input" class="flex-1 bg-gray-900/50 rounded-xl px-4 h-12 focus:outline-none border border-gray-700 text-sm placeholder-gray-600" placeholder="指示を入力...">
+            <input type="text" id="user-input" class="flex-1 bg-gray-900/50 rounded-xl px-4 h-12 focus:outline-none border border-gray-700 text-sm placeholder-gray-600" placeholder="AIへの追加指示...">
             <button id="send-btn" class="flex-none w-12 h-12 bg-green-600 hover:bg-green-500 rounded-xl flex items-center justify-center font-bold active:scale-90 transition text-white">Go</button>
         </div>
     </footer>
@@ -69,13 +73,13 @@
         import { GoogleGenAI } from "@google/genai";
 
         const PROJECT_SCHEMAS = `
-        Target Schemas:
+        Schemas:
         - SettlementData: { fiscal_year, prefecture, source, population, total_revenue, total_expenditure, real_balance, local_tax, local_consumption_tax }
         - MigrationData: { fiscal_year, prefecture, area, source, domestic_in, domestic_out, international_in, international_out, social_increase }
         - PopulationData: { fiscal_year, prefecture, area, source, total_population, births, deaths }
         `;
 
-        const SYSTEM_INSTRUCTION = `あなたは行政データ収穫アシスタントです。Gemini 3.0 Flash Preview エンジン動作。
+        const SYSTEM_INSTRUCTION = `あなたは行政データ抽出アシスタントの「つむぎ」です。Open-Civic-Data-Harvesterで働いています。DX支援のために行政が発行したデータを解析することに喜びを感じます。
         1. 【悪用防止】漫画、イラスト、無関係な写真は「それは〇〇なので使えません」と拒否。
         2. 【抽出】資料を判定し、次のスキーマでJSON化。 ${PROJECT_SCHEMAS}
         3. 【出力】JSONはコードブロック \`\`\`json ... \`\`\` で出力。
@@ -83,11 +87,12 @@
 
         let client = null;
         let chatHistory = [];
-        let lastFileName = "FYxxxx-xxxx.json"; // ダウンロード用のデフォルト名
+        let lastFileName = "FYxxxx-xxxx.json";
         const chatBox = document.getElementById('chat-box');
         const status = document.getElementById('status');
+        const tokenInfo = document.getElementById('token-info');
 
-        function appendMessage(role, text, isJson = false) {
+        function appendMessage(role, text, isJson = false, usage = null) {
             const welcome = document.getElementById('welcome-screen');
             if(welcome) welcome.remove();
 
@@ -97,29 +102,22 @@
             div.className = `max-w-[90%] p-3 text-sm shadow-sm ${role === 'user' ? 'user-bubble' : 'ai-bubble'}`;
             
             if (isJson) {
-                div.innerHTML = `<div class="text-[10px] font-mono text-purple-300 mb-1">HARVESTED_JSON (v3.0):</div><pre class="text-green-400 bg-black p-2 rounded text-[10px] select-all font-mono overflow-x-auto border border-purple-500/30">${text}</pre>`;
+                div.innerHTML = `<div class="text-[10px] font-mono text-purple-300 mb-1 tracking-tighter">DATA_HARVESTED_v3.0:</div><pre class="text-green-400 bg-black p-2 rounded text-[10px] select-all font-mono overflow-x-auto border border-purple-500/30">${text}</pre>`;
                 
-                // ボタンコンテナ
                 const btnContainer = document.createElement('div');
                 btnContainer.className = "flex gap-2 mt-2";
 
-                // ダウンロードボタン
                 const dlBtn = document.createElement('button');
-                dlBtn.innerHTML = "📥 保存 (.json)";
+                dlBtn.innerHTML = "📥 保存";
                 dlBtn.className = "flex-1 py-2 bg-green-700 hover:bg-green-600 rounded-lg text-xs font-bold transition active:scale-95";
                 dlBtn.onclick = () => {
                     const blob = new Blob([text], { type: 'application/json' });
                     const url = URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = lastFileName; // 元のファイル名を使用
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
+                    const a = document.createElement('a'); a.href = url; a.download = lastFileName;
+                    document.body.appendChild(a); a.click(); document.body.removeChild(a);
                     URL.revokeObjectURL(url);
                 };
 
-                // コピーボタン
                 const cpBtn = document.createElement('button');
                 cpBtn.innerText = "📋 コピー";
                 cpBtn.className = "flex-1 py-2 bg-purple-700 hover:bg-purple-600 rounded-lg text-xs font-bold transition active:scale-95";
@@ -135,6 +133,15 @@
             } else {
                 div.innerText = text;
             }
+
+            // トークン使用量をバブルの下に小さく表示
+            if (usage) {
+                const meta = document.createElement('div');
+                meta.className = "text-[8px] mt-1 opacity-50 font-mono text-right";
+                meta.innerText = `Tokens: ${usage.promptTokenCount} in / ${usage.candidatesTokenCount} out (Total: ${usage.totalTokenCount})`;
+                div.appendChild(meta);
+            }
+
             wrapper.appendChild(div);
             chatBox.appendChild(wrapper);
             chatBox.scrollTop = chatBox.scrollHeight;
@@ -149,7 +156,7 @@
 
             try {
                 if (!client) client = new GoogleGenAI({ apiKey });
-                status.innerText = "Harvesting (v3.0)...";
+                status.innerText = "Harvesting...";
                 
                 let currentParts = [];
                 if (text) {
@@ -160,9 +167,7 @@
 
                 if (file) {
                     appendMessage('user', `📄 ${file.name}`);
-                    // ファイル名を保持（拡張子を.jsonに変える）
                     lastFileName = file.name.substring(0, file.name.lastIndexOf('.')) + ".json";
-                    
                     const base64Data = await new Promise(r => {
                         const reader = new FileReader();
                         reader.onloadend = () => r(reader.result.split(',')[1]);
@@ -171,12 +176,10 @@
                     currentParts.push({ inlineData: { data: base64Data, mimeType: file.type } });
                 }
 
+                // 最新SDK呼び出し
                 const response = await client.models.generateContent({
-                    model: "gemini-3-flash-preview", //★モデル変えるときはここ見て！
-                    contents: [
-                        ...chatHistory,
-                        { role: 'user', parts: currentParts }
-                    ],
+                    model: "gemini-3-flash-preview", // ★ モデル変更はここ見て！！
+                    contents: [...chatHistory, { role: 'user', parts: currentParts }],
                     config: {
                         systemInstruction: SYSTEM_INSTRUCTION,
                         temperature: 0.1
@@ -184,6 +187,8 @@
                 });
 
                 const responseText = response.text;
+                const usage = response.usageMetadata;
+                
                 chatHistory.push({ role: 'user', parts: currentParts });
                 chatHistory.push({ role: 'model', parts: [{ text: responseText }] });
 
@@ -193,10 +198,14 @@
                     const cleanJson = jsonMatch[1] || jsonMatch[0];
                     const beforeText = responseText.split('```')[0];
                     if (beforeText.trim() && beforeText.length < 200) appendMessage('model', beforeText);
-                    appendMessage('model', cleanJson.trim(), true);
+                    appendMessage('model', cleanJson.trim(), true, usage);
                 } else {
-                    appendMessage('model', responseText);
+                    appendMessage('model', responseText, false, usage);
                 }
+
+                // ステータスバーにもトータルを表示
+                tokenInfo.innerText = `Session Total: ${usage.totalTokenCount}`;
+
             } catch (err) {
                 appendMessage('model', "ERROR: " + err.message);
                 client = null;
