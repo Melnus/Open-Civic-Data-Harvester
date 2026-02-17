@@ -1,6 +1,6 @@
 # Open-Civic-Data-Harvester Project Context
 
-This file consolidates the source code and documentation for the **Open-Civic-Data-Harvester** project. It is designed to provide AI agents with full context of the data extraction pipeline, schemas, and frontend logic.
+This file consolidates the source code, documentation, and **AI System Prompts** for the **Open-Civic-Data-Harvester** project. It is designed to provide AI agents with full context of the data extraction pipeline, schemas, and frontend logic.
 
 ## 📖 Project Overview
 
@@ -8,6 +8,7 @@ This file consolidates the source code and documentation for the **Open-Civic-Da
 - **Input**: Excel files in `xlsx/` or file uploads via the Web Portal.
 - **Output**: JSON files in `data/`.
 - **Core Logic**: TypeScript-based extraction using `xlsx` library and keyword matching via a Lexicon.
+- **AI Mode**: A web portal (`docs/index.html`) utilizing Google Gemini for non-standardized files.
 
 ## 📂 Directory Structure
 
@@ -15,7 +16,7 @@ This file consolidates the source code and documentation for the **Open-Civic-Da
 Open-Civic-Data-Harvester/
 ├── data/                  # Output JSON files
 ├── docs/                  # GitHub Pages Web Portal
-│   ├── index.html         # AI-assisted extraction UI
+│   ├── index.html         # AI-assisted extraction UI (Gemini)
 │   └── lexicon.json       # JSON version of the lexicon for frontend
 ├── src/                   # Source Code (TypeScript)
 │   ├── index.ts           # Entry point
@@ -30,6 +31,37 @@ Open-Civic-Data-Harvester/
 ├── xlsx/                  # Input Excel files
 ├── package.json           # Dependencies
 └── README.md              # Documentation
+```
+
+---
+
+## 🧠 AI System Prompt (Tsumugi)
+
+The Web Portal (`docs/index.html`) uses Google Gemini with the following system instruction. It dynamically injects the `lexicon.json` to ensure consistency between the TypeScript logic and the AI logic.
+
+**Persona**: Administrative Data Extraction Assistant "Tsumugi" (つむぎ)
+
+**System Instruction Template:**
+```text
+あなたは行政データ抽出アシスタントの「つむぎ」です。Open-Civic-Data-Harvesterで働いています。
+
+【重要】以下の「共有辞書(Lexicon)」を使い、表記ゆれを吸収して正確に値を抽出しなさい。
+辞書にあるキーワード（配列内の単語）が見つかった場合、その周辺にある数値を正解として扱いなさい。
+
+=== 共有辞書 (Lexicon) ===
+{INJECTED_LEXICON_JSON_DATA}
+=========================
+
+=== 出力スキーマ ===
+Schemas:
+- SettlementData: { fiscal_year, prefecture, source, population, total_revenue, total_expenditure, real_balance, local_tax, local_consumption_tax }
+- MigrationData: { fiscal_year, prefecture, area, source, domestic_in, domestic_out, international_in, international_out, social_increase }
+- PopulationData: { fiscal_year, prefecture, area, source, total_population, births, deaths }
+
+1. 【悪用防止】漫画、イラスト、無関係な写真は拒否。
+2. 【抽出】資料を判定し、辞書とスキーマに基づいてJSON化。
+3. 【出力】JSONコードブロック ```json ... ``` のみを出力。
+4. 【汎用性】辞書にない項目も文脈から推測すること。
 ```
 
 ---
@@ -414,7 +446,7 @@ export function extractPopulation(workbook: XLSX.WorkBook, fiscalYear: number, s
 ## 🌐 Web Portal (Frontend)
 
 ### `docs/index.html`
-A single-page application using Google Gemini API to parse PDFs/images and structured data, utilizing the shared `lexicon.json` for consistent prompts.
+A single-page application using Google Gemini API. It fetches `lexicon.json` to inject the system instruction dynamically.
 
 ```html
 <!DOCTYPE html>
@@ -426,33 +458,18 @@ A single-page application using Google Gemini API to parse PDFs/images and struc
     <script type="module">
         import { GoogleGenAI } from "@google/genai";
 
-        const PROJECT_SCHEMAS = `
-        Schemas:
-        - SettlementData: { fiscal_year, prefecture, source, population, total_revenue, total_expenditure, real_balance, local_tax, local_consumption_tax }
-        - MigrationData: { fiscal_year, prefecture, area, source, domestic_in, domestic_out, international_in, international_out, social_increase }
-        - PopulationData: { fiscal_year, prefecture, area, source, total_population, births, deaths }
-        `;
-
-        let SYSTEM_INSTRUCTION = "";
-
+        // Logic to load lexicon and initialize prompt
         async function initializePrompt() {
             let lexiconData = {};
             try {
                 const res = await fetch('./lexicon.json');
                 if (res.ok) lexiconData = await res.json();
             } catch (e) { console.warn("Lexicon load failed", e); }
-
-            const LEXICON_STR = JSON.stringify(lexiconData, null, 2);
-            SYSTEM_INSTRUCTION = `You are "Tsumugi", an admin data extraction assistant.
-            Use this Shared Lexicon to handle spelling variations and extract values correctly:
-            ${LEXICON_STR}
             
-            Schema: ${PROJECT_SCHEMAS}
-            Output ONLY valid JSON code blocks.`;
+            // SYSTEM_INSTRUCTION is constructed here (See "AI System Prompt" section above)
         }
         
         await initializePrompt();
-        
         // ... (Chat UI logic and Gemini API calls)
     </script>
 </head>
