@@ -9,11 +9,6 @@ export const LEXICON = {
     expenditure: ["歳出合計", "歳出決算総額"],
     real_balance: ["実質収支", "実質収支額"],
     single_year_balance: ["単年度収支"],
-    // 指標
-    financial_capability_index: ["財政力指数"],
-    real_debt_service_ratio: ["実質公債費比率"],
-    future_burden_ratio: ["将来負担比率"],
-    current_account_ratio: ["経常収支比率"],
     // 歳入内訳
     local_tax: ["地方税"],
     local_allocation_tax: ["地方交付税"],
@@ -22,7 +17,12 @@ export const LEXICON = {
     personnel_expenses: ["人件費"],
     assistance_expenses: ["扶助費"],
     public_debt_expenses: ["公債費"],
-    ordinary_construction_expenses: ["普通建設事業費"]
+    ordinary_construction_expenses: ["普通建設事業費"],
+    // 指標
+    financial_capability_index: ["財政力指数"],
+    real_debt_service_ratio: ["実質公債費比率"],
+    future_burden_ratio: ["将来負担比率"],
+    current_account_ratio: ["経常収支比率"],
   },
 
   // ■ 人口移動 (Migration) - 既存維持
