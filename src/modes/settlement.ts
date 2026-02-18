@@ -6,7 +6,6 @@ import { SettlementData } from '../types';
 export function extractSettlement(workbook: XLSX.WorkBook, fiscalYear: number, sourceFile: string): SettlementData[] {
   const results: SettlementData[] = [];
 
-  // 全20項目弱をスキャン対象に設定
   const CONFIG = [
     { key: "population", keywords: LEXICON.settlement.population },
     { key: "area", keywords: LEXICON.settlement.area },
@@ -34,29 +33,31 @@ export function extractSettlement(workbook: XLSX.WorkBook, fiscalYear: number, s
     if (matrix.length < 5) continue;
 
     const cleanPref = normalizePrefecture(sheetName);
-    const entry: any = { 
-      fiscal_year: fiscalYear, 
-      prefecture: cleanPref, 
-      source: sourceFile 
-    };
-    
+    const entry: any = { fiscal_year: fiscalYear, prefecture: cleanPref, source: sourceFile };
     let foundAny = false;
 
-    // 定義された全ての項目についてキーワード検索を実行
     CONFIG.forEach((configItem) => {
-      // 既に値が取れていればスキップ
       if (entry[configItem.key] !== undefined) return;
 
       outer_loop: for (const row of matrix) {
         for (let c = 0; c < row.length; c++) {
-          const cellStr = String(row[c]);
+          const cellStr = String(row[c]).replace(/\s/g, ''); // 空白を詰めて判定
           
           if (configItem.keywords.some(kw => cellStr.includes(kw))) {
-            // キーワード発見！その右側50セル以内にある「最初の有効な数値」を取得
+            
+            // --- ★ここが重要：金額と比率の混同防止ガード ---
+            const isRatioLabel = cellStr.includes("比率") || cellStr.includes("％") || cellStr.includes("(%)");
+            const wantsRatio = configItem.key.includes("ratio") || configItem.key.includes("index");
+
+            // 金額が欲しいのに「比率」ラベルを見つけた場合はスキップ
+            if (!wantsRatio && isRatioLabel) continue;
+            // 比率が欲しいのに「比率」と書いていないラベル（ただの公債費など）はスキップ
+            if (wantsRatio && !isRatioLabel) continue;
+            // ----------------------------------------------
+
             for (let nc = c + 1; nc < Math.min(c + 50, row.length); nc++) {
               const val = parseNumber(row[nc]);
               if (val !== null) { 
-                // 人口データ誤検出防止（4桁未満は人口として無視）
                 if (configItem.key === "population" && val < 1000) continue;
                 
                 entry[configItem.key] = val;
@@ -69,10 +70,7 @@ export function extractSettlement(workbook: XLSX.WorkBook, fiscalYear: number, s
       }
     });
 
-    if (foundAny) {
-      results.push(entry as SettlementData);
-    }
+    if (foundAny) results.push(entry as SettlementData);
   }
-
   return results;
 }
