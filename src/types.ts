@@ -2,12 +2,28 @@ export interface SettlementData {
   fiscal_year: number;
   prefecture: string;
   source: string;
-  population: number | null;
+  // 基本指標
+  population: number | null;          // 住民基本台帳人口
+  area: number | null;                // 面積 (k㎡)
+  // 収支総括
   total_revenue: number | null;       // 歳入合計
   total_expenditure: number | null;   // 歳出合計
   real_balance: number | null;        // 実質収支
-  local_tax: number | null;           // 地方税
-  local_consumption_tax: number | null; // 地方消費税（内訳にある）
+  single_year_balance: number | null; // 単年度収支
+  // 財政指標
+  financial_capability_index: number | null; // 財政力指数
+  real_debt_service_ratio: number | null;    // 実質公債費比率
+  future_burden_ratio: number | null;        // 将来負担比率
+  current_account_ratio: number | null;      // 経常収支比率
+  // 歳入内訳
+  local_tax: number | null;            // 地方税
+  local_allocation_tax: number | null; // 地方交付税
+  local_consumption_tax: number | null; // 地方消費税
+  // 歳出内訳（性質別）
+  personnel_expenses: number | null;   // 人件費
+  assistance_expenses: number | null;  // 扶助費
+  public_debt_expenses: number | null; // 公債費
+  ordinary_construction_expenses: number | null; // 普通建設事業費
 }
 
 export interface MigrationData {
