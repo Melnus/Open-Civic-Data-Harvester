@@ -22,18 +22,6 @@
     "single_year_balance": [
       "単年度収支"
     ],
-    "financial_capability_index": [
-      "財政力指数"
-    ],
-    "real_debt_service_ratio": [
-      "実質公債費比率"
-    ],
-    "future_burden_ratio": [
-      "将来負担比率"
-    ],
-    "current_account_ratio": [
-      "経常収支比率"
-    ],
     "local_tax": [
       "地方税"
     ],
@@ -54,6 +42,18 @@
     ],
     "ordinary_construction_expenses": [
       "普通建設事業費"
+    ],
+    "financial_capability_index": [
+      "財政力指数"
+    ],
+    "real_debt_service_ratio": [
+      "実質公債費比率"
+    ],
+    "future_burden_ratio": [
+      "将来負担比率"
+    ],
+    "current_account_ratio": [
+      "経常収支比率"
     ]
   },
   "migration": {
