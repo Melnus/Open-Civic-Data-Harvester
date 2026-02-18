@@ -75,7 +75,10 @@
         // 基本スキーマ定義
         const PROJECT_SCHEMAS = `
         Schemas:
-        - SettlementData: { fiscal_year, prefecture, source, population, total_revenue, total_expenditure, real_balance, local_tax, local_consumption_tax }
+        // docs/index.html 内の更新
+        const PROJECT_SCHEMAS = `
+        Schemas:
+        - SettlementData: { fiscal_year, prefecture, source, population, area, total_revenue, total_expenditure, real_balance, single_year_balance, financial_capability_index, real_debt_service_ratio, future_burden_ratio, current_account_ratio, local_tax, local_allocation_tax, local_consumption_tax, personnel_expenses, assistance_expenses, public_debt_expenses, ordinary_construction_expenses } 
         - MigrationData: { fiscal_year, prefecture, area, source, domestic_in, domestic_out, international_in, international_out, social_increase }
         - PopulationData: { fiscal_year, prefecture, area, source, total_population, births, deaths }
         `;
