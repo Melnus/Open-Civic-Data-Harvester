@@ -1,5 +1,12 @@
 {
   "settlement": {
+    "population": [
+      "住民基本台帳人口",
+      "住基人口"
+    ],
+    "area": [
+      "面積"
+    ],
     "revenue": [
       "歳入合計",
       "歳入決算総額"
@@ -12,15 +19,41 @@
       "実質収支",
       "実質収支額"
     ],
+    "single_year_balance": [
+      "単年度収支"
+    ],
+    "financial_capability_index": [
+      "財政力指数"
+    ],
+    "real_debt_service_ratio": [
+      "実質公債費比率"
+    ],
+    "future_burden_ratio": [
+      "将来負担比率"
+    ],
+    "current_account_ratio": [
+      "経常収支比率"
+    ],
     "local_tax": [
       "地方税"
+    ],
+    "local_allocation_tax": [
+      "地方交付税"
     ],
     "local_consumption_tax": [
       "地方消費税"
     ],
-    "population": [
-      "住民基本台帳人口",
-      "住基人口"
+    "personnel_expenses": [
+      "人件費"
+    ],
+    "assistance_expenses": [
+      "扶助費"
+    ],
+    "public_debt_expenses": [
+      "公債費"
+    ],
+    "ordinary_construction_expenses": [
+      "普通建設事業費"
     ]
   },
   "migration": {
