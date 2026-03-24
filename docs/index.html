@@ -3,169 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Harvester Portal</title>
+    <title>Harvester Portal (Local)</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="importmap">
-      {
-        "imports": {
-          "@google/genai": "https://esm.run/@google/genai"
-        }
-      }
-    </script>
+    <!-- ▼▼▼ 変更: Gemini APIを削除し、SheetJS(Excel解析)をローカル導入 ▼▼▼ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <style>
         body { height: 100dvh; }
-        .chat-container { height: calc(100% - 160px); }
+        .chat-container { height: calc(100% - 140px); }
         pre { white-space: pre-wrap; word-break: break-all; }
         .user-bubble { background-color: #374151; border-radius: 1rem 1rem 0 1rem; }
-        .ai-bubble { background-color: #1e3a8a; border-radius: 1rem 1rem 1rem 0; border: 1px solid #1e40af; }
-        input { font-size: 16px !important; }
-        .drop-shadow-purple { filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.4)); }
+        .ai-bubble { background-color: #064e3b; border-radius: 1rem 1rem 1rem 0; border: 1px solid #047857; } /* ローカルなので緑系に変更 */
+        .drop-shadow-green { filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.4)); }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100 flex flex-col font-sans overflow-hidden">
 
     <!-- Header -->
-    <header class="flex-none p-4 bg-gray-800 border-b border-purple-900/50 shadow-md z-10">
-        <div class="flex justify-between items-center mb-3">
-            <h1 class="text-xl font-bold flex items-center gap-2">
-                <span class="text-2xl drop-shadow-purple">🚜</span> Harvester <span class="text-[10px] bg-purple-600 px-2 py-0.5 rounded text-white font-black uppercase tracking-tighter">v3.0 Flash</span>
-            </h1>
-            <button onclick="location.reload()" class="text-xs bg-gray-700 hover:bg-gray-600 px-3 py-1 rounded-full text-gray-400 transition">Reset</button>
-        </div>
-        <!-- APIキー入力欄（ローカル保存であることを明示） -->
-        <div class="relative w-full">
-            <span class="absolute left-3 top-2.5 text-gray-500 text-xs">🔒</span>
-            <input type="password" id="api-key" class="w-full pl-8 p-2 bg-gray-900/50 rounded-lg border border-gray-700 text-sm focus:ring-1 focus:ring-purple-500 outline-none placeholder-gray-500" placeholder="Gemini API Keyを入力 (ブラウザ内でのみ保持されます)">
-        </div>
+    <header class="flex-none p-4 bg-gray-800 border-b border-green-900/50 shadow-md z-10 flex justify-between items-center">
+        <h1 class="text-xl font-bold flex items-center gap-2">
+            <span class="text-2xl drop-shadow-green">🚜</span> Harvester 
+            <span class="text-[10px] bg-green-600 px-2 py-0.5 rounded text-white font-black uppercase tracking-tighter">v4.0 Local Secure</span>
+        </h1>
+        <button onclick="location.reload()" class="text-xs bg-gray-700 hover:bg-gray-600 px-3 py-1 rounded-full text-gray-400 transition">Reset</button>
     </header>
 
-    <!-- Main Chat Area -->
-    <main id="chat-box" class="flex-1 overflow-y-auto p-4 space-y-4 chat-container">
+    <!-- Main Content Area -->
+    <main id="chat-box" class="flex-1 overflow-y-auto p-4 space-y-4 chat-container relative">
         <div id="welcome-screen" class="h-full flex flex-col items-center justify-center text-center space-y-6 pb-10">
             <label class="cursor-pointer group flex flex-col items-center">
-                <div class="w-24 h-24 bg-purple-900/30 rounded-full flex items-center justify-center border-2 border-dashed border-purple-500 active:scale-95 transition-all">
-                    <span class="text-5xl text-purple-400">＋</span>
+                <div class="w-24 h-24 bg-green-900/30 rounded-full flex items-center justify-center border-2 border-dashed border-green-500 active:scale-95 transition-all shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+                    <span class="text-5xl text-green-400">＋</span>
                 </div>
-                <input type="file" id="file-input-center" class="hidden" accept=".pdf,.xls,.xlsx,image/*">
+                <input type="file" id="file-input-center" class="hidden" accept=".xls,.xlsx">
                 <div class="mt-4">
-                    <h2 class="text-lg font-bold text-purple-300">ファイルをアップロードしてください🙌</h2>
-                    <p class="text-xs text-gray-400 mt-1">PDF/画像を構造化しJSON形式にします😤</p>
+                    <h2 class="text-lg font-bold text-green-300">Excelファイルをドロップ🙌</h2>
+                    <p class="text-xs text-gray-400 mt-1">Lexicon辞書を使い、ブラウザ内で即座にJSON化します</p>
                 </div>
             </label>
 
-            <!-- ▼▼▼ 追加：免責事項・セキュリティ警告 ▼▼▼ -->
-            <div class="mt-4 text-left bg-gray-800/80 p-4 rounded-xl border border-red-900/30 max-w-sm shadow-lg">
-                <h3 class="text-xs font-bold text-red-400 mb-2 flex items-center gap-1">⚠️ ご利用上の注意</h3>
+            <!-- セキュリティの完全アピール -->
+            <div class="mt-4 text-left bg-gray-800/80 p-4 rounded-xl border border-green-900/50 max-w-sm shadow-lg">
+                <h3 class="text-xs font-bold text-green-400 mb-2 flex items-center gap-1">🛡️ 完全ローカル処理（外部送信なし）</h3>
                 <ul class="text-[10px] text-gray-400 space-y-1.5 list-disc list-inside">
-                    <li>本ツールはブラウザ上で完結し、サーバーは存在しません。</li>
-                    <li>入力されたAPIキーは<strong>お使いのブラウザ内でのみ</strong>使用されます。</li>
-                    <li>解析のため、ファイルは<strong>Google Gemini APIへ送信</strong>されます。</li>
-                    <li><strong>機密情報や個人情報</strong>を含むファイルはアップロードしないでください。</li>
-                    <li>本ツールの利用は<strong>自己責任</strong>でお願いいたします。</li>
+                    <li>AI（Gemini API）の使用を廃止しました。</li>
+                    <li>ファイルは<strong>お使いのブラウザ内部でのみ</strong>処理されます。</li>
+                    <li>外部サーバーへのデータ送信は一切行われません。</li>
+                    <li>機密情報を含む行政データでも<strong>100%安全</strong>に変換可能です。</li>
                 </ul>
             </div>
-            <!-- ▲▲▲ 追加ここまで ▲▲▲ -->
         </div>
     </main>
 
-    <!-- Status & Token Counter -->
+    <!-- Status Bar -->
     <div id="status-bar" class="px-4 py-1 flex justify-between items-center bg-gray-800/50 border-t border-gray-800">
-        <div id="status" class="text-[10px] text-purple-400 uppercase tracking-widest font-bold font-mono"></div>
-        <div id="token-info" class="text-[9px] text-gray-500 font-mono"></div>
+        <div id="status" class="text-[10px] text-green-400 uppercase tracking-widest font-bold font-mono">Ready to harvest.</div>
     </div>
 
     <!-- Footer -->
     <footer class="flex-none p-4 bg-gray-800 border-t border-gray-700 pb-6 shadow-[0_-4px_10px_rgba(0,0,0,0.3)]">
-        <div class="flex gap-2 items-center">
-            <label class="flex-none w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center cursor-pointer active:scale-90 transition">
-                <span class="text-2xl text-white">📎</span>
-                <input type="file" id="file-input-footer" class="hidden" accept=".pdf,.xls,.xlsx,image/*">
+        <div class="flex gap-2 items-center justify-center">
+            <label class="w-full max-w-md h-12 bg-green-700 hover:bg-green-600 rounded-xl flex items-center justify-center cursor-pointer active:scale-95 transition shadow-lg">
+                <span class="text-sm font-bold text-white flex items-center gap-2">
+                    <span class="text-xl">📎</span> Excelファイルを選択して変換
+                </span>
+                <input type="file" id="file-input-footer" class="hidden" accept=".xls,.xlsx">
             </label>
-            <input type="text" id="user-input" class="flex-1 bg-gray-900/50 rounded-xl px-4 h-12 focus:outline-none border border-gray-700 text-sm placeholder-gray-600" placeholder="AIへの追加指示...">
-            <button id="send-btn" class="flex-none w-12 h-12 bg-green-600 hover:bg-green-500 rounded-xl flex items-center justify-center font-bold active:scale-90 transition text-white">Go</button>
         </div>
     </footer>
 
-    <script type="module">
-        import { GoogleGenAI } from "@google/genai";
+    <script>
+        let lexiconData = {};
 
-        // 基本スキーマ定義
-        const PROJECT_SCHEMAS = `
-        Schemas:
-        - SettlementData: { fiscal_year, prefecture, source, population, area, total_revenue, total_expenditure, real_balance, single_year_balance, financial_capability_index, real_debt_service_ratio, future_burden_ratio, current_account_ratio, local_tax, local_allocation_tax, local_consumption_tax, personnel_expenses, assistance_expenses, public_debt_expenses, ordinary_construction_expenses } 
-        - MigrationData: { fiscal_year, prefecture, area, source, domestic_in, domestic_out, international_in, international_out, social_increase }
-        - PopulationData: { fiscal_year, prefecture, area, source, total_population, births, deaths }
-        `;
-
-        let SYSTEM_INSTRUCTION = "";
-        let client = null;
-        let chatHistory =[];
-        let lastFileName = "FYxxxx-xxxx.json";
-        
-        async function initializePrompt() {
-            let lexiconData = {};
+        // 起動時に辞書をロード
+        async function loadLexicon() {
             try {
                 const res = await fetch('./lexicon.json');
                 if (res.ok) lexiconData = await res.json();
             } catch (e) {
-                console.warn("辞書の読み込みに失敗しました(ローカル実行など)", e);
+                console.warn("辞書の読み込みに失敗。デフォルトの空辞書を使用します。", e);
             }
-
-            const LEXICON_STR = JSON.stringify(lexiconData, null, 2);
-
-            SYSTEM_INSTRUCTION = `あなたは行政データ抽出アシスタントの「つむぎ」です。Open-Civic-Data-Harvesterで働いています。
-            
-            【重要】以下の「共有辞書(Lexicon)」を使い、表記ゆれを吸収して正確に値を抽出しなさい。
-            辞書にあるキーワード（配列内の単語）が見つかった場合、その周辺にある数値を正解として扱いなさい。
-
-            === 共有辞書 (Lexicon) ===
-            ${LEXICON_STR}
-            =========================
-
-            === 出力スキーマ ===
-            ${PROJECT_SCHEMAS}
-
-            1. 【悪用防止】漫画、イラスト、無関係な写真は拒否。
-            2. 【抽出】資料を判定し、辞書とスキーマに基づいてJSON化。
-            3. 【出力】JSONコードブロック \`\`\`json ... \`\`\` のみを出力。
-            4. 【汎用性】辞書にない項目も文脈から推測すること。`;
         }
-        
-        await initializePrompt();
+        loadLexicon();
 
         const chatBox = document.getElementById('chat-box');
         const status = document.getElementById('status');
-        const tokenInfo = document.getElementById('token-info');
+        let lastFileName = "extracted_data.json";
 
-        function appendMessage(role, text, isJson = false, usage = null) {
+        function appendMessage(role, content, isJson = false) {
             const welcome = document.getElementById('welcome-screen');
             if(welcome) welcome.remove();
 
             const wrapper = document.createElement('div');
             wrapper.className = `flex ${role === 'user' ? 'justify-end' : 'justify-start'}`;
             const div = document.createElement('div');
-            div.className = `max-w-[90%] p-3 text-sm shadow-sm ${role === 'user' ? 'user-bubble' : 'ai-bubble'}`;
+            div.className = `max-w-[95%] p-3 text-sm shadow-sm ${role === 'user' ? 'user-bubble' : 'ai-bubble'}`;
             
             if (isJson) {
-                // XSS脆弱性対策: DOM操作で要素を作成し、テキストは textContent で挿入
                 const titleDiv = document.createElement('div');
-                titleDiv.className = "text-[10px] font-mono text-purple-300 mb-1 tracking-tighter";
-                titleDiv.textContent = "DATA_HARVESTED_v3.0:";
+                titleDiv.className = "text-[10px] font-mono text-green-300 mb-1 tracking-tighter";
+                titleDiv.textContent = "LOCAL_HARVESTED_v4.0:";
                 div.appendChild(titleDiv);
 
                 const pre = document.createElement('pre');
-                pre.className = "text-green-400 bg-black p-2 rounded text-[10px] select-all font-mono overflow-x-auto border border-purple-500/30";
-                pre.textContent = text; 
+                pre.className = "text-green-400 bg-black p-2 rounded text-[10px] select-all font-mono overflow-x-auto border border-green-500/30";
+                pre.textContent = content; // XSS安全
                 div.appendChild(pre);
                 
                 const btnContainer = document.createElement('div');
                 btnContainer.className = "flex gap-2 mt-2";
 
                 const dlBtn = document.createElement('button');
-                dlBtn.innerHTML = "📥 保存";
-                dlBtn.className = "flex-1 py-2 bg-green-700 hover:bg-green-600 rounded-lg text-xs font-bold transition active:scale-95";
+                dlBtn.innerHTML = "📥 JSON保存";
+                dlBtn.className = "flex-1 py-2 bg-green-700 hover:bg-green-600 rounded-lg text-xs font-bold transition active:scale-95 text-white";
                 dlBtn.onclick = () => {
-                    const blob = new Blob([text], { type: 'application/json' });
+                    const blob = new Blob([content], { type: 'application/json' });
                     const url = URL.createObjectURL(blob);
                     const a = document.createElement('a'); a.href = url; a.download = lastFileName;
                     document.body.appendChild(a); a.click(); document.body.removeChild(a);
@@ -174,9 +125,9 @@
 
                 const cpBtn = document.createElement('button');
                 cpBtn.innerText = "📋 コピー";
-                cpBtn.className = "flex-1 py-2 bg-purple-700 hover:bg-purple-600 rounded-lg text-xs font-bold transition active:scale-95";
+                cpBtn.className = "flex-1 py-2 bg-teal-700 hover:bg-teal-600 rounded-lg text-xs font-bold transition active:scale-95 text-white";
                 cpBtn.onclick = () => {
-                    navigator.clipboard.writeText(text);
+                    navigator.clipboard.writeText(content);
                     cpBtn.innerText = "✅ OK";
                     setTimeout(() => cpBtn.innerText = "📋 コピー", 2000);
                 };
@@ -185,14 +136,7 @@
                 btnContainer.appendChild(cpBtn);
                 div.appendChild(btnContainer);
             } else {
-                div.innerText = text; // innerText は安全
-            }
-
-            if (usage) {
-                const meta = document.createElement('div');
-                meta.className = "text-[8px] mt-1 opacity-50 font-mono text-right";
-                meta.innerText = `Tokens: ${usage.promptTokenCount} in / ${usage.candidatesTokenCount} out (Total: ${usage.totalTokenCount})`;
-                div.appendChild(meta);
+                div.innerText = content;
             }
 
             wrapper.appendChild(div);
@@ -200,75 +144,100 @@
             chatBox.scrollTop = chatBox.scrollHeight;
         }
 
-        async function handleSend(file = null) {
-            const apiKey = document.getElementById('api-key').value;
-            const userInput = document.getElementById('user-input');
-            const text = userInput.value;
-            if (!apiKey) return alert("API KEYが必要です");
-            if (!text && !file) return;
+        // --- ▼ ブラウザ内ローカル抽出エンジン ▼ ---
+        function extractWithLexicon(workbook) {
+            const results = { source: lastFileName, data: {} };
+            
+            // 全シートを走査
+            for (const sheetName of workbook.SheetNames) {
+                if (sheetName.match(/(目次|index|注意|原本|表紙)/i)) continue;
+                
+                const matrix = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1, defval: "" });
+                
+                // 辞書の全カテゴリ(settlement等)を走査
+                for (const category in lexiconData) {
+                    if (!results.data[category]) results.data[category] = {};
+                    const dict = lexiconData[category];
+
+                    for (const key in dict) {
+                        if (results.data[category][key] !== undefined) continue; // 取得済みならスキップ
+                        const keywords = dict[key];
+
+                        // 行列からキーワードを探す
+                        outer_loop: for (let r = 0; r < matrix.length; r++) {
+                            for (let c = 0; c < matrix[r].length; c++) {
+                                const cellStr = String(matrix[r][c]).replace(/\s/g, '');
+                                
+                                if (keywords.some(kw => cellStr.includes(kw))) {
+                                    // 見つけたら右側のセルから数値を抽出
+                                    for (let nc = c + 1; nc < Math.min(c + 20, matrix[r].length); nc++) {
+                                        const val = matrix[r][nc];
+                                        let parsed = null;
+                                        if (typeof val === 'number') parsed = val;
+                                        else if (typeof val === 'string') {
+                                            const numStr = val.replace(/,/g, '').trim();
+                                            if (!isNaN(parseFloat(numStr)) && numStr !== '') parsed = parseFloat(numStr);
+                                        }
+
+                                        if (parsed !== null) {
+                                            results.data[category][key] = parsed;
+                                            break outer_loop;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return results;
+        }
+
+        async function handleFile(file) {
+            if (!file) return;
+            
+            lastFileName = file.name.substring(0, file.name.lastIndexOf('.')) + ".json";
+            appendMessage('user', `📄 ${file.name} をローカル解析中...`);
+            status.innerText = "Extracting data locally...";
 
             try {
-                if (!client) client = new GoogleGenAI({ apiKey });
-                status.innerText = "Harvesting...";
-                
-                let currentParts =[];
-                if (text) {
-                    appendMessage('user', text);
-                    currentParts.push({ text });
-                    userInput.value = '';
-                }
+                if (file.name.match(/\.(xlsx|xls)$/i)) {
+                    // 1. ファイルをArrayBufferとして読み込む
+                    const data = await file.arrayBuffer();
+                    
+                    // 2. SheetJSでパース
+                    const workbook = XLSX.read(data, { type: 'array' });
+                    
+                    // 3. ブラウザ内抽出エンジン実行
+                    const extractedData = extractWithLexicon(workbook);
 
-                if (file) {
-                    appendMessage('user', `📄 ${file.name}`);
-                    lastFileName = file.name.substring(0, file.name.lastIndexOf('.')) + ".json";
-                    const base64Data = await new Promise(r => {
-                        const reader = new FileReader();
-                        reader.onloadend = () => r(reader.result.split(',')[1]);
-                        reader.readAsDataURL(file);
-                    });
-                    currentParts.push({ inlineData: { data: base64Data, mimeType: file.type } });
-                }
-
-                const response = await client.models.generateContent({
-                    model: "gemini-3-flash-preview", 
-                    contents:[...chatHistory, { role: 'user', parts: currentParts }],
-                    config: {
-                        systemInstruction: SYSTEM_INSTRUCTION, 
-                        temperature: 0.1
-                    }
-                });
-
-                const responseText = response.text;
-                const usage = response.usageMetadata;
-                
-                chatHistory.push({ role: 'user', parts: currentParts });
-                chatHistory.push({ role: 'model', parts: [{ text: responseText }] });
-
-                const jsonMatch = responseText.match(/```json\s?([\s\S]*?)```/) || responseText.match(/(\{[\s\S]*\}|\[[\s\S]*\])/);
-                
-                if (jsonMatch) {
-                    const cleanJson = jsonMatch[1] || jsonMatch[0];
-                    const beforeText = responseText.split('```')[0];
-                    if (beforeText.trim() && beforeText.length < 200) appendMessage('model', beforeText);
-                    appendMessage('model', cleanJson.trim(), true, usage);
+                    // 4. 結果表示
+                    setTimeout(() => {
+                        appendMessage('model', JSON.stringify(extractedData, null, 2), true);
+                        status.innerText = "Harvest complete.";
+                    }, 500); // UIのチラつき防止で少しだけ待つ
                 } else {
-                    appendMessage('model', responseText, false, usage);
+                    appendMessage('model', "⚠️ 現在のローカル完全セキュア版は Excelファイル (.xlsx, .xls) のみに対応しています。PDFや画像への対応は別ツールをご利用ください。");
+                    status.innerText = "Error: Invalid file type.";
                 }
-
-                tokenInfo.innerText = `Session Total: ${usage.totalTokenCount}`;
-
             } catch (err) {
-                appendMessage('model', "ERROR: " + err.message);
-                client = null;
-            } finally {
-                status.innerText = "";
+                appendMessage('model', "ERROR: ファイルの解析に失敗しました。\n" + err.message);
+                status.innerText = "Error occurred.";
             }
         }
 
-        document.getElementById('send-btn').onclick = () => handleSend();
-        document.getElementById('file-input-center').onchange = (e) => handleSend(e.target.files[0]);
-        document.getElementById('file-input-footer').onchange = (e) => handleSend(e.target.files[0]);
-        document.getElementById('user-input').onkeypress = (e) => { if(e.key === 'Enter') handleSend(); };
+        // ファイル入力イベントの紐付け
+        document.getElementById('file-input-center').onchange = (e) => handleFile(e.target.files[0]);
+        document.getElementById('file-input-footer').onchange = (e) => handleFile(e.target.files[0]);
+        
+        // ドラッグ＆ドロップ対応
+        document.body.addEventListener('dragover', (e) => e.preventDefault());
+        document.body.addEventListener('drop', (e) => {
+            e.preventDefault();
+            if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+                handleFile(e.dataTransfer.files[0]);
+            }
+        });
     </script>
 </body>
 </html>
